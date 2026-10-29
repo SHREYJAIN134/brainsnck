@@ -8,8 +8,8 @@ TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
 
 echo "[1/3] python packages"
-python3 -c "import piper, playwright, numpy, scipy" 2>/dev/null \
-  || pip install -q --break-system-packages piper-tts playwright numpy scipy
+python3 -c "import kokoro_onnx, piper, playwright, numpy, scipy, soundfile" 2>/dev/null \
+  || pip install -q --break-system-packages kokoro-onnx piper-tts playwright numpy scipy soundfile
 
 echo "[2/3] headless chromium"
 if ! python3 - <<'EOF' 2>/dev/null
@@ -25,18 +25,17 @@ then
   fi
 fi
 
-echo "[3/3] voice model (en-us libritts, high: female and male narrators)"
+echo "[3/3] voice model (Kokoro: female and male narrators, Apache 2.0)"
 mkdir -p "$ENG/voices"
-if [ ! -s "$ENG/voices/en-us-libritts-high.onnx" ]; then
-  mkdir "$TMP/voice"
-  curl -sSfL -o "$TMP/voice/v.tar.gz" \
-    https://github.com/rhasspy/piper/releases/download/v0.0.2/voice-en-us-libritts-high.tar.gz
-  tar -xzf "$TMP/voice/v.tar.gz" -C "$TMP/voice"
-  cp "$TMP/voice/en-us-libritts-high.onnx" "$TMP/voice/en-us-libritts-high.onnx.json" "$ENG/voices/"
-fi
+for f in kokoro-v1.0.onnx voices-v1.0.bin; do
+  if [ ! -s "$ENG/voices/$f" ]; then
+    curl -sSfL -o "$TMP/$f" "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/$f"
+    mv "$TMP/$f" "$ENG/voices/$f"
+  fi
+done
 
 for f in gsap.min.js emoji_index.txt fonts/anton.woff2 fonts/mont700.woff2 fonts/mont800.woff2 fonts/mont900.woff2 \
-         voices/en-us-libritts-high.onnx voices/en-us-libritts-high.onnx.json; do
+         voices/kokoro-v1.0.onnx voices/voices-v1.0.bin; do
   [ -s "$ENG/$f" ] || { echo "missing: engine/$f"; exit 1; }
 done
 echo "setup ok"

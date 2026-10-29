@@ -73,15 +73,24 @@ def voice_spec(v):
 
 def voice_model(name):
     if name not in _models:
-        from piper import PiperVoice
-        _models[name] = PiperVoice.load(os.path.join(HERE, 'voices', name + '.onnx'))
+        if name == 'kokoro':
+            from kokoro_onnx import Kokoro
+            vd = os.path.join(HERE, 'voices')
+            _models[name] = Kokoro(os.path.join(vd, 'kokoro-v1.0.onnx'), os.path.join(vd, 'voices-v1.0.bin'))
+        else:
+            from piper import PiperVoice
+            _models[name] = PiperVoice.load(os.path.join(HERE, 'voices', name + '.onnx'))
     return _models[name]
 
 
-def tts(text):
-    from piper import SynthesisConfig
+def tts(text, speed=1.0):
+    """Speak one phrase. `speed` multiplies the voice's own speed. Returns float audio at SR."""
     v = VOICE or voice_spec(None)
-    cfg = SynthesisConfig(speaker_id=v.get('speaker'), length_scale=v.get('length_scale', 0.9),
+    if v.get('engine') == 'kokoro':
+        x, sr = voice_model('kokoro').create(text, voice=v['voice'], speed=v.get('speed', 1.0) * speed, lang='en-us')
+        return resample_poly(np.asarray(x, dtype=np.float64), 147, 80)  # 24k -> 44.1k
+    from piper import SynthesisConfig
+    cfg = SynthesisConfig(speaker_id=v.get('speaker'), length_scale=v.get('length_scale', 0.9) / speed,
                           noise_scale=0.6, noise_w_scale=0.75)
     chunks = [c.audio_float_array for c in voice_model(v['model']).synthesize(text, syn_config=cfg)]
     x = np.concatenate(chunks) if chunks else np.zeros(1)
@@ -117,34 +126,74 @@ def speak_text(sentence):
     return ' '.join(out)
 
 
-def say_scene(text):
-    """Synthesize one scene sentence by sentence. Returns audio and per-word timings (display words)."""
-    sentences = [s for s in re.split(r'(?<=[.!?])\s+', text.strip()) if s]
-    parts, words, t = [], [], 0.0
-    pause = np.zeros(int(.14 * SR))
+def phrases_of(text):
+    """Split a scene's `say` into spoken phrases with the pause that follows each.
+
+    Delivery marks a script can use (they never show in captions):
+      "..."  a dramatic pause, e.g. "Okay... here's the thing."
+      " — "  a short beat, e.g. "It weighs about — a billion tons!"
+    Sentence ends pause a little longer after "?" than "!" or ".". Sentences carrying *emphasis* are read
+    slightly slower, exclamations slightly faster, so the delivery is not one flat pace.
+    """
+    rnd = np.random.default_rng(sum(map(ord, text)))
+    out = []
+    # sentence ends: ! ? or a single full stop (an ellipsis is a pause inside the sentence, not an end)
+    sentences = [s for s in re.split(r'(?:(?<=[!?])|(?<=[^.]\.))\s+(?=\S)', text.strip()) if s]
     for si, sent in enumerate(sentences):
-        x = tts(speak_text(sent))
+        end = sent.rstrip()[-1] if sent.strip() else '.'
+        speed = (1.04 if end == '!' else 1.02 if end == '?' else 1.0) * (0.95 if '*' in sent else 1.0)
+        pieces = re.split(r'(\.\.\.|…|\s+[—–]\s+)', sent)
+        chunks = []
+        for p in pieces:
+            if p in ('...', '…'):
+                if chunks:
+                    chunks[-1][0] += '...'; chunks[-1][1] = .42
+            elif p.strip() in ('—', '–'):
+                if chunks:
+                    chunks[-1][0] += ','; chunks[-1][1] = .2
+            elif p.strip():
+                chunks.append([p.strip(), 0.0])
+        last = si == len(sentences) - 1
+        for ci, (ph, gap) in enumerate(chunks):
+            if ci == len(chunks) - 1:
+                gap = 0.0 if last else {'?': .36, '!': .3}.get(end, .26)
+            out.append((ph, speed, gap * (1 + rnd.uniform(-.15, .15))))
+    return out
+
+
+def trim(x, pad=.03):
+    a0, a1 = voiced_span(x)
+    return x[max(0, int((a0 - pad) * SR)): int((a1 + pad) * SR)]
+
+
+def say_scene(text):
+    """Synthesize one scene phrase by phrase. Returns audio and per-word timings (display words)."""
+    parts, words, t = [], [], 0.0
+    open_em = False  # *a multi word span* emphasises every word inside it
+    for ph, speed, gap in phrases_of(text):
+        x = trim(tts(speak_text(ph), speed))
         a0, a1 = voiced_span(x)
-        disp = sent.split()
+        disp = [w for w in ph.replace('...', ' ').split() if re.search(r'\w', w)]
         wts = [.35 + syllables(w.replace('*', '')) for w in disp]
         gaps = [.9 if re.search(r'[,;:]$', w) else 0 for w in disp]
         scale = (a1 - a0) / (sum(wts) + sum(gaps[:-1]))
         cur = t + a0
-        open_em = False  # *a multi word span* emphasises every word inside it
-        for w, wt, g in zip(disp, wts, gaps):
+        for i, (w, wt, g) in enumerate(zip(disp, wts, gaps)):
             d = wt * scale
             clean = re.sub(r"[^\w%'?!.$×-]", '', w.replace('*', '')).rstrip('.,')
             starts, ends = w.startswith('*'), bool(re.search(r'.\*[^\w]*$', w))
             em = open_em or starts
             open_em = (open_em or starts) and not ends
-            words.append({'w': clean, 'start': round(cur, 3), 'end': round(cur + d, 3), 'em': em,
-                          'raw': w.replace('*', '').lower()})
+            raw = w.replace('*', '').lower()
+            if i == len(disp) - 1 and not re.search(r'[.,!?;:]$', raw):
+                raw += ','  # a spoken pause also ends the caption chunk
+            words.append({'w': clean, 'start': round(cur, 3), 'end': round(cur + d, 3), 'em': em, 'raw': raw})
             cur += d + g * scale
         parts.append(x)
         t += len(x) / SR
-        if si < len(sentences) - 1:
-            parts.append(pause)
-            t += len(pause) / SR
+        if gap > 0:
+            parts.append(np.zeros(int(gap * SR)))
+            t += gap
     return np.concatenate(parts), words
 
 
@@ -181,7 +230,8 @@ def find_word(words, key, default):
 def build(spec, build_dir):
     global VOICE
     VOICE = voice_spec(spec.get('voice'))
-    print(f"voice: {VOICE.get('name', '?')} ({VOICE['model']}, speaker {VOICE.get('speaker')})")
+    print(f"voice: {VOICE.get('name', '?')} ({VOICE.get('engine', 'piper')}: {VOICE.get('voice') or VOICE.get('model')}"
+          f"{'' if VOICE.get('speaker') is None else ', speaker ' + str(VOICE['speaker'])})")
     theme = spec.get('theme', 'bokeh')
     palette, accent = THEMES[theme]
     seed = sum(ord(c) for c in spec.get('title', 'x')) * 7919 + 13

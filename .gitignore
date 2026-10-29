@@ -6,3 +6,4 @@ engine/voices/MODEL_CARD
 cache/
 out/
 *.mp4
+engine/voices/*.bin

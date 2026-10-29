@@ -3,10 +3,24 @@
   "niche": "Mixed science facts: brain and body, space, animals, nature, everyday physics and chemistry",
   "language": "English",
   "reels_per_day": 3,
-  "post_times_ist": ["08:41", "13:41", "19:41"],
+  "post_times_ist": [
+    "08:41",
+    "13:41",
+    "19:41"
+  ],
   "voices": [
-    {"name": "female", "model": "en-us-libritts-high", "speaker": 108},
-    {"name": "male", "model": "en-us-libritts-high", "speaker": 816}
+    {
+      "name": "female",
+      "engine": "kokoro",
+      "voice": "af_heart",
+      "speed": 1.05
+    },
+    {
+      "name": "male",
+      "engine": "kokoro",
+      "voice": "am_michael",
+      "speed": 1.05
+    }
   ],
   "voice_rule": "alternate: each reel uses the voice not used by the previous reel in log/topics.json",
   "approval_until": "2026-11-05",

@@ -48,6 +48,14 @@ Save to `scripts/<YYYY-MM-DD>_<HHMM>_<slug>.json`. Shape (see `scripts/space_fak
 `thumb` drives the cover image: a punchy title (≤ 32 characters, so it fits on two lines; emphasise one word),
 one hero icon and up to two small icons. Optional `badge` (default "DID YOU KNOW?").
 
+Write `say` lines the way a person talks, so the narration sounds human, not read out:
+- Short sentences, contractions ("it's", "you're"), and a reaction now and then ("Wait, what?", "Crazy, right?").
+- `...` makes a real pause (use once or twice per reel, e.g. "Okay... three facts"), and ` — ` a short beat
+  before a reveal ("it burns around — *20%* of your energy!"). Neither shows in the captions.
+- `!` and `?` change the intonation; `*emphasis*` also slows that sentence slightly. Don't overuse any of them:
+  one or two per scene.
+- Example: `scripts/brain_facts_v2.json`.
+
 `voice`: the narrator, `"female"` or `"male"` (defined in `config.voices`). Reels alternate: use the voice that the
 most recent entry in `log/topics.json` did **not** use (if that entry has no `voice`, treat it as `"male"`).
 
