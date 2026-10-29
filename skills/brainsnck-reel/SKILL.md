@@ -48,6 +48,9 @@ Save to `scripts/<YYYY-MM-DD>_<HHMM>_<slug>.json`. Shape (see `scripts/space_fak
 `thumb` drives the cover image: a punchy title (≤ 32 characters, so it fits on two lines; emphasise one word),
 one hero icon and up to two small icons. Optional `badge` (default "DID YOU KNOW?").
 
+`voice`: the narrator, `"female"` or `"male"` (defined in `config.voices`). Reels alternate: use the voice that the
+most recent entry in `log/topics.json` did **not** use (if that entry has no `voice`, treat it as `"male"`).
+
 Every scene has `layout` and `say` (what the voice reads). Wrap stressed words in `*...*`; a span may cover
 several words (`*a billion tons*`). Fact scenes are numbered automatically.
 
@@ -132,7 +135,7 @@ and before a second one check `GET .../IG/media?fields=id,caption,timestamp&limi
 
 ## 8. Log and report
 
-Append to `log/topics.json`: `date`, `time`, `slug`, `title`, `facts` (one line each), `sources`,
+Append to `log/topics.json`: `date`, `time`, `slug`, `title`, `voice`, `facts` (one line each), `sources`,
 `video_url`, `cover_url`, `status` (`posted` with the media id/permalink if returned, or `awaiting approval`).
 Commit the script and the log, push to `main`.
 Finish with one short message: the title, the status and the link.

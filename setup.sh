@@ -25,18 +25,18 @@ then
   fi
 fi
 
-echo "[3/3] voice model (en-us ryan, high)"
+echo "[3/3] voice model (en-us libritts, high: female and male narrators)"
 mkdir -p "$ENG/voices"
-if [ ! -s "$ENG/voices/en-us-ryan-high.onnx" ]; then
+if [ ! -s "$ENG/voices/en-us-libritts-high.onnx" ]; then
   mkdir "$TMP/voice"
   curl -sSfL -o "$TMP/voice/v.tar.gz" \
-    https://github.com/rhasspy/piper/releases/download/v0.0.2/voice-en-us-ryan-high.tar.gz
+    https://github.com/rhasspy/piper/releases/download/v0.0.2/voice-en-us-libritts-high.tar.gz
   tar -xzf "$TMP/voice/v.tar.gz" -C "$TMP/voice"
-  cp "$TMP/voice/en-us-ryan-high.onnx" "$TMP/voice/en-us-ryan-high.onnx.json" "$ENG/voices/"
+  cp "$TMP/voice/en-us-libritts-high.onnx" "$TMP/voice/en-us-libritts-high.onnx.json" "$ENG/voices/"
 fi
 
 for f in gsap.min.js emoji_index.txt fonts/anton.woff2 fonts/mont700.woff2 fonts/mont800.woff2 fonts/mont900.woff2 \
-         voices/en-us-ryan-high.onnx voices/en-us-ryan-high.onnx.json; do
+         voices/en-us-libritts-high.onnx voices/en-us-libritts-high.onnx.json; do
   [ -s "$ENG/$f" ] || { echo "missing: engine/$f"; exit 1; }
 done
 echo "setup ok"

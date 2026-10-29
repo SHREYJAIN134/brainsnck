@@ -52,21 +52,38 @@ def resolve_icon(name):
 
 
 # ---------------- voice ----------------
-_voice = None
+# A script picks its narrator with "voice": a name from config.json "voices" (e.g. "female" / "male"),
+# or an explicit {"model": ..., "speaker": ...}. Default is the first voice in config.json.
+_models = {}
+VOICE = None
 
 
-def voice():
-    global _voice
-    if _voice is None:
+def voice_spec(v):
+    if isinstance(v, dict):
+        return v
+    cfg_path = os.path.join(HERE, '..', 'config.json')
+    voices = json.load(open(cfg_path)).get('voices', []) if os.path.exists(cfg_path) else []
+    for item in voices:
+        if v is None or item.get('name') == v:
+            return item
+    if v is None:
+        return {'model': 'en-us-libritts-high', 'speaker': 108}
+    raise SystemExit(f'unknown voice: {v}')
+
+
+def voice_model(name):
+    if name not in _models:
         from piper import PiperVoice
-        _voice = PiperVoice.load(os.path.join(HERE, 'voices', 'en-us-ryan-high.onnx'))
-    return _voice
+        _models[name] = PiperVoice.load(os.path.join(HERE, 'voices', name + '.onnx'))
+    return _models[name]
 
 
 def tts(text):
     from piper import SynthesisConfig
-    cfg = SynthesisConfig(length_scale=0.9, noise_scale=0.6, noise_w_scale=0.75)
-    chunks = [c.audio_float_array for c in voice().synthesize(text, syn_config=cfg)]
+    v = VOICE or voice_spec(None)
+    cfg = SynthesisConfig(speaker_id=v.get('speaker'), length_scale=v.get('length_scale', 0.9),
+                          noise_scale=0.6, noise_w_scale=0.75)
+    chunks = [c.audio_float_array for c in voice_model(v['model']).synthesize(text, syn_config=cfg)]
     x = np.concatenate(chunks) if chunks else np.zeros(1)
     return resample_poly(x, 2, 1).astype(np.float64)  # 22.05k -> 44.1k
 
@@ -162,6 +179,9 @@ def find_word(words, key, default):
 
 # ---------------- build ----------------
 def build(spec, build_dir):
+    global VOICE
+    VOICE = voice_spec(spec.get('voice'))
+    print(f"voice: {VOICE.get('name', '?')} ({VOICE['model']}, speaker {VOICE.get('speaker')})")
     theme = spec.get('theme', 'bokeh')
     palette, accent = THEMES[theme]
     seed = sum(ord(c) for c in spec.get('title', 'x')) * 7919 + 13
