@@ -8,7 +8,7 @@ description: Make one BrainSnck Instagram reel end to end (pick a fresh topic, f
 One run = one reel. Work through the steps in order. If any step fails, do not post anything:
 send the person one short message saying which step failed and why, then stop.
 
-The repo is `REPO_OWNER/REPO_NAME` (GitHub). Everything that must survive between runs lives there:
+The repo is `SHREYJAIN134/brainsnck` (GitHub). Everything that must survive between runs lives there:
 the engine, `config.json`, `log/topics.json` and the posted videos (as release assets).
 
 ## 1. Get the repo and set up
@@ -83,8 +83,8 @@ Rules that keep the layout clean:
 
 Instagram only takes a public URL. Upload the MP4 as a release asset (release tag `reels-<YYYY-MM>`;
 create it if missing, as a normal release, not a draft):
-`gh release upload reels-<YYYY-MM> out/<name>.mp4 --repo REPO_OWNER/REPO_NAME`
-The URL is `https://github.com/REPO_OWNER/REPO_NAME/releases/download/reels-<YYYY-MM>/<name>.mp4`.
+`gh release upload reels-<YYYY-MM> out/<name>.mp4 --repo SHREYJAIN134/brainsnck`
+The URL is `https://github.com/SHREYJAIN134/brainsnck/releases/download/reels-<YYYY-MM>/<name>.mp4`.
 Confirm with `curl -sIL <url>` that the final response is 200.
 
 ## 7. Publish (Zapier, Instagram for Business)
