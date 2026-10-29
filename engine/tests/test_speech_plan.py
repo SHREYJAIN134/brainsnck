@@ -95,16 +95,29 @@ class Rendering(unittest.TestCase):
             spoken = [w['w'] for op in self.ops(say) for w in op['words']]
             self.assertEqual(spoken, [w for w in sp.words(say) if w not in ('—',)])
 
-    def test_strong_emphasis_is_its_own_slower_louder_chunk(self):
+    def test_strong_emphasis_stays_in_its_sentence(self):
         ops = self.ops(CLAIM, llm_plan())
-        strong = [op for op in ops if op['gain_db'] > 0]
-        self.assertEqual(len(strong), 1)
-        self.assertEqual(strong[0]['words'][0]['w'], 'he')
-        before = ops[ops.index(strong[0]) - 1]
-        self.assertGreaterEqual(before['pause_after'], sp.BEAT_BEFORE_STRONG)
-        self.assertTrue(before['tts_text'].endswith(','), 'mid-sentence chunk keeps suspended intonation')
-        self.assertLess(strong[0]['speed'], before['speed'])
-        self.assertEqual(strong[0]['stress'], [0])
+        self.assertEqual(len(ops), 1, 'the sentence is not cut apart around the strong word')
+        self.assertEqual(ops[0]['pause_after'], 0.0)
+        self.assertEqual(ops[0]['stress'], [3], '"he" gets the stress mark')
+        base = sp.EMOTIONS['serious'][0]
+        self.assertAlmostEqual(ops[0]['speed'], round(base * sp.STRONG_SPEED, 3))
+
+    def test_strong_slower_than_moderate_slower_than_none(self):
+        say = 'It is big. It is *big*. It is *really big*!'
+        p = llm_plan(emotion='neutral', segments=[
+            {'text': 'It is big.', 'emphasis': 0}, {'text': 'It is', 'emphasis': 0}, {'text': 'big.', 'emphasis': 2},
+            {'text': 'It is', 'emphasis': 0}, {'text': 'really big!', 'emphasis': 3}])
+        ops = self.ops(say, p)
+        self.assertEqual(len(ops), 3)
+        none, moderate, strong = (op['speed'] for op in ops)
+        self.assertGreater(none, moderate)
+        self.assertGreater(moderate / 1.0, strong / 1.03)  # strong sentence also gets the "!" lift
+
+    def test_mid_sentence_planned_pause_keeps_intonation_open(self):
+        plan = llm_plan(pauses=[{'after_text': 'I never said', 'duration_ms': 300}])
+        ops = self.ops(CLAIM, plan)
+        self.assertTrue(ops[0]['tts_text'].endswith(','))
 
     def test_planned_pause_applied_with_emotion_scale(self):
         plan = llm_plan(emotion='empathetic', pauses=[{'after_text': 'I never said', 'duration_ms': 300}])
@@ -114,7 +127,7 @@ class Rendering(unittest.TestCase):
     def test_planner_off_is_neutral(self):
         p, _ = sp.validate_plan(sp.neutral_plan(SAY), SAY)
         ops = sp.plan_to_ops(p)
-        self.assertTrue(all(op['gain_db'] == 0 and op['stress'] == [] for op in ops))
+        self.assertTrue(all(op['stress'] == [] for op in ops))
         self.assertTrue(all(not w['em'] for op in ops for w in op['words']))
 
 

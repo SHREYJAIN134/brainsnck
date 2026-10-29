@@ -178,8 +178,6 @@ def say_scene(text, speech=None):
     parts, words, t = [], [], 0.0
     for op in ops:
         x = trim(tts(speak_text(op['tts_text']), op['speed'], op['stress']))
-        if op['gain_db']:
-            x = x * 10 ** (op['gain_db'] / 20)
         a0, a1 = voiced_span(x)
         disp = op['words']
         if disp:

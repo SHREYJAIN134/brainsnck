@@ -1,6 +1,6 @@
 """Before/after evaluation of the speech planner on nine kinds of text.
 
-usage: python3 eval_speech.py OUT_DIR
+usage: python3 eval_speech.py OUT_DIR [CASE_NUMBERS, e.g. 2,6,9]
 
 "Before" = planner off (plain delivery, sentence gaps only). "After" = a context-aware plan (written by Claude, the
 same way a scheduled run writes one) rendered by speech_plan.plan_to_ops. Writes OUT_DIR/eval_report.json and
@@ -105,13 +105,15 @@ def speak(say, speech, planner):
     return x, list(mr.RENDER_LOG), list(mr.PLAN_REPORT)
 
 
-def main(out):
+def main(out, only=None):
     os.makedirs(out, exist_ok=True)
     female = mr.voice_spec('female')
     label_voice = mr.voice_spec('male')
     report, track = [], []
     gap = np.zeros(int(.7 * mr.SR))
     for n, (name, context, say, pl) in enumerate(CASES, 1):
+        if only and n not in only:
+            continue
         mr.VOICE = label_voice
         lab, _, _ = speak(f'Case {n}. {name}.', None, 'off')
         before_lab, _, _ = speak('Before.', None, 'off')
@@ -129,7 +131,6 @@ def main(out):
             'before': {'seconds': round(len(b) / mr.SR, 2), 'pauses_s': [round(s, 2) for s in sb]},
             'after': {'seconds': round(len(a) / mr.SR, 2), 'pauses_s': [round(s, 2) for s in sa],
                       'chunks': len(ops), 'speeds': [op['speed'] for op in ops],
-                      'strong_chunks_gain_db': [op['gain_db'] for op in ops if op['gain_db']],
                       'stress_requested': sum(1 for r in alog if r['stress_requested']),
                       'stress_applied': sum(1 for r in alog if r['stress_applied'])},
         })
@@ -152,4 +153,4 @@ def main(out):
 
 
 if __name__ == '__main__':
-    main(sys.argv[1])
+    main(sys.argv[1], [int(c) for c in sys.argv[2].split(',')] if len(sys.argv) > 2 else None)

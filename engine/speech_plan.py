@@ -15,8 +15,9 @@ What each engine can genuinely do (see CAPS):
   rate        speaking speed per chunk (the model takes one speed per call)
   stress      add a primary-stress mark to an unstressed word's phonemes (Kokoro only; already-stressed
               content words cannot be pushed further by this model)
-  chunk_gain  louder delivery for a strong-emphasis phrase spoken as its own chunk
-Not controllable with these models: pitch contour/range, per-word loudness or duration inside a chunk, timbre/emotion.
+Emphasis 2 and 3 slow the phrase that contains them a little (3 more than 2); the phrase is never cut apart, because
+a listening test (Oct 2026) preferred the plain reading every time a strong word was split off with a beat and gain.
+Not controllable with these models: pitch contour/range, loudness, per-word duration inside a phrase, timbre/emotion.
 Emotion is approximated only through pace and pause length.
 """
 import re
@@ -28,12 +29,11 @@ EMOTIONS = {  # emotion -> (pace multiplier, pause multiplier)
 }
 ENERGY = {'low': 0.97, 'moderate': 1.0, 'high': 1.03}
 CAPS = {
-    'kokoro': {'pause', 'rate', 'stress', 'chunk_gain'},
-    'piper': {'pause', 'rate', 'chunk_gain'},
+    'kokoro': {'pause', 'rate', 'stress'},
+    'piper': {'pause', 'rate'},
 }
 SENTENCE_GAP = {'?': .32, '!': .26, '.': .22}   # natural breath at a sentence end that has no planned pause
-BEAT_BEFORE_STRONG = .14                          # short beat before a strong-emphasis phrase
-STRONG_SPEED, STRONG_GAIN_DB, MODERATE_SPEED = .9, 2.0, .96
+STRONG_SPEED, MODERATE_SPEED = .93, .96          # pace of a phrase holding emphasis 3 / 2
 
 
 class PlanError(ValueError):
@@ -134,11 +134,11 @@ def validate_plan(plan, say, engine='kokoro'):
             raise PlanError(f'segment {i} emphasis {em} outside 0-3')
         if str(s.get('pitch', 'neutral')).lower() not in ('neutral', 'natural', ''):
             warn.append(f"segment '{s['text']}': pitch '{s.get('pitch')}' not controllable on {engine}, ignored")
-        if str(s.get('duration', 'normal')).lower() not in ('normal', '') and em < 3:
+        if str(s.get('duration', 'normal')).lower() not in ('normal', ''):
             warn.append(f"segment '{s['text']}': duration '{s.get('duration')}' only applies to whole chunks; "
                         f"realised through chunk pace")
-        if str(s.get('intensity', 'normal')).lower() not in ('normal', '') and em < 3:
-            warn.append(f"segment '{s['text']}': intensity '{s.get('intensity')}' only renders on strong (3) emphasis")
+        if str(s.get('intensity', 'normal')).lower() not in ('normal', ''):
+            warn.append(f"segment '{s['text']}': intensity '{s.get('intensity')}' not controllable on {engine}, ignored")
         if em and 'stress' not in caps:
             warn.append(f"segment '{s['text']}': {engine} cannot mark word stress; emphasis via pace/pauses only")
         clean.append({'text': strip_marks(s['text']), 'emphasis': em, 'reason': str(s.get('reason', '')),
@@ -181,10 +181,11 @@ def validate_plan(plan, say, engine='kokoro'):
 # ---------------------------------------------------------------- rendering
 def plan_to_ops(plan, engine='kokoro'):
     """Turn a validated plan into spoken chunks:
-    [{'tts_text', 'words': [{'w', 'em'}], 'stress': [word idx], 'speed', 'gain_db', 'pause_after'}]
+    [{'tts_text', 'words': [{'w', 'em'}], 'stress': [word idx], 'speed', 'pause_after'}]
 
-    Chunks break at planned pauses and sentence ends. A strong (3) emphasis starts its own chunk after a short
-    beat and runs to the end of its clause, spoken a little slower and louder, the way a narrator lands a reveal.
+    Chunks break only at planned pauses and sentence ends, so each sentence keeps its natural intonation.
+    A chunk holding emphasis 3 is read a little slower than one holding emphasis 2; emphasised unstressed words
+    get a stress mark.
     """
     caps = CAPS.get(engine, set())
     pace_e, pause_e = EMOTIONS[plan['emotion']]
@@ -192,12 +193,10 @@ def plan_to_ops(plan, engine='kokoro'):
     pause_at = {p['after']: p['duration_ms'] / 1000 * pause_e for p in plan['pauses']}
     segs = plan['segments']
     ops, cur = [], []
-    state = {'strong': False}
 
     def close(pause):
         if not cur:
             return
-        strong = state['strong']
         text = ' '.join(s['text'] for s in cur)
         ws, stress = [], []
         for s in cur:
@@ -207,27 +206,20 @@ def plan_to_ops(plan, engine='kokoro'):
                 if s['emphasis'] >= 1:
                     stress.append(len(ws))
                 ws.append({'w': w, 'em': s['emphasis'] >= 2})
+        top = max(s['emphasis'] for s in cur)
         speed = base * (1.03 if text.rstrip().endswith('!') else 1.0)
-        if strong:
+        if top == 3:
             speed *= STRONG_SPEED
-        elif any(s['emphasis'] == 2 or s.get('duration') == 'long' for s in cur):
+        elif top == 2 or any(s.get('duration') == 'long' for s in cur):
             speed *= MODERATE_SPEED
         tts = re.sub(r'\s*—\s*', ', ', text).strip().rstrip(',').strip()
         if text.rstrip().endswith('—') or not re.search(r'([.!?,;:…]|\.\.\.)$', tts):
             tts += ','  # chunk ends mid-sentence: keep the intonation suspended, not falling
         ops.append({'tts_text': tts, 'words': ws, 'stress': stress if 'stress' in caps else [],
-                    'speed': round(min(1.4, max(.6, speed)), 3),
-                    'gain_db': STRONG_GAIN_DB if strong and 'chunk_gain' in caps else 0.0,
-                    'pause_after': round(pause, 3)})
-        cur.clear(); state['strong'] = False
+                    'speed': round(min(1.4, max(.6, speed)), 3), 'pause_after': round(pause, 3)})
+        cur.clear()
 
     for i, s in enumerate(segs):
-        if s['emphasis'] == 3 and not state['strong']:
-            if cur:
-                close(BEAT_BEFORE_STRONG if 'pause' in caps else 0.0)
-            elif ops and 'pause' in caps:
-                ops[-1]['pause_after'] = max(ops[-1]['pause_after'], BEAT_BEFORE_STRONG)
-            state['strong'] = True
         cur.append(s)
         last = i == len(segs) - 1
         if i in pause_at:
