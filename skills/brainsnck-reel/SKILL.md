@@ -102,11 +102,25 @@ Full caption = `caption` + blank line + hashtags joined by spaces.
   Publish only after they reply "post" in this session. Apply any change they ask for, re-render, re-check, send again.
 - **Auto mode:** publish straight away.
 
-To publish: `inspect_zapier_actions` for `InstagramBusinessCLIAPI` / `publish_video` with
-`connection_id` = `config.zapier_instagram_connection_id`, resolve `instagramPageId`, and check that the value
-`config.instagram_page_id` is listed with the label BrainSnck. If it is not, stop and ask. Then
-`execute_zapier_write_action` with that `connection_id` and `video` (the URL), `caption` and `instagramPageId`.
-If Instagram returns an error, report it word for word and stop. Do not retry more than once.
+To publish, use the Instagram Graph API through Zapier's raw request actions (the ready-made `publish_video`
+action gives up while Instagram is still processing the video, so it is not used). Every call goes to
+`selected_api` `InstagramBusinessCLIAPI` with `connection_id` = `config.zapier_instagram_connection_id`;
+`IG` below means `config.instagram_page_id`.
+
+1. Check the account: `inspect_zapier_actions` on `instagram_for_business_publish_video` with
+   `enum_property` `instagramPageId` must list `IG` with the label BrainSnck. If not, stop and ask.
+2. Create the container (`instagram_for_business_make_api_mutating_request`, method POST,
+   url `https://graph.facebook.com/v21.0/IG/media`, header `Content-Type: application/json`,
+   body JSON `{"media_type": "REELS", "share_to_feed": true, "video_url": <url>, "caption": <full caption>}`).
+   It returns the container `id`.
+3. Poll (`instagram_for_business_make_api_get_request`, url `https://graph.facebook.com/v21.0/<container id>`,
+   querystring `fields=status_code,status`) about once a minute (wait with a Monitor running `sleep 60`)
+   until `status_code` is `FINISHED`. Stop and report if it is `ERROR`/`EXPIRED` or not finished after 10 minutes.
+4. Publish: POST `https://graph.facebook.com/v21.0/IG/media_publish` with body `{"creation_id": "<container id>"}`.
+   It returns the media id. Then GET `https://graph.facebook.com/v21.0/<media id>?fields=permalink` for the link.
+
+If Instagram returns an error, report it word for word and stop. Create at most two containers per run,
+and before a second one check `GET .../IG/media?fields=id,caption,timestamp&limit=5` so nothing posts twice.
 
 ## 8. Log and report
 
