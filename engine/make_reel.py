@@ -372,6 +372,20 @@ def open_page(p, build_dir):
     return browser, page
 
 
+def loudnorm_filter(wav_path, target=-14.0):
+    """Two-pass loudness normalisation: measure the mix first, then correct it exactly (single-pass
+    loudnorm can land 1-2 LU short on quieter voices)."""
+    r = subprocess.run(['ffmpeg', '-hide_banner', '-i', wav_path, '-af',
+                        f'loudnorm=I={target}:TP=-1.5:LRA=11:print_format=json', '-f', 'null', '-'],
+                       capture_output=True, text=True)
+    try:
+        m = json.loads(r.stderr[r.stderr.rindex('{'):r.stderr.rindex('}') + 1])
+        return (f"loudnorm=I={target}:TP=-1.5:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
+                f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true")
+    except (ValueError, KeyError):
+        return f'loudnorm=I={target}:TP=-1.5:LRA=11'
+
+
 def render(build_dir, data, wav_path, out_path, stills=None):
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
@@ -384,7 +398,7 @@ def render(build_dir, data, wav_path, out_path, stills=None):
             return
         nf = int(math.ceil(data['total'] * FPS))
         ff = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'image2pipe', '-framerate', str(FPS), '-c:v', 'mjpeg', '-i', '-',
-                               '-i', wav_path, '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11', '-ar', str(SR), '-ac', '2',
+                               '-i', wav_path, '-af', loudnorm_filter(wav_path), '-ar', str(SR), '-ac', '2',
                                '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '19', '-pix_fmt', 'yuv420p',
                                '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', out_path],
                               stdin=subprocess.PIPE)
