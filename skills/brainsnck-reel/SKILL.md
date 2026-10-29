@@ -81,11 +81,17 @@ Rules that keep the layout clean:
 
 ## 6. Host the video
 
-Instagram only takes a public URL. Upload the MP4 as a release asset (release tag `reels-<YYYY-MM>`;
-create it if missing, as a normal release, not a draft):
-`gh release upload reels-<YYYY-MM> out/<name>.mp4 --repo SHREYJAIN134/brainsnck`
-The URL is `https://github.com/SHREYJAIN134/brainsnck/releases/download/reels-<YYYY-MM>/<name>.mp4`.
-Confirm with `curl -sIL <url>` that the final response is 200.
+Instagram only takes a public URL. Videos live on the `media` branch, which is kept as a single commit
+holding only the last 3 days of videos so the repo does not grow (GitHub releases are not allowed from these sessions).
+
+1. `git fetch origin media`, then make a worktree on a new orphan branch:
+   `git worktree add --orphan -b media-new <tmpdir>`
+2. Copy into `<tmpdir>/videos/` the new MP4 (named `<YYYY-MM-DD>_<HHMM>_<slug>.mp4`) plus any files from
+   `origin/media:videos/` whose date prefix is within the last 3 days (`git show origin/media:videos/<f> > <tmpdir>/videos/<f>`).
+   Keep the branch README: `git show origin/media:README.md > <tmpdir>/README.md`.
+3. Commit and force-push it over the media branch: `git push --force origin media-new:media`.
+4. The URL is `https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/<file>.mp4`.
+   Confirm with `curl -sIL <url>` that it ends in HTTP 200 and `content-length` equals the file size.
 
 ## 7. Publish (Zapier, Instagram for Business)
 
