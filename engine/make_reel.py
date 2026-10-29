@@ -87,7 +87,8 @@ def tts(text, speed=1.0):
     """Speak one phrase. `speed` multiplies the voice's own speed. Returns float audio at SR."""
     v = VOICE or voice_spec(None)
     if v.get('engine') == 'kokoro':
-        x, sr = voice_model('kokoro').create(text, voice=v['voice'], speed=v.get('speed', 1.0) * speed, lang='en-us')
+        x, sr = voice_model('kokoro').create(text, voice=v['voice'], speed=v.get('speed', 1.0) * speed,
+                                             lang=v.get('lang', 'en-us'))
         return resample_poly(np.asarray(x, dtype=np.float64), 147, 80)  # 24k -> 44.1k
     from piper import SynthesisConfig
     cfg = SynthesisConfig(speaker_id=v.get('speaker'), length_scale=v.get('length_scale', 0.9) / speed,
