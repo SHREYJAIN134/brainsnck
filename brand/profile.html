@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:640px;height:640px;overflow:hidden;background:#14061F}
+#p{position:relative;width:640px;height:640px;overflow:hidden;
+  background:radial-gradient(circle at 50% 46%,#C2377A 0%,#7A1B63 34%,#3A0E47 66%,#14061F 100%)}
+svg{position:absolute;inset:0}
+.glow{position:absolute;left:50%;top:47%;width:480px;height:480px;margin:-240px 0 0 -240px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,122,182,.55) 0%,rgba(255,122,182,0) 68%)}
+.brain{position:absolute;left:50%;top:47%;width:400px;height:400px;margin:-200px 0 0 -200px;
+  filter:drop-shadow(0 22px 34px rgba(20,6,31,.55))}
+.spark{position:absolute;width:96px;height:96px;left:448px;top:96px;transform:rotate(12deg);
+  filter:drop-shadow(0 8px 14px rgba(20,6,31,.45))}
+</style>
+</head>
+<body>
+<div id="p">
+  <svg viewBox="0 0 640 640">
+    <g stroke="rgba(255,255,255,.18)" stroke-width="3">
+      <line x1="70" y1="190" x2="150" y2="110"/><line x1="150" y1="110" x2="250" y2="70"/>
+      <line x1="70" y1="190" x2="95" y2="330"/><line x1="95" y1="330" x2="60" y2="450"/>
+      <line x1="540" y1="400" x2="590" y2="290"/><line x1="540" y1="400" x2="560" y2="520"/>
+      <line x1="560" y1="520" x2="440" y2="585"/><line x1="200" y1="580" x2="320" y2="600"/>
+      <line x1="200" y1="580" x2="110" y2="520"/>
+    </g>
+    <g fill="rgba(255,255,255,.55)">
+      <circle cx="70" cy="190" r="8"/><circle cx="150" cy="110" r="7"/><circle cx="250" cy="70" r="6"/>
+      <circle cx="95" cy="330" r="7"/><circle cx="60" cy="450" r="6"/><circle cx="540" cy="400" r="8"/>
+      <circle cx="590" cy="290" r="6"/><circle cx="560" cy="520" r="7"/><circle cx="440" cy="585" r="6"/>
+      <circle cx="200" cy="580" r="7"/><circle cx="320" cy="600" r="6"/><circle cx="110" cy="520" r="6"/>
+    </g>
+    <g fill="#FF7AB6" style="filter:drop-shadow(0 0 6px #FF7AB6)">
+      <circle cx="110" cy="150" r="6"/><circle cx="82" cy="262" r="5"/><circle cx="565" cy="345" r="6"/><circle cx="260" cy="590" r="5"/>
+    </g>
+  </svg>
+  <div class="glow"></div>
+  <img class="brain" src="../cache/icons/brain_3d.png">
+  <img class="spark" src="../cache/icons/sparkles_3d.png">
+</div>
+</body>
+</html>
