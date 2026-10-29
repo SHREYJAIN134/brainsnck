@@ -9,14 +9,28 @@
       "say": "Three space facts that sound *fake*, but are completely true.",
       "text": "Space is *stranger* than fiction",
       "icon": "Ringed planet",
-      "minis": ["Glowing star", "Comet"]
+      "minis": [
+        "Glowing star",
+        "Comet"
+      ]
     },
     {
       "layout": "compare",
       "say": "On Venus, one *day* lasts longer than a whole *year*. It spins once every 243 Earth days, but circles the Sun in just 225.",
       "headline": "A day > a *year*",
-      "left": {"icon": "Hourglass not done", "title": "1 Venus day", "value": "243 days", "color": "#FF7AB6", "hi": true},
-      "right": {"icon": "Sun", "title": "1 Venus year", "value": "225 days", "color": "#7CF5FF"},
+      "left": {
+        "icon": "Hourglass not done",
+        "title": "1 Venus day",
+        "value": "243 days",
+        "color": "#FF7AB6",
+        "hi": true
+      },
+      "right": {
+        "icon": "Sun",
+        "title": "1 Venus year",
+        "value": "225 days",
+        "color": "#7CF5FF"
+      },
       "left_sync": "243",
       "right_sync": "225"
     },
@@ -48,10 +62,27 @@
     }
   ],
   "caption": "Space is stranger than fiction 🪐\n\n1. A day on Venus (about 243 Earth days) is longer than its year (about 225 Earth days).\n2. A teaspoon of neutron star would weigh around a billion tons.\n3. Sunlight takes about 8 minutes to reach Earth, so you always see the Sun as it was a few minutes ago.\n\nWhich one blew your mind? Follow @BrainSnck for a daily brain snack.",
-  "hashtags": ["#brainsnck", "#spacefacts", "#space", "#astronomy", "#sciencefacts", "#didyouknow", "#funfacts", "#facts"],
+  "hashtags": [
+    "#brainsnck",
+    "#spacefacts",
+    "#space",
+    "#astronomy",
+    "#sciencefacts",
+    "#didyouknow",
+    "#funfacts",
+    "#facts"
+  ],
   "sources": [
     "https://www.nbcnews.com/science/space/long-solar-systems-longest-day-venus-answer-rcna826",
     "https://pursuit.unimelb.edu.au/articles/what-s-the-heaviest-thing-in-the-universe",
     "https://howthingsfly.si.edu/ask-an-explainer/how-long-does-it-take-light-sun-get-earth"
-  ]
+  ],
+  "thumb": {
+    "title": "3 space facts that sound *fake*",
+    "icon": "Ringed planet",
+    "minis": [
+      "Glowing star",
+      "Comet"
+    ]
+  }
 }

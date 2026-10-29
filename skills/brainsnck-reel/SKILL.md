@@ -41,8 +41,12 @@ Save to `scripts/<YYYY-MM-DD>_<HHMM>_<slug>.json`. Shape (see `scripts/space_fak
 
 ```json
 {"title": "...", "series": "BrainSnck", "handle": "@BrainSnck", "theme": "space",
- "scenes": [hook, fact, fact, fact, cta], "caption": "...", "hashtags": ["#brainsnck", "..."], "sources": ["..."]}
+ "scenes": [hook, fact, fact, fact, cta], "caption": "...", "hashtags": ["#brainsnck", "..."], "sources": ["..."],
+ "thumb": {"title": "3 space facts that sound *fake*", "icon": "Ringed planet", "minis": ["Glowing star", "Comet"]}}
 ```
+
+`thumb` drives the cover image: a punchy title (≤ 32 characters, so it fits on two lines; emphasise one word),
+one hero icon and up to two small icons. Optional `badge` (default "DID YOU KNOW?").
 
 Every scene has `layout` and `say` (what the voice reads). Wrap stressed words in `*...*`; a span may cover
 several words (`*a billion tons*`). Fact scenes are numbered automatically.
@@ -78,6 +82,9 @@ Rules that keep the layout clean:
    `python3 engine/make_reel.py scripts/<file>.json out/<name>.mp4`
 3. Check: `ffprobe` duration matches the build; `ebur128` integrated loudness is −14 ± 1 LUFS;
    `blackdetect` and `freezedetect` report nothing; a contact sheet of 10 frames looks right.
+4. Cover image (every reel gets one): `cd engine && python3 make_thumb.py ../scripts/<file>.json ../out/<name>.jpg`
+   Look at it in full and as the profile-grid crop (`crop((0, 240, 1080, 1680))`): the title must be whole and readable,
+   nothing important outside the crop. Fix the `thumb` block and re-render if not.
 
 ## 6. Host the video
 
@@ -86,19 +93,20 @@ holding only the last 3 days of videos so the repo does not grow (GitHub release
 
 1. `git fetch origin media`, then make a worktree on a new orphan branch:
    `git worktree add --orphan -b media-new <tmpdir>`
-2. Copy into `<tmpdir>/videos/` the new MP4 (named `<YYYY-MM-DD>_<HHMM>_<slug>.mp4`) plus any files from
-   `origin/media:videos/` whose date prefix is within the last 3 days (`git show origin/media:videos/<f> > <tmpdir>/videos/<f>`).
+2. Copy into `<tmpdir>/videos/` the new MP4 and its cover JPEG with the same base name
+   (`<YYYY-MM-DD>_<HHMM>_<slug>.mp4` and `.jpg`), plus any files from `origin/media:videos/` whose date prefix
+   is within the last 3 days (`git show origin/media:videos/<f> > <tmpdir>/videos/<f>`).
    Keep the branch README: `git show origin/media:README.md > <tmpdir>/README.md`.
 3. Commit and force-push it over the media branch: `git push --force origin media-new:media`.
-4. The URL is `https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/<file>.mp4`.
-   Confirm with `curl -sIL <url>` that it ends in HTTP 200 and `content-length` equals the file size.
+4. The URLs are `https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/<file>.mp4` and `.jpg`.
+   Confirm with `curl -sIL <url>` that each ends in HTTP 200 and `content-length` equals the file size.
 
 ## 7. Publish (Zapier, Instagram for Business)
 
 Full caption = `caption` + blank line + hashtags joined by spaces.
 
-- **Approval mode:** send the person the video (`SendUserFile`, status `proactive`) and one message with the
-  caption, the three sources, and: reply "post" to publish or tell me what to change. Then stop.
+- **Approval mode:** send the person the video and its cover image (`SendUserFile`, status `proactive`) and one
+  message with the caption, the three sources, and: reply "post" to publish or tell me what to change. Then stop.
   Publish only after they reply "post" in this session. Apply any change they ask for, re-render, re-check, send again.
 - **Auto mode:** publish straight away.
 
@@ -111,8 +119,8 @@ action gives up while Instagram is still processing the video, so it is not used
    `enum_property` `instagramPageId` must list `IG` with the label BrainSnck. If not, stop and ask.
 2. Create the container (`instagram_for_business_make_api_mutating_request`, method POST,
    url `https://graph.facebook.com/v21.0/IG/media`, header `Content-Type: application/json`,
-   body JSON `{"media_type": "REELS", "share_to_feed": true, "video_url": <url>, "caption": <full caption>}`).
-   It returns the container `id`.
+   body JSON `{"media_type": "REELS", "share_to_feed": true, "video_url": <mp4 url>, "cover_url": <jpg url>,
+   "caption": <full caption>}`). It returns the container `id`. Always include `cover_url`.
 3. Poll (`instagram_for_business_make_api_get_request`, url `https://graph.facebook.com/v21.0/<container id>`,
    querystring `fields=status_code,status`) about once a minute (wait with a Monitor running `sleep 60`)
    until `status_code` is `FINISHED`. Stop and report if it is `ERROR`/`EXPIRED` or not finished after 10 minutes.
@@ -125,6 +133,6 @@ and before a second one check `GET .../IG/media?fields=id,caption,timestamp&limi
 ## 8. Log and report
 
 Append to `log/topics.json`: `date`, `time`, `slug`, `title`, `facts` (one line each), `sources`,
-`video_url`, `status` (`posted` with the media id/permalink if returned, or `awaiting approval`).
+`video_url`, `cover_url`, `status` (`posted` with the media id/permalink if returned, or `awaiting approval`).
 Commit the script and the log, push to `main`.
 Finish with one short message: the title, the status and the link.

@@ -141,6 +141,30 @@
   }
   el('div', 'vignette', bg);
 
+  // ---------------- thumbnail (cover image) mode ----------------
+  // Same background as the reel, one still layout. Key content stays inside y 240-1680,
+  // the 3:4 area the profile grid shows.
+  if (R.mode === 'thumb') {
+    const T = R.thumb;
+    const box = el('div', 'thumb');
+    el('div', 'rays trays', box);
+    el('div', 'pill tpill', box, `<span class="dot"></span>${R.series}`);
+    const hero = el('div', 'thero', box);
+    icon(T.icon, 540, hero, 0, 0);
+    (T.minis || []).slice(0, 2).forEach((m, k) => {
+      const mw = el('div', 'mini', box); mw.style.left = (k ? 800 : 70) + 'px'; mw.style.top = (k ? 820 : 430) + 'px';
+      icon(m, 190, mw, 0, 0);
+    });
+    el('div', 'tbadge', box, T.badge || 'DID YOU KNOW?');
+    el('div', 'ttitle', box, wordsHTML(T.title));
+    window.seek = t => { for (const u of updaters) u(t); };
+    window.reelReady = Promise.all([
+      document.fonts.ready,
+      ...Array.from(document.images).map(im => im.decode().catch(() => null)),
+    ]).then(() => { window.seek(T.t || 3); return true; });
+    return;
+  }
+
   // ---------------- HUD ----------------
   const hud = el('div', 'hud');
   const pill = el('div', 'pill', hud, `<span class="dot"></span>${R.series}`);

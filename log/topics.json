@@ -3,7 +3,11 @@
     "date": "2026-10-29",
     "slug": "brain_facts",
     "title": "3 facts about your brain that sound fake",
-    "facts": ["brain is ~2% of body weight but uses ~20% of energy", "brain has no pain receptors", "~86 billion neurons"],
+    "facts": [
+      "brain is ~2% of body weight but uses ~20% of energy",
+      "brain has no pain receptors",
+      "~86 billion neurons"
+    ],
     "status": "test render, not posted"
   },
   {
@@ -11,7 +15,11 @@
     "slug": "space_fake_facts",
     "title": "3 space facts that sound fake",
     "time": "21:38",
-    "facts": ["a day on Venus is longer than its year", "a teaspoon of neutron star weighs ~1 billion tons", "sunlight takes ~8 minutes to reach Earth"],
+    "facts": [
+      "a day on Venus is longer than its year",
+      "a teaspoon of neutron star weighs ~1 billion tons",
+      "sunlight takes ~8 minutes to reach Earth"
+    ],
     "sources": [
       "https://www.nbcnews.com/science/space/long-solar-systems-longest-day-venus-answer-rcna826",
       "https://pursuit.unimelb.edu.au/articles/what-s-the-heaviest-thing-in-the-universe",
@@ -20,6 +28,8 @@
     "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-29_test_space_fake_facts.mp4",
     "status": "posted",
     "media_id": "18190139296414335",
-    "permalink": "https://www.instagram.com/reel/DfFZkQRjuBO/"
+    "permalink": "https://www.instagram.com/reel/DfFZkQRjuBO/",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-29_test_space_fake_facts.jpg",
+    "cover_note": "posted before covers existed; cover to be set in the Instagram app"
   }
 ]
