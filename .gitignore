@@ -1,0 +1,8 @@
+node_modules/
+__pycache__/
+engine/voices/*.onnx
+engine/voices/*.onnx.json
+engine/voices/MODEL_CARD
+cache/
+out/
+*.mp4

@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face{font-family:'Anton';src:url('fonts/anton.woff2') format('woff2');font-weight:400}
+@font-face{font-family:'Mont';src:url('fonts/mont700.woff2') format('woff2');font-weight:700}
+@font-face{font-family:'Mont';src:url('fonts/mont800.woff2') format('woff2');font-weight:800}
+@font-face{font-family:'Mont';src:url('fonts/mont900.woff2') format('woff2');font-weight:900}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:'Mont',sans-serif;color:#fff;
+  --accent:#38E1FF;--em:#FFE14D;--ink:#0b0b16}
+
+/* ---------- background ---------- */
+.bg{position:absolute;inset:0;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(110px);opacity:.55}
+.amb{position:absolute;inset:0}
+.amb > *{position:absolute}
+.bubble{border-radius:50%;border:3px solid rgba(255,255,255,.38);
+  background:radial-gradient(circle at 32% 30%,rgba(255,255,255,.55) 0 12%,rgba(255,255,255,.06) 13% 100%)}
+.ray{top:-200px;width:220px;height:1500px;transform-origin:50% 0;
+  background:linear-gradient(180deg,rgba(255,255,255,.14),rgba(255,255,255,0));filter:blur(18px)}
+.star{border-radius:50%;background:#fff;box-shadow:0 0 8px #fff}
+.cell{border-radius:50%;background:radial-gradient(circle,var(--accent) 0%,rgba(255,255,255,0) 70%);opacity:.22}
+.grid{left:-540px;width:2160px;top:900px;height:1400px;transform-origin:50% 0;
+  transform:perspective(700px) rotateX(62deg);
+  background-image:linear-gradient(rgba(255,255,255,.13) 2px,transparent 2px),linear-gradient(90deg,rgba(255,255,255,.13) 2px,transparent 2px);
+  background-size:120px 120px}
+.spark{border-radius:50%;background:var(--accent);box-shadow:0 0 14px var(--accent)}
+.vignette{position:absolute;inset:0;background:radial-gradient(120% 90% at 50% 45%,rgba(0,0,0,0) 55%,rgba(0,0,0,.55) 100%)}
+svg.net{position:absolute;inset:0}
+
+/* ---------- HUD ---------- */
+.hud{position:absolute;top:118px;left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:22px;z-index:5}
+.pill{display:flex;align-items:center;gap:16px;padding:14px 34px;border-radius:999px;
+  background:rgba(255,255,255,.12);border:2px solid rgba(255,255,255,.22);font:800 34px 'Mont';letter-spacing:4px;text-transform:uppercase}
+.pill .dot{width:16px;height:16px;border-radius:50%;background:var(--accent);box-shadow:0 0 16px var(--accent)}
+.segs{display:flex;gap:16px}
+.seg{width:150px;height:10px;border-radius:6px;background:rgba(255,255,255,.2);overflow:hidden}
+.seg i{display:block;height:100%;width:0;background:var(--accent);box-shadow:0 0 12px var(--accent)}
+
+/* ---------- scenes ---------- */
+.scene{position:absolute;inset:0;transform-origin:50% 45%;z-index:3}
+.badge{position:absolute;top:330px;left:50%;padding:14px 38px;border-radius:999px;background:var(--accent);color:var(--ink);
+  font:900 46px 'Mont';letter-spacing:3px;box-shadow:0 12px 40px rgba(0,0,0,.35);white-space:nowrap}
+.headline{position:absolute;top:430px;left:60px;right:60px;text-align:center;font:400 94px/1.06 'Anton';
+  text-transform:uppercase;letter-spacing:1px;text-shadow:0 8px 30px rgba(0,0,0,.5)}
+.headline span,.title span{display:inline-block;margin:0 4px}
+.em{color:var(--em)}
+.main{position:absolute;top:650px;left:60px;right:60px;height:660px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.float{display:flex;align-items:center;justify-content:center}
+.iconwrap{position:relative}
+.iconwrap img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 26px 40px rgba(0,0,0,.5))}
+.bignum{font:400 250px/1 'Anton';text-shadow:0 0 70px var(--accent),0 12px 30px rgba(0,0,0,.45);margin-top:6px}
+.label{font:800 52px/1.15 'Mont';text-transform:uppercase;text-align:center;max-width:900px;margin-top:8px;text-shadow:0 6px 20px rgba(0,0,0,.5)}
+.note{margin-top:22px;padding:12px 30px;border-radius:999px;background:rgba(0,0,0,.35);border:2px solid rgba(255,255,255,.25);
+  font:700 38px 'Mont';text-transform:uppercase;letter-spacing:1px}
+
+/* hook */
+.rays{position:absolute;left:-10px;top:110px;width:1100px;height:1100px;border-radius:50%;
+  background:repeating-conic-gradient(rgba(255,255,255,.10) 0 9deg,rgba(255,255,255,0) 9deg 22deg);
+  -webkit-mask-image:radial-gradient(circle,#000 0 30%,transparent 68%);mask-image:radial-gradient(circle,#000 0 30%,transparent 68%)}
+.hookicon{position:absolute;top:380px;left:0;right:0}
+.title{position:absolute;top:900px;left:50px;right:50px;text-align:center;font:400 124px/1.02 'Anton';text-transform:uppercase;
+  text-shadow:0 10px 36px rgba(0,0,0,.55)}
+.mini{position:absolute}
+
+/* ring */
+.ringbox{position:relative;width:500px;height:500px}
+.ringbox svg{position:absolute;inset:0;transform:rotate(-90deg);filter:drop-shadow(0 0 22px var(--accent))}
+.ringin{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.ringnum{font:400 150px/1 'Anton';text-shadow:0 8px 24px rgba(0,0,0,.45)}
+
+/* compare */
+.cards{position:relative;width:960px;height:560px}
+.card{position:absolute;top:0;width:430px;height:560px;border-radius:44px;background:rgba(255,255,255,.10);
+  border:3px solid rgba(255,255,255,.22);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+  box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.card.l{left:0}.card.r{right:0}
+.card.hi{border-color:var(--accent);box-shadow:0 0 50px rgba(255,255,255,.08),0 0 40px var(--accent)}
+.ctitle{font:800 44px 'Mont';text-transform:uppercase;text-align:center}
+.cval{font:400 112px/1 'Anton';text-transform:uppercase}
+.vs{position:absolute;left:50%;top:50%;width:130px;height:130px;margin:-65px 0 0 -65px;border-radius:50%;background:var(--em);color:var(--ink);
+  font:400 64px/130px 'Anton';text-align:center;box-shadow:0 10px 40px rgba(0,0,0,.45);z-index:2}
+
+/* list */
+.rows{display:flex;flex-direction:column;gap:30px;width:900px}
+.row{display:flex;align-items:center;gap:34px;padding:22px 34px;border-radius:36px;background:rgba(255,255,255,.10);border:3px solid rgba(255,255,255,.18)}
+.row .t{font:800 50px/1.15 'Mont';text-transform:uppercase}
+
+/* cta */
+.handle{position:absolute;top:760px;left:0;right:0;text-align:center;font:400 140px/1 'Anton';
+  background:linear-gradient(90deg,#fff 0%,var(--em) 50%,var(--accent) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 10px 26px rgba(0,0,0,.5))}
+.sub span{display:inline-block;margin:0 2px}
+.sub{position:absolute;top:930px;left:40px;right:40px;text-align:center;font:800 46px/1.2 'Mont';text-transform:uppercase}
+.btn{position:absolute;top:1090px;left:50%;width:460px;height:120px;margin-left:-230px;border-radius:999px;background:#fff;color:var(--ink);
+  font:900 50px/120px 'Mont';text-align:center;letter-spacing:2px;box-shadow:0 18px 44px rgba(0,0,0,.4);overflow:hidden}
+.btn span{position:absolute;inset:0}
+.btn .on{background:var(--accent);opacity:0}
+.confetti{position:absolute;inset:0;pointer-events:none;z-index:6}
+.confetti i{position:absolute;width:18px;height:30px;border-radius:4px}
+.pointer{position:absolute;z-index:7}
+
+/* captions */
+.caps{position:absolute;top:1360px;left:110px;right:110px;height:250px;z-index:8}
+.chunk{position:absolute;inset:0;display:flex;flex-wrap:wrap;justify-content:center;align-content:center;gap:0 30px;
+  font:900 84px/1.12 'Mont';text-transform:uppercase;text-align:center}
+.chunk span{display:inline-block;text-shadow:
+  -5px -5px 0 #000,5px -5px 0 #000,-5px 5px 0 #000,5px 5px 0 #000,0 -6px 0 #000,0 6px 0 #000,-6px 0 0 #000,6px 0 0 #000,0 12px 22px rgba(0,0,0,.6)}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="gsap.min.js"></script>
+<script src="data.js"></script>
+<script src="engine.js"></script>
+</body>
+</html>

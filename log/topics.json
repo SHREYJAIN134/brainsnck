@@ -1,0 +1,16 @@
+[
+  {
+    "date": "2026-10-29",
+    "slug": "brain_facts",
+    "title": "3 facts about your brain that sound fake",
+    "facts": ["brain is ~2% of body weight but uses ~20% of energy", "brain has no pain receptors", "~86 billion neurons"],
+    "status": "test render, not posted"
+  },
+  {
+    "date": "2026-10-29",
+    "slug": "space_fake_facts",
+    "title": "3 space facts that sound fake",
+    "facts": ["a day on Venus is longer than its year", "a teaspoon of neutron star weighs ~1 billion tons", "sunlight takes ~8 minutes to reach Earth"],
+    "status": "test render, not posted"
+  }
+]

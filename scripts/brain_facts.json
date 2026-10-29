@@ -1,0 +1,54 @@
+{
+  "title": "3 facts about your brain that sound fake",
+  "series": "BrainSnck",
+  "handle": "@BrainSnck",
+  "theme": "bio",
+  "scenes": [
+    {
+      "layout": "hook",
+      "say": "Three facts about your brain that sound *fake*, but are 100% real.",
+      "text": "Your brain is *weirder* than you think",
+      "icon": "Brain",
+      "minis": ["Exploding head", "Sparkles"]
+    },
+    {
+      "layout": "ring",
+      "say": "Your brain is only about 2% of your body weight, but it burns around *20%* of your energy.",
+      "headline": "A tiny *energy hog*",
+      "icon": "High voltage",
+      "value": 20,
+      "sync": "20%",
+      "label": "of your body's *energy*",
+      "note": "but only 2% of your weight"
+    },
+    {
+      "layout": "compare",
+      "say": "Your brain can't feel *pain*. It has no pain receptors, which is why surgeons can operate on it while patients are awake.",
+      "headline": "It can't feel *pain*",
+      "left": {"icon": "Hand with fingers splayed", "title": "Your skin", "value": "Ouch!", "color": "#FF6B6B"},
+      "right": {"icon": "Brain", "title": "Your brain", "value": "Nothing", "color": "#4ADE80", "hi": true},
+      "left_sync": "feel",
+      "right_sync": "receptors"
+    },
+    {
+      "layout": "counter",
+      "say": "And it's packed with about *86 billion* neurons. That's more than ten times the number of people on Earth.",
+      "headline": "*Billions* of neurons",
+      "icon": "Light bulb",
+      "value": 86,
+      "suffix": "B",
+      "sync": "86",
+      "label": "neurons in your head",
+      "note": "10× more than people on Earth"
+    },
+    {
+      "layout": "cta",
+      "say": "Follow BrainSnck for a new brain snack every day.",
+      "text": "A new *brain snack* every day",
+      "icon": "Brain",
+      "pointer": "Backhand index pointing up"
+    }
+  ],
+  "caption": "Your brain is stranger than you think 🧠\n\n1. It's only about 2% of your body weight but uses around 20% of your energy.\n2. It has no pain receptors, so surgeons can operate on it while you're awake.\n3. It holds about 86 billion neurons, more than 10x the people on Earth.\n\nWhich one surprised you most? Follow @BrainSnck for a daily brain snack.",
+  "hashtags": ["#brainsnck", "#brainfacts", "#sciencefacts", "#didyouknow", "#neuroscience", "#funfacts", "#learnoninstagram", "#facts"]
+}
