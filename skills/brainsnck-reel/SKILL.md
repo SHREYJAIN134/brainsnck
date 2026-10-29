@@ -56,6 +56,32 @@ Write `say` lines the way a person talks, so the narration sounds human, not rea
   one or two per scene.
 - Example: `scripts/brain_facts_v2.json`.
 
+**Speech plan (every scene).** Before rendering, decide how each `say` line should be spoken and write it as a
+`speech` object on the scene. Think about what the line means: its intent, what is new or contrastive, the emotion.
+Most words stay unmarked; emphasise only what carries the point.
+
+```json
+"speech": {"intent": "reveal how much energy the brain uses", "emotion": "amazed",
+  "delivery": {"pace": 1.0, "energy": "moderate", "pitch_style": "natural", "overall_style": "conversational"},
+  "segments": [{"text": "Your brain is only about 2% of your body weight.", "emphasis": 0, "reason": "set-up"},
+               {"text": "But it burns around —", "emphasis": 0, "reason": "lead-in"},
+               {"text": "20%", "emphasis": 3, "reason": "the payoff, contrasts with 2%"},
+               {"text": "of your energy!", "emphasis": 0, "reason": "given"}],
+  "pauses": [{"after_text": "But it burns around —", "duration_ms": 200, "reason": "beat before the reveal"}]}
+```
+
+- `segments` must reproduce `say` word for word, in order (only the `*` marks may be dropped). A plan that adds,
+  drops or reorders words is rejected and a cautious fallback plan is used instead.
+- `emphasis`: 0 none, 1 light (unstressed word that needs a little stress, e.g. a contrastive "he"),
+  2 moderate (the meaningful word or phrase), 3 strong (a reveal, correction or contrast; at most one or two per
+  scene). Strong emphasis is spoken as its own phrase after a short beat, slightly slower and louder.
+- `emotion`: neutral, curious, excited, amazed, playful, serious, reassuring, empathetic, urgent, persuasive,
+  disappointed or sarcastic. It only changes pace and pause length; the voice itself cannot change emotion.
+- `pauses`: after a segment, 0–1200 ms. Use them for questions that should land and before reveals, not after
+  every sentence.
+- Pitch, per-word loudness and per-word length are not controllable with this voice; don't rely on them.
+- Read `out/<name>_build/speech_report.json` after building: it lists any warnings and which emphasis was applied.
+
 `voice`: the narrator, `"female"` or `"male"` (defined in `config.voices`). Reels alternate: use the voice that the
 most recent entry in `log/topics.json` did **not** use (if that entry has no `voice`, treat it as `"male"`).
 
