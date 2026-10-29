@@ -6,5 +6,7 @@
   "post_times_ist": ["09:00", "14:00", "20:00"],
   "approval_until": "2026-11-05",
   "hashtag_count": 8,
-  "max_reel_seconds": 35
+  "max_reel_seconds": 35,
+  "zapier_instagram_connection_id": "025d6515-a4d7-8eba-ad67-27e8a1f94e84",
+  "instagram_page_id": "17841469922119577"
 }

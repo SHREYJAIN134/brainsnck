@@ -102,9 +102,10 @@ Full caption = `caption` + blank line + hashtags joined by spaces.
   Publish only after they reply "post" in this session. Apply any change they ask for, re-render, re-check, send again.
 - **Auto mode:** publish straight away.
 
-To publish: `inspect_zapier_actions` for `InstagramBusinessCLIAPI` / `publish_video`; resolve `instagramPageId`
-and pick the account whose name matches BrainSnck. If it does not resolve, or more than one account could match,
-stop and ask. Then `execute_zapier_write_action` with `video` (the URL), `caption` and `instagramPageId`.
+To publish: `inspect_zapier_actions` for `InstagramBusinessCLIAPI` / `publish_video` with
+`connection_id` = `config.zapier_instagram_connection_id`, resolve `instagramPageId`, and check that the value
+`config.instagram_page_id` is listed with the label BrainSnck. If it is not, stop and ask. Then
+`execute_zapier_write_action` with that `connection_id` and `video` (the URL), `caption` and `instagramPageId`.
 If Instagram returns an error, report it word for word and stop. Do not retry more than once.
 
 ## 8. Log and report
