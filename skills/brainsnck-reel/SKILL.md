@@ -74,7 +74,7 @@ Most words stay unmarked; emphasise only what carries the point.
   drops or reorders words is rejected and a cautious fallback plan is used instead.
 - `emphasis`: 0 none, 1 light (unstressed word that needs a little stress, e.g. a contrastive "he"),
   2 moderate (the meaningful word or phrase), 3 strong (a reveal, correction or contrast; at most one or two per
-  scene). Strong emphasis is spoken as its own phrase after a short beat, slightly slower and louder.
+  scene). Emphasis 2 and 3 make their sentence a little slower (3 more than 2); the sentence is never cut apart.
 - `emotion`: neutral, curious, excited, amazed, playful, serious, reassuring, empathetic, urgent, persuasive,
   disappointed or sarcastic. It only changes pace and pause length; the voice itself cannot change emotion.
 - `pauses`: after a segment, 0–1200 ms. Use them for questions that should land and before reveals, not after
