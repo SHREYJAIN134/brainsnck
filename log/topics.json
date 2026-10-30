@@ -32,5 +32,25 @@
     "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-29_test_space_fake_facts.jpg",
     "voice": "male",
     "note": "re-posted with its cover; the first upload without a cover (https://www.instagram.com/reel/DfFZkQRjuBO/) should be deleted in the app"
+  },
+  {
+    "date": "2026-10-30",
+    "time": "08:45",
+    "slug": "animal_fake_facts",
+    "title": "3 animal facts that sound fake",
+    "voice": "female",
+    "facts": [
+      "an octopus has three hearts and blue blood",
+      "a hummingbird's heart can beat up to ~1,200 times a minute (human ~72)",
+      "wombats poop cubes, shaped in their gut"
+    ],
+    "sources": [
+      "https://www.sciencefocus.com/nature/why-does-an-octopus-have-more-than-one-heart",
+      "https://www.birdsandblooms.com/birding/attracting-hummingbirds/hummingbird-heart-rate/",
+      "https://www.livescience.com/why-wombats-have-cubed-poop.html"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-30_0845_animal_fake_facts.mp4",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-30_0845_animal_fake_facts.jpg",
+    "status": "awaiting approval"
   }
 ]
