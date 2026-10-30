@@ -23,7 +23,7 @@
     }
   ],
   "voice_rule": "alternate: each reel uses the voice not used by the previous reel in log/topics.json",
-  "approval_until": "2026-11-05",
+  "approval_until": "2026-10-29",
   "hashtag_count": 8,
   "max_reel_seconds": 35,
   "zapier_instagram_connection_id": "025d6515-a4d7-8eba-ad67-27e8a1f94e84",
