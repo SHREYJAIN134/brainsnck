@@ -125,16 +125,17 @@ Rules that keep the layout clean:
 
 ## 6. Host the video
 
-Instagram only takes a public URL. Videos live on the `media` branch, which is kept as a single commit
-holding only the last 3 days of videos so the repo does not grow (GitHub releases are not allowed from these sessions).
+Instagram only takes a public URL. Videos live on the `media` branch (GitHub releases are not allowed from
+these sessions). Force-push is blocked in these sessions, so add each reel as a normal commit on top of the
+branch and remove videos older than 3 days in the same commit. The branch history still grows (about 27 MB a
+day); Shrey resets the branch by hand now and then.
 
-1. `git fetch origin media`, then make a worktree on a new orphan branch:
-   `git worktree add --orphan -b media-new <tmpdir>`
+1. `git fetch origin media:refs/remotes/origin/media`, then make a worktree on top of it:
+   `git worktree add -b media-local <tmpdir> origin/media`
 2. Copy into `<tmpdir>/videos/` the new MP4 and its cover JPEG with the same base name
-   (`<YYYY-MM-DD>_<HHMM>_<slug>.mp4` and `.jpg`), plus any files from `origin/media:videos/` whose date prefix
-   is within the last 3 days (`git show origin/media:videos/<f> > <tmpdir>/videos/<f>`).
-   Keep the branch README: `git show origin/media:README.md > <tmpdir>/README.md`.
-3. Commit and force-push it over the media branch: `git push --force origin media-new:media`.
+   (`<YYYY-MM-DD>_<HHMM>_<slug>.mp4` and `.jpg`), and `git rm` any file in `videos/` whose date prefix is older
+   than 3 days.
+3. Commit and push normally (never `--force`): `git push origin media-local:media`.
 4. The URLs are `https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/<file>.mp4` and `.jpg`.
    Confirm with `curl -sIL <url>` that each ends in HTTP 200 and `content-length` equals the file size.
 
