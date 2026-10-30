@@ -132,6 +132,9 @@ day); Shrey resets the branch by hand now and then.
 
 1. `git fetch origin media:refs/remotes/origin/media`, then make a worktree on top of it:
    `git worktree add -b media-local <tmpdir> origin/media`
+   If the branch does not exist (Shrey deleted it to reset it), start it fresh instead:
+   `git worktree add --orphan -b media-local <tmpdir>` and add a one-line `README.md`
+   ("Hosted BrainSnck reel videos; only the last 3 days are kept.").
 2. Copy into `<tmpdir>/videos/` the new MP4 and its cover JPEG with the same base name
    (`<YYYY-MM-DD>_<HHMM>_<slug>.mp4` and `.jpg`), and `git rm` any file in `videos/` whose date prefix is older
    than 3 days.
