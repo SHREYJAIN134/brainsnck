@@ -2,11 +2,13 @@
   "handle": "@BrainSnck",
   "niche": "Mixed science facts: brain and body, space, animals, nature, everyday physics and chemistry",
   "language": "English",
-  "reels_per_day": 3,
+  "reels_per_day": 5,
   "post_times_ist": [
     "08:41",
-    "13:41",
-    "19:41"
+    "11:41",
+    "14:41",
+    "17:41",
+    "20:41"
   ],
   "voices": [
     {
