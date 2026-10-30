@@ -55,5 +55,27 @@
     "media_id": "18129795544827691",
     "permalink": "https://www.instagram.com/reel/DfGt4RAlWeY/",
     "note": "approved by Shrey; he said approve everything from now on"
+  },
+  {
+    "date": "2026-10-30",
+    "time": "14:00",
+    "slug": "everyday_science_fake_facts",
+    "title": "3 everyday science facts that sound fake",
+    "voice": "male",
+    "facts": [
+      "lightning heats air to ~50,000°F, about 5x hotter than the Sun's surface",
+      "sound travels ~1,500 m/s in seawater vs ~340 m/s in air (4x+ faster)",
+      "honey thousands of years old found preserved in Egyptian tombs"
+    ],
+    "sources": [
+      "https://www.weather.gov/safety/lightning-temperature",
+      "https://dosits.org/tutorials/science/tutorial-speed",
+      "https://www.smithsonianmag.com/smart-news/why-honey-never-spoils-1218690/"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-30_1400_everyday_science_fake_facts.mp4",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-30_1400_everyday_science_fake_facts.jpg",
+    "status": "posted",
+    "media_id": "18120887956748100",
+    "permalink": "https://www.instagram.com/reel/DfHKprVgrez/"
   }
 ]

@@ -1,0 +1,282 @@
+{
+  "title": "3 everyday science facts that sound fake",
+  "series": "BrainSnck",
+  "handle": "@BrainSnck",
+  "theme": "bokeh",
+  "voice": "male",
+  "scenes": [
+    {
+      "layout": "hook",
+      "say": "Okay... three everyday science facts that sound *fake*. But they're real!",
+      "text": "Science is *weirder* than you think",
+      "icon": "Test tube",
+      "minis": [
+        "High voltage",
+        "Honey pot"
+      ],
+      "speech": {
+        "intent": "hook the viewer with a promise of strange everyday science",
+        "emotion": "playful",
+        "delivery": {
+          "pace": 1.0,
+          "energy": "high",
+          "pitch_style": "natural",
+          "overall_style": "conversational"
+        },
+        "segments": [
+          {
+            "text": "Okay...",
+            "emphasis": 0,
+            "reason": "opener"
+          },
+          {
+            "text": "three everyday science facts that sound",
+            "emphasis": 0,
+            "reason": "set-up"
+          },
+          {
+            "text": "fake.",
+            "emphasis": 3,
+            "reason": "the hook word"
+          },
+          {
+            "text": "But they're",
+            "emphasis": 0,
+            "reason": "lead-in"
+          },
+          {
+            "text": "real!",
+            "emphasis": 2,
+            "reason": "contrast with fake"
+          }
+        ],
+        "pauses": [
+          {
+            "after_text": "Okay...",
+            "duration_ms": 300,
+            "reason": "settle in"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "counter",
+      "say": "Lightning heats the air around it to about *five* times hotter than the surface of the Sun. Wait, what?",
+      "headline": "Hotter than *the Sun*",
+      "icon": "High voltage",
+      "value": 5,
+      "suffix": "X",
+      "sync": "five",
+      "label": "hotter than the *Sun's surface*",
+      "note": "about 50,000°F (27,700°C)",
+      "speech": {
+        "intent": "reveal lightning is hotter than the Sun's surface",
+        "emotion": "amazed",
+        "delivery": {
+          "pace": 1.0,
+          "energy": "moderate",
+          "pitch_style": "natural",
+          "overall_style": "conversational"
+        },
+        "segments": [
+          {
+            "text": "Lightning heats the air around it to about",
+            "emphasis": 0,
+            "reason": "set-up"
+          },
+          {
+            "text": "five",
+            "emphasis": 3,
+            "reason": "the surprising number"
+          },
+          {
+            "text": "times hotter than the surface of the Sun.",
+            "emphasis": 0,
+            "reason": "comparison"
+          },
+          {
+            "text": "Wait, what?",
+            "emphasis": 0,
+            "reason": "reaction"
+          }
+        ],
+        "pauses": [
+          {
+            "after_text": "times hotter than the surface of the Sun.",
+            "duration_ms": 250,
+            "reason": "let it land"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "compare",
+      "say": "In air, sound moves about 340 meters a second. In seawater? About — *1,500*!",
+      "headline": "Sound *speed* (m/s)",
+      "left": {
+        "icon": "Wind face",
+        "title": "Air",
+        "value": "340",
+        "color": "#FF6B6B"
+      },
+      "right": {
+        "icon": "Water wave",
+        "title": "Seawater",
+        "value": "1,500",
+        "color": "#4ADE80",
+        "hi": true
+      },
+      "left_sync": "340",
+      "right_sync": "1,500",
+      "speech": {
+        "intent": "contrast speed of sound in air and seawater",
+        "emotion": "excited",
+        "delivery": {
+          "pace": 1.0,
+          "energy": "high",
+          "pitch_style": "natural",
+          "overall_style": "conversational"
+        },
+        "segments": [
+          {
+            "text": "In air, sound moves about 340 meters a second.",
+            "emphasis": 0,
+            "reason": "baseline"
+          },
+          {
+            "text": "In seawater?",
+            "emphasis": 1,
+            "reason": "contrastive setting"
+          },
+          {
+            "text": "About —",
+            "emphasis": 0,
+            "reason": "lead-in"
+          },
+          {
+            "text": "1,500!",
+            "emphasis": 3,
+            "reason": "the payoff"
+          }
+        ],
+        "pauses": [
+          {
+            "after_text": "In seawater?",
+            "duration_ms": 300,
+            "reason": "let the question land"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "big",
+      "say": "And honey basically never spoils. Pots found in ancient Egyptian tombs were *thousands* of years old... and still preserved. Crazy, right?",
+      "headline": "Forever *honey*",
+      "icon": "Honey pot",
+      "label": "honey that's *thousands* of years old",
+      "note": "found preserved in Egyptian tombs",
+      "speech": {
+        "intent": "reveal honey can last thousands of years",
+        "emotion": "amazed",
+        "delivery": {
+          "pace": 1.0,
+          "energy": "moderate",
+          "pitch_style": "natural",
+          "overall_style": "conversational"
+        },
+        "segments": [
+          {
+            "text": "And honey basically never spoils.",
+            "emphasis": 0,
+            "reason": "claim"
+          },
+          {
+            "text": "Pots found in ancient Egyptian tombs were",
+            "emphasis": 0,
+            "reason": "set-up"
+          },
+          {
+            "text": "thousands",
+            "emphasis": 3,
+            "reason": "the reveal"
+          },
+          {
+            "text": "of years old...",
+            "emphasis": 0,
+            "reason": "given"
+          },
+          {
+            "text": "and still preserved.",
+            "emphasis": 2,
+            "reason": "the surprise"
+          },
+          {
+            "text": "Crazy, right?",
+            "emphasis": 0,
+            "reason": "reaction"
+          }
+        ],
+        "pauses": []
+      }
+    },
+    {
+      "layout": "cta",
+      "say": "Follow BrainSnck for a new brain snack every day.",
+      "text": "A new *brain snack* every day",
+      "icon": "Brain",
+      "pointer": "Backhand index pointing up",
+      "speech": {
+        "intent": "invite the viewer to follow",
+        "emotion": "reassuring",
+        "delivery": {
+          "pace": 1.0,
+          "energy": "moderate",
+          "pitch_style": "natural",
+          "overall_style": "conversational"
+        },
+        "segments": [
+          {
+            "text": "Follow BrainSnck for a new",
+            "emphasis": 0,
+            "reason": "call to action"
+          },
+          {
+            "text": "brain snack",
+            "emphasis": 2,
+            "reason": "the brand idea"
+          },
+          {
+            "text": "every day.",
+            "emphasis": 0,
+            "reason": "given"
+          }
+        ],
+        "pauses": []
+      }
+    }
+  ],
+  "thumb": {
+    "title": "3 science facts that sound *fake*",
+    "icon": "High voltage",
+    "minis": [
+      "Honey pot",
+      "Water wave"
+    ]
+  },
+  "caption": "Everyday stuff is way stranger than it looks ⚡\n\n1. Lightning heats the air to about 50,000°F, around five times hotter than the Sun's surface.\n2. Sound travels about 1,500 m/s in seawater, more than four times faster than in air (about 340 m/s).\n3. Honey basically never spoils. Pots thousands of years old were found preserved in Egyptian tombs.\n\nWhich one surprised you most? Follow @BrainSnck for a daily brain snack.",
+  "hashtags": [
+    "#brainsnck",
+    "#sciencefacts",
+    "#physics",
+    "#didyouknow",
+    "#funfacts",
+    "#learnoninstagram",
+    "#science",
+    "#chemistry"
+  ],
+  "sources": [
+    "https://www.weather.gov/safety/lightning-temperature",
+    "https://dosits.org/tutorials/science/tutorial-speed",
+    "https://www.smithsonianmag.com/smart-news/why-honey-never-spoils-1218690/"
+  ]
+}
