@@ -1,0 +1,122 @@
+{
+  "title": "3 body facts that sound fake",
+  "series": "BrainSnck",
+  "handle": "@BrainSnck",
+  "theme": "bio",
+  "voice": "female",
+  "scenes": [
+    {
+      "layout": "hook",
+      "say": "Okay... three things your body does that sound *fake*. Let's go!",
+      "text": "Your body is *secretly wild*",
+      "icon": "Anatomical heart",
+      "minis": ["Bone", "Baby"],
+      "speech": {
+        "intent": "hook the viewer with strange body facts",
+        "emotion": "playful",
+        "delivery": {"pace": 1.0, "energy": "high", "pitch_style": "natural", "overall_style": "conversational"},
+        "segments": [
+          {"text": "Okay...", "emphasis": 0, "reason": "opener"},
+          {"text": "three things your body does that sound", "emphasis": 0, "reason": "set-up"},
+          {"text": "fake.", "emphasis": 3, "reason": "the hook word"},
+          {"text": "Let's go!", "emphasis": 0, "reason": "energy"}
+        ],
+        "pauses": [{"after_text": "Okay...", "duration_ms": 300, "reason": "settle in"}]
+      }
+    },
+    {
+      "layout": "compare",
+      "say": "You were born with more than 300 bones. Adults have just 206. They didn't vanish... they *fused* together!",
+      "headline": "Bones: *baby* vs adult",
+      "left": {"icon": "Baby", "title": "Newborn", "value": "300+", "color": "#4ADE80", "hi": true},
+      "right": {"icon": "Person", "title": "Adult", "value": "206", "color": "#FF6B6B"},
+      "left_sync": "300",
+      "right_sync": "206",
+      "speech": {
+        "intent": "contrast baby and adult bone counts and explain why",
+        "emotion": "amazed",
+        "delivery": {"pace": 1.0, "energy": "moderate", "pitch_style": "natural", "overall_style": "conversational"},
+        "segments": [
+          {"text": "You were born with more than", "emphasis": 0, "reason": "set-up"},
+          {"text": "300 bones.", "emphasis": 2, "reason": "surprising number"},
+          {"text": "Adults have just", "emphasis": 0, "reason": "lead-in"},
+          {"text": "206.", "emphasis": 2, "reason": "contrast"},
+          {"text": "They didn't vanish...", "emphasis": 0, "reason": "anticipate the question"},
+          {"text": "they fused", "emphasis": 3, "reason": "the reveal"},
+          {"text": "together!", "emphasis": 0, "reason": "given"}
+        ],
+        "pauses": [{"after_text": "206.", "duration_ms": 250, "reason": "let the contrast land"}]
+      }
+    },
+    {
+      "layout": "counter",
+      "say": "Your heart beats about *100,000* times a day. And you don't even think about it!",
+      "headline": "Nonstop *heartbeat*",
+      "icon": "Anatomical heart",
+      "value": 100,
+      "suffix": "K",
+      "sync": "100,000",
+      "label": "heartbeats every *day*",
+      "note": "about 100,000 beats a day",
+      "speech": {
+        "intent": "reveal how often the heart beats each day",
+        "emotion": "excited",
+        "delivery": {"pace": 1.0, "energy": "high", "pitch_style": "natural", "overall_style": "conversational"},
+        "segments": [
+          {"text": "Your heart beats about", "emphasis": 0, "reason": "set-up"},
+          {"text": "100,000", "emphasis": 3, "reason": "the payoff number"},
+          {"text": "times a day.", "emphasis": 0, "reason": "given"},
+          {"text": "And you don't even think about it!", "emphasis": 1, "reason": "reaction"}
+        ],
+        "pauses": [{"after_text": "times a day.", "duration_ms": 200, "reason": "beat"}]
+      }
+    },
+    {
+      "layout": "big",
+      "say": "And your stomach lining? It's renewed every *few days*. A fresh lining, again and again. Crazy, right?",
+      "headline": "Fresh *stomach* lining",
+      "icon": "Fork and knife",
+      "label": "renewed every *few days*",
+      "note": "your body keeps rebuilding it",
+      "speech": {
+        "intent": "reveal the stomach lining renews every few days",
+        "emotion": "amazed",
+        "delivery": {"pace": 1.0, "energy": "moderate", "pitch_style": "natural", "overall_style": "conversational"},
+        "segments": [
+          {"text": "And your stomach lining?", "emphasis": 1, "reason": "new topic"},
+          {"text": "It's renewed every", "emphasis": 0, "reason": "lead-in"},
+          {"text": "few days.", "emphasis": 3, "reason": "the reveal"},
+          {"text": "A fresh lining, again and again.", "emphasis": 0, "reason": "restate"},
+          {"text": "Crazy, right?", "emphasis": 0, "reason": "reaction"}
+        ],
+        "pauses": [{"after_text": "And your stomach lining?", "duration_ms": 300, "reason": "question lands"}]
+      }
+    },
+    {
+      "layout": "cta",
+      "say": "Follow BrainSnck for a new brain snack every day.",
+      "text": "A new *brain snack* every day",
+      "icon": "Brain",
+      "pointer": "Backhand index pointing up",
+      "speech": {
+        "intent": "invite the viewer to follow",
+        "emotion": "reassuring",
+        "delivery": {"pace": 1.0, "energy": "moderate", "pitch_style": "natural", "overall_style": "conversational"},
+        "segments": [
+          {"text": "Follow BrainSnck for a new", "emphasis": 0, "reason": "call to action"},
+          {"text": "brain snack", "emphasis": 2, "reason": "the brand idea"},
+          {"text": "every day.", "emphasis": 0, "reason": "given"}
+        ],
+        "pauses": []
+      }
+    }
+  ],
+  "thumb": {"title": "3 body facts that sound *fake*", "icon": "Anatomical heart", "minis": ["Bone", "Baby"]},
+  "caption": "Your body is doing wild stuff right now 🫀\n\n1. Newborns can have more than 300 bones. Adults have 206, because many fuse together as we grow.\n2. Your heart beats about 100,000 times a day.\n3. Your stomach lining is renewed every few days.\n\nWhich one surprised you most? Follow @BrainSnck for a daily brain snack.",
+  "hashtags": ["#brainsnck", "#humanbody", "#biology", "#didyouknow", "#funfacts", "#sciencefacts", "#learnoninstagram", "#science"],
+  "sources": [
+    "https://www.popsci.com/story/health/bones-human-skeleton/",
+    "https://health.clevelandclinic.org/facts-about-the-heart",
+    "https://www.wbez.org/health/2016/06/28/does-your-body-really-refresh-itself-every-7-years"
+  ]
+}

@@ -77,5 +77,27 @@
     "status": "posted",
     "media_id": "18120887956748100",
     "permalink": "https://www.instagram.com/reel/DfHKprVgrez/"
+  },
+  {
+    "date": "2026-10-30",
+    "time": "20:20",
+    "slug": "body_fake_facts",
+    "title": "3 body facts that sound fake",
+    "voice": "female",
+    "facts": [
+      "newborns can have 300+ bones; adults have 206 (bones fuse)",
+      "heart beats ~100,000 times a day",
+      "stomach lining is renewed every few days"
+    ],
+    "sources": [
+      "https://www.popsci.com/story/health/bones-human-skeleton/",
+      "https://health.clevelandclinic.org/facts-about-the-heart",
+      "https://www.wbez.org/health/2016/06/28/does-your-body-really-refresh-itself-every-7-years"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-30_2020_body_fake_facts.mp4",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-30_2020_body_fake_facts.jpg",
+    "status": "posted",
+    "media_id": "17909750103589618",
+    "permalink": "https://www.instagram.com/reel/DfH2rhgjcEu/"
   }
 ]
