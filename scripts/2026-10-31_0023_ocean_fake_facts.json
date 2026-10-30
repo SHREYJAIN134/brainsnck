@@ -1,0 +1,125 @@
+{
+  "title": "3 ocean facts that sound fake",
+  "series": "BrainSnck",
+  "handle": "@BrainSnck",
+  "theme": "ocean",
+  "voice": "male",
+  "scenes": [
+    {
+      "layout": "hook",
+      "say": "Okay... three ocean facts that sound *fake*. But they're real!",
+      "text": "The ocean is *weirder* than you think",
+      "icon": "Water wave",
+      "minis": ["Spouting whale", "Diving mask"],
+      "speech": {
+        "intent": "hook the viewer with a promise of strange ocean facts",
+        "emotion": "playful",
+        "delivery": {"pace": 1.0, "energy": "high", "pitch_style": "natural", "overall_style": "conversational"},
+        "segments": [
+          {"text": "Okay...", "emphasis": 0, "reason": "opener"},
+          {"text": "three ocean facts that sound", "emphasis": 0, "reason": "set-up"},
+          {"text": "fake.", "emphasis": 3, "reason": "the hook word"},
+          {"text": "But they're", "emphasis": 0, "reason": "lead-in"},
+          {"text": "real!", "emphasis": 2, "reason": "contrast with fake"}
+        ],
+        "pauses": [{"after_text": "Okay...", "duration_ms": 300, "reason": "settle in"}]
+      }
+    },
+    {
+      "layout": "ring",
+      "say": "About *half* of the oxygen on Earth comes from the ocean. Mostly from tiny plankton you can't even see!",
+      "headline": "Ocean *oxygen*",
+      "icon": "Microbe",
+      "value": 50,
+      "sync": "half",
+      "label": "of Earth's *oxygen*",
+      "note": "made mostly by tiny plankton",
+      "speech": {
+        "intent": "reveal that the ocean makes about half of Earth's oxygen",
+        "emotion": "amazed",
+        "delivery": {"pace": 1.0, "energy": "moderate", "pitch_style": "natural", "overall_style": "conversational"},
+        "segments": [
+          {"text": "About", "emphasis": 0, "reason": "lead-in"},
+          {"text": "half", "emphasis": 3, "reason": "the surprising amount"},
+          {"text": "of the oxygen on Earth comes from the ocean.", "emphasis": 0, "reason": "the claim"},
+          {"text": "Mostly from tiny plankton", "emphasis": 2, "reason": "who does it"},
+          {"text": "you can't even see!", "emphasis": 0, "reason": "twist"}
+        ],
+        "pauses": [{"after_text": "of the oxygen on Earth comes from the ocean.", "duration_ms": 250, "reason": "let it land"}]
+      }
+    },
+    {
+      "layout": "compare",
+      "say": "Mount Everest is about 8,849 meters tall. The deepest spot in the ocean? About — *10,935* meters deep!",
+      "headline": "Tall vs *deep* (m)",
+      "left": {"icon": "Snow-capped mountain", "title": "Everest", "value": "8,849", "color": "#FF6B6B"},
+      "right": {"icon": "Diving mask", "title": "Deepest spot", "value": "10,935", "color": "#4ADE80", "hi": true},
+      "left_sync": "8,849",
+      "right_sync": "10,935",
+      "speech": {
+        "intent": "contrast Everest's height with the ocean's deepest point",
+        "emotion": "excited",
+        "delivery": {"pace": 1.0, "energy": "high", "pitch_style": "natural", "overall_style": "conversational"},
+        "segments": [
+          {"text": "Mount Everest is about 8,849 meters tall.", "emphasis": 0, "reason": "baseline"},
+          {"text": "The deepest spot in the ocean?", "emphasis": 1, "reason": "contrastive setting"},
+          {"text": "About —", "emphasis": 0, "reason": "lead-in"},
+          {"text": "10,935", "emphasis": 3, "reason": "the payoff"},
+          {"text": "meters deep!", "emphasis": 0, "reason": "given"}
+        ],
+        "pauses": [{"after_text": "The deepest spot in the ocean?", "duration_ms": 300, "reason": "let the question land"}]
+      }
+    },
+    {
+      "layout": "counter",
+      "say": "And Earth's longest mountain range is underwater. It runs nearly *65,000* kilometers! Crazy, right?",
+      "headline": "Hidden *mountains*",
+      "icon": "Volcano",
+      "value": 65,
+      "suffix": "K",
+      "sync": "65,000",
+      "label": "*km* of mountains",
+      "note": "over 90% of it is underwater",
+      "speech": {
+        "intent": "reveal the longest mountain range is underwater",
+        "emotion": "amazed",
+        "delivery": {"pace": 1.0, "energy": "moderate", "pitch_style": "natural", "overall_style": "conversational"},
+        "segments": [
+          {"text": "And Earth's longest mountain range is", "emphasis": 0, "reason": "set-up"},
+          {"text": "underwater.", "emphasis": 2, "reason": "the surprise"},
+          {"text": "It runs nearly", "emphasis": 0, "reason": "lead-in"},
+          {"text": "65,000", "emphasis": 3, "reason": "the number"},
+          {"text": "kilometers!", "emphasis": 0, "reason": "given"},
+          {"text": "Crazy, right?", "emphasis": 0, "reason": "reaction"}
+        ],
+        "pauses": [{"after_text": "underwater.", "duration_ms": 250, "reason": "beat before the size"}]
+      }
+    },
+    {
+      "layout": "cta",
+      "say": "Follow BrainSnck for a new brain snack every day.",
+      "text": "A new *brain snack* every day",
+      "icon": "Brain",
+      "pointer": "Backhand index pointing up",
+      "speech": {
+        "intent": "invite the viewer to follow",
+        "emotion": "reassuring",
+        "delivery": {"pace": 1.0, "energy": "moderate", "pitch_style": "natural", "overall_style": "conversational"},
+        "segments": [
+          {"text": "Follow BrainSnck for a new", "emphasis": 0, "reason": "call to action"},
+          {"text": "brain snack", "emphasis": 2, "reason": "the brand idea"},
+          {"text": "every day.", "emphasis": 0, "reason": "given"}
+        ],
+        "pauses": []
+      }
+    }
+  ],
+  "thumb": {"title": "3 ocean facts that sound *fake*", "icon": "Water wave", "minis": ["Spouting whale", "Volcano"]},
+  "caption": "The ocean is hiding some wild stuff 🌊\n\n1. About half of Earth's oxygen comes from the ocean, mostly made by tiny plankton.\n2. The deepest spot in the ocean, the Challenger Deep, is about 10,935 m deep. Mount Everest is about 8,849 m tall.\n3. Earth's longest mountain range, the mid-ocean ridge, runs nearly 65,000 km, and over 90% of it is underwater.\n\nWhich one surprised you most? Follow @BrainSnck for a daily brain snack.",
+  "hashtags": ["#brainsnck", "#oceanfacts", "#ocean", "#didyouknow", "#funfacts", "#sciencefacts", "#learnoninstagram", "#marinelife"],
+  "sources": [
+    "https://oceanservice.noaa.gov/facts/ocean-oxygen.html",
+    "https://www.livescience.com/how-deep-is-the-mariana-trench",
+    "https://oceanexplorer.noaa.gov/?p=1785"
+  ]
+}

@@ -99,5 +99,27 @@
     "status": "posted",
     "media_id": "17909750103589618",
     "permalink": "https://www.instagram.com/reel/DfH2rhgjcEu/"
+  },
+  {
+    "date": "2026-10-31",
+    "time": "00:23",
+    "slug": "ocean_fake_facts",
+    "title": "3 ocean facts that sound fake",
+    "voice": "male",
+    "facts": [
+      "about half of Earth's oxygen comes from the ocean (mostly plankton)",
+      "Challenger Deep ~10,935 m deep vs Everest ~8,849 m tall",
+      "mid-ocean ridge, longest mountain range, ~65,000 km, 90%+ underwater"
+    ],
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/ocean-oxygen.html",
+      "https://www.livescience.com/how-deep-is-the-mariana-trench",
+      "https://oceanexplorer.noaa.gov/?p=1785"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-31_0023_ocean_fake_facts.mp4",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-31_0023_ocean_fake_facts.jpg",
+    "status": "posted",
+    "media_id": "18474539062138445",
+    "permalink": "https://www.instagram.com/reel/DfISVBlgI5g/"
   }
 ]
