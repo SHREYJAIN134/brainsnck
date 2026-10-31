@@ -1,9 +1,10 @@
 # Howzat Tech daily reel
 
-Make one Hinglish "ye kaise hota hai?" explainer reel (45–55 s) for Instagram @howzat.tech and post it.
+Make one Hinglish "ye kaise hota hai?" explainer reel (15–20 s) for Instagram @howzat.tech and post it.
 Owner: Shrey Jain. Talk to him in Hinglish (Hindi in Roman script), short and simple.
 Reel 1 (Google Maps traffic, `scripts/2026-10-31_google-maps.json`, engine files in `engine/`) is the
-reference for quality, look and pacing: match it.
+reference for quality and look: match it. Reels are now short (15–20 s) so the free ElevenLabs credits last a
+reel a day: about 320 credits per reel, 10,000 a month.
 
 ## 0. Setup (fresh container)
 - `cd howzat/engine && npm i @fontsource/poppins @fontsource/jetbrains-mono`
@@ -22,11 +23,11 @@ If a company's internals aren't public, say "aam taur pe" instead of claiming ex
 religion, medical or financial advice.
 
 ## 2. Script
-Write `scripts/<YYYY-MM-DD>_<slug>.json` like the reference: `title`, `lines` (12–16 lines, 110–140 spoken words
-total), and `caption`, `hashtags`, `sources`, `cover` (2–3 short title lines, one punchy word for the pill).
-- Lines: Hinglish, short, punchy; hook in line 1 (a surprising fact or mini story), 3–5 steps, a twist, and a
-  last line "Ye reel us dost ko bhejo jo ..." CTA.
-- ElevenLabs tags in English brackets, at most one per line: [curious], [excited], [whispers], [mischievously],
+Write `scripts/<YYYY-MM-DD>_<slug>.json` like the reference: `title`, `lines` (6–8 lines, 35–45 spoken words
+total; the whole typed text, tags and spaces included, must be at most 270 characters: count it), and `caption`, `hashtags`, `sources`, `cover` (2–3 short title lines, one punchy word for the pill).
+- Lines: Hinglish, short, punchy; hook in line 1 (a surprising fact or mini story), 2–3 steps, a quick payoff,
+  and a short last line "Ye reel us dost ko bhejo jo ..." CTA (at most 8 words).
+- ElevenLabs tags in English brackets (they cost credits too), at most 2 in the whole script: [curious], [excited], [whispers], [mischievously],
   [laughs], [sarcastic]. "..." for pauses, CAPS for one stressed word.
 - Also write `engine/script_<slug>.py` with `LINES` in the format of `engine/script_maps.py`: per line
   `(speed, pause, [(caption_roman, tts_devanagari, keyword, colour)])`. Captions are the spoken words without tags,
@@ -40,8 +41,8 @@ Shrey is on the ElevenLabs **free plan**: Bunty works on the website only, not t
    (Shrey may switch to another ElevenLabs account when credits run out: if Bunty isn't in My voices, find
    "Bunty – Punchy, Crisp and Reel King" in the Voice Library and add it first; if it isn't there, fail.)
    Model must be **Eleven v4**.
-   Credits: read the account's remaining credits on the site. One reel costs about 950 credits (reel 1:
-   818-character script used 952, so about 1.17 × characters). If remaining < 1.2 × the script's characters,
+   Credits: read the account's remaining credits on the site. Credits ≈ 1.17 × characters (reel 1: an
+   818-character script used 952), so a 270-character script costs about 320. If remaining < 1.2 × the script's characters,
    don't generate: post nothing, tell Shrey "ElevenLabs credits khatam (<remaining> bache) — dusre account se
    login karo", and stop.
 3. Click the text box, select all and delete any old text, type the full script (all lines joined with spaces,
@@ -70,13 +71,13 @@ Work in a copy of `engine/` (`<work>/`, link `node_modules`, put `timings.js` an
   chips, map, phone, eye), replace the Maps scenes with this topic's scenes, and define
   `window.TOPIC` (header word, e.g. 'UPI'), `function sceneList()` returning `[[start, end, fn], ...]`
   (use `LS(i)`/`LE(i)` line times and `CK('chunk text')` chunk times; last scene ends at `END + 0.4`),
-  `function STEPS()` (4–5 short step labels with their start times), and `function reelBursts(t)` (sparkle
-  bursts on the 4–6 key reveals). Keep `captions`/`draw` from `theme.js`. Point `index.html` at `<slug>.js`
+  `function STEPS()` (2–3 short step labels with their start times), and `function reelBursts(t)` (sparkle
+  bursts on the 2–3 key reveals). Keep `captions`/`draw` from `theme.js`. Point `index.html` at `<slug>.js`
   instead of `maps.js`.
 - Every line gets a visual that moves with it: phones, maps, servers, cards, counters, arrows, packets. Original
   drawings only: no brand logos, no real people, no copied footage. Keep important things between y 300 and
   y 1420 (captions sit at y ~1505; Instagram covers the bottom).
-- Look at full-size preview frames of the 6–8 busiest moments (`python3 render.py preview t1,t2,...`), fix
+- Look at full-size preview frames of the 4–5 busiest moments (`python3 render.py preview t1,t2,...`), fix
   overlaps, then render once: duration = `TL.dur + 0.9 + 1.6` → `python3 render.py render <dur>`.
 
 ## 6. Sound
@@ -111,4 +112,4 @@ Mark the topic `"status": "posted"` in `topics.json`, append to `log.json` (`dat
 `sources`, `video_url`, `cover_url`, `permalink`), commit the script, scene file and logs, push to `main`. The BrainSnck task pushes to the same repo, so if a push
 is rejected, `git fetch` + `git rebase` and push again (never `--force`).
 Send Shrey one short Hinglish message: the reel title, the Instagram link and the ElevenLabs credits left. If
-fewer than ~1,200 credits are left, add that the next reel won't fit and he should log in with another account.
+fewer than ~400 credits are left, add that the next reel won't fit and he should log in with another account.

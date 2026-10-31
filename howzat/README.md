@@ -1,6 +1,6 @@
 # Howzat Tech (@howzat.tech)
 
-Hinglish "ye kaise hota hai?" explainer reels, about 45–60 s, one a day.
+Hinglish "ye kaise hota hai?" explainer reels, about 15–20 s, one a day.
 
 - `topics.json`: topic bank (30 ideas with hooks).
 - `scripts/`: voice scripts with ElevenLabs audio tags (voice: Bunty, model Eleven v4).
