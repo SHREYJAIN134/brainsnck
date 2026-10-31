@@ -47,6 +47,10 @@ Save to `scripts/<YYYY-MM-DD>_<HHMM>_<slug>.json`. Shape (see `scripts/space_fak
 
 `thumb` drives the cover image: a punchy title (≤ 32 characters, so it fits on two lines; emphasise one word),
 one hero icon and up to two small icons. Optional `badge` (default "DID YOU KNOW?").
+Covers must not look repeated on the profile grid: before writing `thumb`, read the `thumb` blocks of the last
+5 scripts and do not reuse their title pattern (e.g. "3 X facts that sound *fake*"), hero icon, any mini icon or
+badge. Lead with the single most surprising fact as the title (e.g. "Saturn could *float* in water") and pick
+a hero icon that pictures that fact.
 
 Write `say` lines the way a person talks, so the narration sounds human, not read out:
 - Short sentences, contractions ("it's", "you're"), and a reaction now and then ("Wait, what?", "Crazy, right?").

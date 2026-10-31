@@ -10,15 +10,54 @@
       "say": "Okay... three facts about our solar system that sound *fake*. But they're true!",
       "text": "Space is *wilder* than you think",
       "icon": "Ringed planet",
-      "minis": ["Sun", "Volcano"],
-      "speech": {"intent": "hook the viewer with strange space facts", "emotion": "playful",
-        "delivery": {"pace": 1.0, "energy": "high", "pitch_style": "natural", "overall_style": "conversational"},
-        "segments": [{"text": "Okay...", "emphasis": 0, "reason": "opener"},
-                     {"text": "three facts about our solar system that sound", "emphasis": 0, "reason": "set-up"},
-                     {"text": "fake.", "emphasis": 3, "reason": "the hook word"},
-                     {"text": "But they're", "emphasis": 0, "reason": "lead-in"},
-                     {"text": "true!", "emphasis": 2, "reason": "contrast with fake"}],
-        "pauses": [{"after_text": "Okay...", "duration_ms": 300, "reason": "settle in"}]}
+      "minis": [
+        "Sun",
+        "Volcano"
+      ],
+      "speech": {
+        "intent": "hook the viewer with strange space facts",
+        "emotion": "playful",
+        "delivery": {
+          "pace": 1.0,
+          "energy": "high",
+          "pitch_style": "natural",
+          "overall_style": "conversational"
+        },
+        "segments": [
+          {
+            "text": "Okay...",
+            "emphasis": 0,
+            "reason": "opener"
+          },
+          {
+            "text": "three facts about our solar system that sound",
+            "emphasis": 0,
+            "reason": "set-up"
+          },
+          {
+            "text": "fake.",
+            "emphasis": 3,
+            "reason": "the hook word"
+          },
+          {
+            "text": "But they're",
+            "emphasis": 0,
+            "reason": "lead-in"
+          },
+          {
+            "text": "true!",
+            "emphasis": 2,
+            "reason": "contrast with fake"
+          }
+        ],
+        "pauses": [
+          {
+            "after_text": "Okay...",
+            "duration_ms": 300,
+            "reason": "settle in"
+          }
+        ]
+      }
     },
     {
       "layout": "big",
@@ -27,14 +66,50 @@
       "icon": "Ringed planet",
       "label": "less dense than *water*",
       "note": "about 0.69 g per cm³",
-      "speech": {"intent": "reveal that Saturn is less dense than water", "emotion": "amazed",
-        "delivery": {"pace": 1.0, "energy": "moderate", "pitch_style": "natural", "overall_style": "conversational"},
-        "segments": [{"text": "Saturn is so light for its size, it could", "emphasis": 0, "reason": "set-up"},
-                     {"text": "float", "emphasis": 3, "reason": "the surprise"},
-                     {"text": "in water.", "emphasis": 0, "reason": "given"},
-                     {"text": "You'd just need a really, really", "emphasis": 0, "reason": "lead-in"},
-                     {"text": "big bathtub.", "emphasis": 2, "reason": "playful payoff"}],
-        "pauses": [{"after_text": "in water.", "duration_ms": 300, "reason": "let it land"}]}
+      "speech": {
+        "intent": "reveal that Saturn is less dense than water",
+        "emotion": "amazed",
+        "delivery": {
+          "pace": 1.0,
+          "energy": "moderate",
+          "pitch_style": "natural",
+          "overall_style": "conversational"
+        },
+        "segments": [
+          {
+            "text": "Saturn is so light for its size, it could",
+            "emphasis": 0,
+            "reason": "set-up"
+          },
+          {
+            "text": "float",
+            "emphasis": 3,
+            "reason": "the surprise"
+          },
+          {
+            "text": "in water.",
+            "emphasis": 0,
+            "reason": "given"
+          },
+          {
+            "text": "You'd just need a really, really",
+            "emphasis": 0,
+            "reason": "lead-in"
+          },
+          {
+            "text": "big bathtub.",
+            "emphasis": 2,
+            "reason": "playful payoff"
+          }
+        ],
+        "pauses": [
+          {
+            "after_text": "in water.",
+            "duration_ms": 300,
+            "reason": "let it land"
+          }
+        ]
+      }
     },
     {
       "layout": "counter",
@@ -47,31 +122,114 @@
       "sync": "million",
       "label": "Earths fit *inside*",
       "note": "by volume",
-      "speech": {"intent": "reveal how big the Sun is compared to Earth", "emotion": "amazed",
-        "delivery": {"pace": 1.0, "energy": "high", "pitch_style": "natural", "overall_style": "conversational"},
-        "segments": [{"text": "The Sun is so huge, about", "emphasis": 0, "reason": "set-up"},
-                     {"text": "1.3 million", "emphasis": 3, "reason": "the number"},
-                     {"text": "Earths could fit inside it.", "emphasis": 0, "reason": "given"},
-                     {"text": "Wait, what?", "emphasis": 0, "reason": "reaction"}],
-        "pauses": [{"after_text": "Earths could fit inside it.", "duration_ms": 250, "reason": "beat before reaction"}]}
+      "speech": {
+        "intent": "reveal how big the Sun is compared to Earth",
+        "emotion": "amazed",
+        "delivery": {
+          "pace": 1.0,
+          "energy": "high",
+          "pitch_style": "natural",
+          "overall_style": "conversational"
+        },
+        "segments": [
+          {
+            "text": "The Sun is so huge, about",
+            "emphasis": 0,
+            "reason": "set-up"
+          },
+          {
+            "text": "1.3 million",
+            "emphasis": 3,
+            "reason": "the number"
+          },
+          {
+            "text": "Earths could fit inside it.",
+            "emphasis": 0,
+            "reason": "given"
+          },
+          {
+            "text": "Wait, what?",
+            "emphasis": 0,
+            "reason": "reaction"
+          }
+        ],
+        "pauses": [
+          {
+            "after_text": "Earths could fit inside it.",
+            "duration_ms": 250,
+            "reason": "beat before reaction"
+          }
+        ]
+      }
     },
     {
       "layout": "compare",
       "say": "And Mars has a volcano called Olympus Mons. Everest is under nine kilometers tall. Olympus Mons? About — *22* kilometers!",
       "headline": "Mars *volcano*",
-      "left": {"icon": "Snow-capped mountain", "title": "Everest", "value": "8.8 km", "color": "#60A5FA"},
-      "right": {"icon": "Volcano", "title": "Olympus Mons", "value": "21.9 km", "color": "#F97316", "hi": true},
+      "left": {
+        "icon": "Snow-capped mountain",
+        "title": "Everest",
+        "value": "8.8 km",
+        "color": "#60A5FA"
+      },
+      "right": {
+        "icon": "Volcano",
+        "title": "Olympus Mons",
+        "value": "21.9 km",
+        "color": "#F97316",
+        "hi": true
+      },
       "left_sync": "Everest",
       "right_sync": "22",
-      "speech": {"intent": "compare Olympus Mons with Everest", "emotion": "excited",
-        "delivery": {"pace": 1.0, "energy": "high", "pitch_style": "natural", "overall_style": "conversational"},
-        "segments": [{"text": "And Mars has a volcano called Olympus Mons.", "emphasis": 0, "reason": "set-up"},
-                     {"text": "Everest is under nine kilometers tall.", "emphasis": 1, "reason": "the baseline"},
-                     {"text": "Olympus Mons?", "emphasis": 1, "reason": "contrastive subject"},
-                     {"text": "About —", "emphasis": 0, "reason": "lead-in"},
-                     {"text": "22", "emphasis": 3, "reason": "the payoff"},
-                     {"text": "kilometers!", "emphasis": 0, "reason": "given"}],
-        "pauses": [{"after_text": "Olympus Mons?", "duration_ms": 300, "reason": "let the question land"}]}
+      "speech": {
+        "intent": "compare Olympus Mons with Everest",
+        "emotion": "excited",
+        "delivery": {
+          "pace": 1.0,
+          "energy": "high",
+          "pitch_style": "natural",
+          "overall_style": "conversational"
+        },
+        "segments": [
+          {
+            "text": "And Mars has a volcano called Olympus Mons.",
+            "emphasis": 0,
+            "reason": "set-up"
+          },
+          {
+            "text": "Everest is under nine kilometers tall.",
+            "emphasis": 1,
+            "reason": "the baseline"
+          },
+          {
+            "text": "Olympus Mons?",
+            "emphasis": 1,
+            "reason": "contrastive subject"
+          },
+          {
+            "text": "About —",
+            "emphasis": 0,
+            "reason": "lead-in"
+          },
+          {
+            "text": "22",
+            "emphasis": 3,
+            "reason": "the payoff"
+          },
+          {
+            "text": "kilometers!",
+            "emphasis": 0,
+            "reason": "given"
+          }
+        ],
+        "pauses": [
+          {
+            "after_text": "Olympus Mons?",
+            "duration_ms": 300,
+            "reason": "let the question land"
+          }
+        ]
+      }
     },
     {
       "layout": "cta",
@@ -79,17 +237,56 @@
       "text": "A new *brain snack* every day",
       "icon": "Brain",
       "pointer": "Backhand index pointing up",
-      "speech": {"intent": "invite the viewer to follow", "emotion": "reassuring",
-        "delivery": {"pace": 1.0, "energy": "moderate", "pitch_style": "natural", "overall_style": "conversational"},
-        "segments": [{"text": "Follow BrainSnck for a new", "emphasis": 0, "reason": "call to action"},
-                     {"text": "brain snack", "emphasis": 2, "reason": "the brand idea"},
-                     {"text": "every day.", "emphasis": 0, "reason": "given"}],
-        "pauses": []}
+      "speech": {
+        "intent": "invite the viewer to follow",
+        "emotion": "reassuring",
+        "delivery": {
+          "pace": 1.0,
+          "energy": "moderate",
+          "pitch_style": "natural",
+          "overall_style": "conversational"
+        },
+        "segments": [
+          {
+            "text": "Follow BrainSnck for a new",
+            "emphasis": 0,
+            "reason": "call to action"
+          },
+          {
+            "text": "brain snack",
+            "emphasis": 2,
+            "reason": "the brand idea"
+          },
+          {
+            "text": "every day.",
+            "emphasis": 0,
+            "reason": "given"
+          }
+        ],
+        "pauses": []
+      }
     }
   ],
-  "thumb": {"title": "3 planet facts that sound *fake*", "icon": "Ringed planet", "minis": ["Sun", "Volcano"]},
+  "thumb": {
+    "title": "Saturn could *float* in water",
+    "icon": "Bathtub",
+    "minis": [
+      "Ringed planet",
+      "Droplet"
+    ],
+    "badge": "WAIT, WHAT?"
+  },
   "caption": "Our solar system is stranger than it looks 🪐\n\n1. Saturn is less dense than water, so it could float in a big enough bathtub.\n2. About 1.3 million Earths could fit inside the Sun.\n3. Olympus Mons on Mars is about 21.9 km tall, roughly 2.5 times taller than Everest.\n\nWhich one surprised you most? Follow @BrainSnck for a daily brain snack.",
-  "hashtags": ["#brainsnck", "#spacefacts", "#solarsystem", "#didyouknow", "#funfacts", "#sciencefacts", "#astronomy", "#learnoninstagram"],
+  "hashtags": [
+    "#brainsnck",
+    "#spacefacts",
+    "#solarsystem",
+    "#didyouknow",
+    "#funfacts",
+    "#sciencefacts",
+    "#astronomy",
+    "#learnoninstagram"
+  ],
   "sources": [
     "https://www.skyatnightmagazine.com/space-science/saturn-could-float-on-water",
     "https://skyatnightmagazine.com/space-science/how-many-earths-can-fit-sun",
