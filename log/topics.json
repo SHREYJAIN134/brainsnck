@@ -1,147 +1,169 @@
 [
- {
-  "date": "2026-10-29",
-  "slug": "brain_facts",
-  "title": "3 facts about your brain that sound fake",
-  "facts": [
-   "brain is ~2% of body weight but uses ~20% of energy",
-   "brain has no pain receptors",
-   "~86 billion neurons"
-  ],
-  "status": "test render, not posted"
- },
- {
-  "date": "2026-10-29",
-  "slug": "space_fake_facts",
-  "title": "3 space facts that sound fake",
-  "time": "22:35",
-  "facts": [
-   "a day on Venus is longer than its year",
-   "a teaspoon of neutron star weighs ~1 billion tons",
-   "sunlight takes ~8 minutes to reach Earth"
-  ],
-  "sources": [
-   "https://www.nbcnews.com/science/space/long-solar-systems-longest-day-venus-answer-rcna826",
-   "https://pursuit.unimelb.edu.au/articles/what-s-the-heaviest-thing-in-the-universe",
-   "https://howthingsfly.si.edu/ask-an-explainer/how-long-does-it-take-light-sun-get-earth"
-  ],
-  "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-29_test_space_fake_facts.mp4",
-  "status": "posted",
-  "media_id": "18119992729949763",
-  "permalink": "https://www.instagram.com/reel/DfFgC86DQ5e/",
-  "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-29_test_space_fake_facts.jpg",
-  "voice": "male",
-  "note": "re-posted with its cover; the first upload without a cover (https://www.instagram.com/reel/DfFZkQRjuBO/) should be deleted in the app"
- },
- {
-  "date": "2026-10-30",
-  "time": "08:45",
-  "slug": "animal_fake_facts",
-  "title": "3 animal facts that sound fake",
-  "voice": "female",
-  "facts": [
-   "an octopus has three hearts and blue blood",
-   "a hummingbird's heart can beat up to ~1,200 times a minute (human ~72)",
-   "wombats poop cubes, shaped in their gut"
-  ],
-  "sources": [
-   "https://www.sciencefocus.com/nature/why-does-an-octopus-have-more-than-one-heart",
-   "https://www.birdsandblooms.com/birding/attracting-hummingbirds/hummingbird-heart-rate/",
-   "https://www.livescience.com/why-wombats-have-cubed-poop.html"
-  ],
-  "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-30_0845_animal_fake_facts.mp4",
-  "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-30_0845_animal_fake_facts.jpg",
-  "status": "posted",
-  "media_id": "18129795544827691",
-  "permalink": "https://www.instagram.com/reel/DfGt4RAlWeY/",
-  "note": "approved by Shrey; he said approve everything from now on"
- },
- {
-  "date": "2026-10-30",
-  "time": "14:00",
-  "slug": "everyday_science_fake_facts",
-  "title": "3 everyday science facts that sound fake",
-  "voice": "male",
-  "facts": [
-   "lightning heats air to ~50,000°F, about 5x hotter than the Sun's surface",
-   "sound travels ~1,500 m/s in seawater vs ~340 m/s in air (4x+ faster)",
-   "honey thousands of years old found preserved in Egyptian tombs"
-  ],
-  "sources": [
-   "https://www.weather.gov/safety/lightning-temperature",
-   "https://dosits.org/tutorials/science/tutorial-speed",
-   "https://www.smithsonianmag.com/smart-news/why-honey-never-spoils-1218690/"
-  ],
-  "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-30_1400_everyday_science_fake_facts.mp4",
-  "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-30_1400_everyday_science_fake_facts.jpg",
-  "status": "posted",
-  "media_id": "18120887956748100",
-  "permalink": "https://www.instagram.com/reel/DfHKprVgrez/"
- },
- {
-  "date": "2026-10-30",
-  "time": "20:20",
-  "slug": "body_fake_facts",
-  "title": "3 body facts that sound fake",
-  "voice": "female",
-  "facts": [
-   "newborns can have 300+ bones; adults have 206 (bones fuse)",
-   "heart beats ~100,000 times a day",
-   "stomach lining is renewed every few days"
-  ],
-  "sources": [
-   "https://www.popsci.com/story/health/bones-human-skeleton/",
-   "https://health.clevelandclinic.org/facts-about-the-heart",
-   "https://www.wbez.org/health/2016/06/28/does-your-body-really-refresh-itself-every-7-years"
-  ],
-  "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-30_2020_body_fake_facts.mp4",
-  "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-30_2020_body_fake_facts.jpg",
-  "status": "posted",
-  "media_id": "17909750103589618",
-  "permalink": "https://www.instagram.com/reel/DfH2rhgjcEu/"
- },
- {
-  "date": "2026-10-31",
-  "time": "00:23",
-  "slug": "ocean_fake_facts",
-  "title": "3 ocean facts that sound fake",
-  "voice": "male",
-  "facts": [
-   "about half of Earth's oxygen comes from the ocean (mostly plankton)",
-   "Challenger Deep ~10,935 m deep vs Everest ~8,849 m tall",
-   "mid-ocean ridge, longest mountain range, ~65,000 km, 90%+ underwater"
-  ],
-  "sources": [
-   "https://oceanservice.noaa.gov/facts/ocean-oxygen.html",
-   "https://www.livescience.com/how-deep-is-the-mariana-trench",
-   "https://oceanexplorer.noaa.gov/?p=1785"
-  ],
-  "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-31_0023_ocean_fake_facts.mp4",
-  "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-31_0023_ocean_fake_facts.jpg",
-  "status": "posted",
-  "media_id": "18474539062138445",
-  "permalink": "https://www.instagram.com/reel/DfISVBlgI5g/"
- },
- {
-  "date": "2026-10-31",
-  "time": "08:45",
-  "slug": "plant_fake_facts",
-  "title": "3 plant facts that sound fake",
-  "voice": "female",
-  "facts": [
-   "a banana is botanically a berry; a strawberry is not",
-   "some bamboo can grow ~91 cm in a day",
-   "Earth has ~3 trillion trees, ~422 per person"
-  ],
-  "sources": [
-   "https://sciencenotes.org/is-a-strawberry-a-berry-why-the-answer-is-surprisingly-no/",
-   "https://www.discoverwildlife.com/plant-facts/fastest-growing-plant",
-   "https://environment.yale.edu/news/article/Yale-study-reveals-there-are-3-trillion-trees-on-earth"
-  ],
-  "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-31_0845_plant_fake_facts.mp4",
-  "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-31_0845_plant_fake_facts.jpg",
-  "status": "posted",
-  "media_id": "18112838765606233",
-  "permalink": "https://www.instagram.com/reel/DfJLf8OgVLe/"
- }
+  {
+    "date": "2026-10-29",
+    "slug": "brain_facts",
+    "title": "3 facts about your brain that sound fake",
+    "facts": [
+      "brain is ~2% of body weight but uses ~20% of energy",
+      "brain has no pain receptors",
+      "~86 billion neurons"
+    ],
+    "status": "test render, not posted"
+  },
+  {
+    "date": "2026-10-29",
+    "slug": "space_fake_facts",
+    "title": "3 space facts that sound fake",
+    "time": "22:35",
+    "facts": [
+      "a day on Venus is longer than its year",
+      "a teaspoon of neutron star weighs ~1 billion tons",
+      "sunlight takes ~8 minutes to reach Earth"
+    ],
+    "sources": [
+      "https://www.nbcnews.com/science/space/long-solar-systems-longest-day-venus-answer-rcna826",
+      "https://pursuit.unimelb.edu.au/articles/what-s-the-heaviest-thing-in-the-universe",
+      "https://howthingsfly.si.edu/ask-an-explainer/how-long-does-it-take-light-sun-get-earth"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-29_test_space_fake_facts.mp4",
+    "status": "posted",
+    "media_id": "18119992729949763",
+    "permalink": "https://www.instagram.com/reel/DfFgC86DQ5e/",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-29_test_space_fake_facts.jpg",
+    "voice": "male",
+    "note": "re-posted with its cover; the first upload without a cover (https://www.instagram.com/reel/DfFZkQRjuBO/) should be deleted in the app"
+  },
+  {
+    "date": "2026-10-30",
+    "time": "08:45",
+    "slug": "animal_fake_facts",
+    "title": "3 animal facts that sound fake",
+    "voice": "female",
+    "facts": [
+      "an octopus has three hearts and blue blood",
+      "a hummingbird's heart can beat up to ~1,200 times a minute (human ~72)",
+      "wombats poop cubes, shaped in their gut"
+    ],
+    "sources": [
+      "https://www.sciencefocus.com/nature/why-does-an-octopus-have-more-than-one-heart",
+      "https://www.birdsandblooms.com/birding/attracting-hummingbirds/hummingbird-heart-rate/",
+      "https://www.livescience.com/why-wombats-have-cubed-poop.html"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-30_0845_animal_fake_facts.mp4",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-30_0845_animal_fake_facts.jpg",
+    "status": "posted",
+    "media_id": "18129795544827691",
+    "permalink": "https://www.instagram.com/reel/DfGt4RAlWeY/",
+    "note": "approved by Shrey; he said approve everything from now on"
+  },
+  {
+    "date": "2026-10-30",
+    "time": "14:00",
+    "slug": "everyday_science_fake_facts",
+    "title": "3 everyday science facts that sound fake",
+    "voice": "male",
+    "facts": [
+      "lightning heats air to ~50,000°F, about 5x hotter than the Sun's surface",
+      "sound travels ~1,500 m/s in seawater vs ~340 m/s in air (4x+ faster)",
+      "honey thousands of years old found preserved in Egyptian tombs"
+    ],
+    "sources": [
+      "https://www.weather.gov/safety/lightning-temperature",
+      "https://dosits.org/tutorials/science/tutorial-speed",
+      "https://www.smithsonianmag.com/smart-news/why-honey-never-spoils-1218690/"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-30_1400_everyday_science_fake_facts.mp4",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-30_1400_everyday_science_fake_facts.jpg",
+    "status": "posted",
+    "media_id": "18120887956748100",
+    "permalink": "https://www.instagram.com/reel/DfHKprVgrez/"
+  },
+  {
+    "date": "2026-10-30",
+    "time": "20:20",
+    "slug": "body_fake_facts",
+    "title": "3 body facts that sound fake",
+    "voice": "female",
+    "facts": [
+      "newborns can have 300+ bones; adults have 206 (bones fuse)",
+      "heart beats ~100,000 times a day",
+      "stomach lining is renewed every few days"
+    ],
+    "sources": [
+      "https://www.popsci.com/story/health/bones-human-skeleton/",
+      "https://health.clevelandclinic.org/facts-about-the-heart",
+      "https://www.wbez.org/health/2016/06/28/does-your-body-really-refresh-itself-every-7-years"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-30_2020_body_fake_facts.mp4",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-30_2020_body_fake_facts.jpg",
+    "status": "posted",
+    "media_id": "17909750103589618",
+    "permalink": "https://www.instagram.com/reel/DfH2rhgjcEu/"
+  },
+  {
+    "date": "2026-10-31",
+    "time": "00:23",
+    "slug": "ocean_fake_facts",
+    "title": "3 ocean facts that sound fake",
+    "voice": "male",
+    "facts": [
+      "about half of Earth's oxygen comes from the ocean (mostly plankton)",
+      "Challenger Deep ~10,935 m deep vs Everest ~8,849 m tall",
+      "mid-ocean ridge, longest mountain range, ~65,000 km, 90%+ underwater"
+    ],
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/ocean-oxygen.html",
+      "https://www.livescience.com/how-deep-is-the-mariana-trench",
+      "https://oceanexplorer.noaa.gov/?p=1785"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-31_0023_ocean_fake_facts.mp4",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-31_0023_ocean_fake_facts.jpg",
+    "status": "posted",
+    "media_id": "18474539062138445",
+    "permalink": "https://www.instagram.com/reel/DfISVBlgI5g/"
+  },
+  {
+    "date": "2026-10-31",
+    "time": "08:45",
+    "slug": "plant_fake_facts",
+    "title": "3 plant facts that sound fake",
+    "voice": "female",
+    "facts": [
+      "a banana is botanically a berry; a strawberry is not",
+      "some bamboo can grow ~91 cm in a day",
+      "Earth has ~3 trillion trees, ~422 per person"
+    ],
+    "sources": [
+      "https://sciencenotes.org/is-a-strawberry-a-berry-why-the-answer-is-surprisingly-no/",
+      "https://www.discoverwildlife.com/plant-facts/fastest-growing-plant",
+      "https://environment.yale.edu/news/article/Yale-study-reveals-there-are-3-trillion-trees-on-earth"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-31_0845_plant_fake_facts.mp4",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-31_0845_plant_fake_facts.jpg",
+    "status": "posted",
+    "media_id": "18112838765606233",
+    "permalink": "https://www.instagram.com/reel/DfJLf8OgVLe/"
+  },
+  {
+    "date": "2026-10-31",
+    "time": "11:45",
+    "slug": "planet_fake_facts",
+    "title": "3 planet facts that sound fake",
+    "voice": "male",
+    "facts": [
+      "Saturn is less dense than water (~0.69 g/cm3), so it could float",
+      "about 1.3 million Earths fit inside the Sun by volume",
+      "Olympus Mons on Mars is ~21.9 km tall, ~2.5x Everest"
+    ],
+    "sources": [
+      "https://www.skyatnightmagazine.com/space-science/saturn-could-float-on-water",
+      "https://skyatnightmagazine.com/space-science/how-many-earths-can-fit-sun",
+      "https://science.nasa.gov/photojournal/pj-olympus-mons-26/"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-31_1145_planet_fake_facts.mp4",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-10-31_1145_planet_fake_facts.jpg",
+    "status": "posted",
+    "media_id": "18498670450106898",
+    "permalink": "https://www.instagram.com/reel/DfJf-clEepX/"
+  }
 ]
