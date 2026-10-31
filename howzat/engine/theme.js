@@ -1,15 +1,15 @@
 const LOGO = new Image(); LOGO.src = window.LOGO_SRC; window.logoOK = false; LOGO.decode().then(() => { window.logoOK = true; });
-// "Flat pop" theme — overrides the look of maps.js: plain solid colours, bright eye-catchy accents,
+// "Soft flat" theme — overrides the look of maps.js: plain solid colours, soft easy-on-the-eye accents,
 // thick ink outlines and hard offset shadows. No glow, no blur, no gradients.
-const BG = window.BG || '#2b35ff';   // plain background colour (one solid colour per reel)
+const BG = window.BG || '#33407a';   // plain, soft background colour (one per reel)
 const INK = '#0d0a26';               // outlines, hard shadows, text on bright pills
 Object.assign(C, {
   bg1: BG, bg2: BG,
-  box: '#15114d', boxLine: INK,
-  text: '#ffffff', mute: '#d6d8ff', dim: '#a9aef5',
-  yel: '#ffd60a', grn: '#21e27c', red: '#ff3355', org: '#ff8a00', cyan: '#18d6ff', blue: '#8fa6ff',
-  pink: '#ff3ea5', purple: '#b58cff',
-  screen: '#15114d', road: 'rgba(255,255,255,0.16)', roadEdge: 'rgba(255,255,255,0.35)',
+  box: '#232b55', boxLine: INK,
+  text: '#ffffff', mute: '#d9dcf2', dim: '#aab0d6',
+  yel: '#ffd166', grn: '#7bd389', red: '#ef6f6c', org: '#f6a465', cyan: '#7cc8e8', blue: '#9fb3ff',
+  pink: '#f48fb1', purple: '#b8a4f0',
+  screen: '#232b55', road: 'rgba(255,255,255,0.16)', roadEdge: 'rgba(255,255,255,0.35)',
   block: 'rgba(255,255,255,0.07)', blockLine: 'rgba(255,255,255,0.20)'
 });
 // no glow anywhere: any shadowBlur set by scene code is ignored

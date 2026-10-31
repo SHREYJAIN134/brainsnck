@@ -3,7 +3,7 @@
 Make one Hinglish "ye kaise hota hai?" explainer reel (15–20 s) for Instagram @howzat.tech and post it.
 Owner: Shrey Jain. Talk to him in Hinglish (Hindi in Roman script), short and simple.
 Reel 1 (Google Maps traffic, `scripts/2026-10-31_google-maps.json`, engine files in `engine/`) is the
-reference for quality and pacing (the look is now the flat pop theme in section 5). Reels are now short (15–20 s) so the free ElevenLabs credits last a
+reference for quality and pacing (the look is now the soft flat theme in section 5). Reels are now short (15–20 s) so the free ElevenLabs credits last a
 reel a day: about 320 credits per reel, 10,000 a month.
 
 ## 0. Setup (fresh container)
@@ -70,14 +70,13 @@ Zapier ElevenLabs `text_to_speech` with voice_id `FZkK3TvQ0pjyDmT8fzIW`, model `
 
 ## 5. Animation
 Work in a copy of `engine/` (`<work>/`, link `node_modules`, put `timings.js` and `voice.wav` there).
-- `theme.js` is the look, "flat pop": one plain solid background colour, bright flat colours (`C.yel`, `C.pink`,
-  `C.cyan`, `C.grn`, `C.org`, `C.red`), dark navy cards (`C.box`), thick ink outlines (`INK`) and hard offset
-  shadows (`hardShadow()`), keyword pills, sparkle bursts, flat colour-band wipes, end card with the logo and
-  "Follow @howzat.tech". Don't change it. Shrey wants plain, bright, eye-catching colours: **no glow, no neon,
-  no gradients, no blur** in scene code (theme.js already ignores `shadowBlur`). Start `<slug>.js` with
-  `window.BG = '#2b35ff';` (electric blue) or `'#7a2cff'` (bright purple): the other one than the last
-  `bg` in `log.json` (blue if there is none).
-  Don't use pink or red as the background (red alerts disappear on it).
+- `theme.js` is the look, "soft flat": one plain, soft background colour, soft flat accents (`C.yel`, `C.pink`,
+  `C.cyan`, `C.grn`, `C.org`, `C.red`), dark navy cards (`C.box`), ink outlines (`INK`) and hard offset shadows
+  (`hardShadow()`), keyword pills, sparkle bursts, flat colour-band wipes, end card with the logo and
+  "Follow @howzat.tech". Don't change it. Shrey wants plain colours that are easy on the eyes: **no glow, no
+  neon, no gradients, no blur, no harsh saturated colours** in scene code (use the `C` palette; theme.js already
+  ignores `shadowBlur`). Start `<slug>.js` with `window.BG = '<colour>';`, rotating in this order after the last
+  `bg` in `log.json`: `#33407a` (soft navy, also the default), `#5a4e8c` (dusty purple), `#2f6b70` (soft teal).
 - Make `<slug>.js` from `maps.js`: keep everything up to and including `phoneBody()` (helpers, background,
   chips, map, phone, eye), replace the Maps scenes with this topic's scenes, and define
   `window.TOPIC` (header word, e.g. 'UPI'), `function sceneList()` returning `[[start, end, fn], ...]`
@@ -99,7 +98,7 @@ correct/tick moment, alert + thud on a big reveal, msg sounds in chat scenes), k
 Check: the voice must be clearly louder than the background (about 14 dB, as in reel 1).
 
 ## 7. Cover
-1080×1920 JPEG in the same flat pop style: the reel's plain background colour, one key visual from the reel,
+1080×1920 JPEG in the same soft flat style: the reel's plain background colour, one key visual from the reel,
 and the `cover` title (white lines with a thick ink outline, one flat yellow pill line with ink outline and hard
 shadow, a solid orange tag). No glow, no gradients, no dimming. Keep the title between y 600 and y 1300.
 Then put the cover on the very first frame of the video (Instagram uses frame 0 as the cover when no
