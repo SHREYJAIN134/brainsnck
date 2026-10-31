@@ -90,6 +90,10 @@ Check: the voice must be clearly louder than the background (about 14 dB, as in 
 ## 7. Cover
 1080×1920 JPEG: a dimmed frame of the reel plus the `cover` title (white lines, one yellow pill line, an orange
 gradient tag), like reel 1's cover. Keep the title between y 600 and y 1300.
+Then put the cover on the very first frame of the video (Instagram uses frame 0 as the cover when no
+`cover_url` is sent, which is the case with the one-call publish in section 8):
+`ffmpeg -i out/final.mp4 -i <cover>.jpg -filter_complex "[0:v][1:v]overlay=enable='eq(n,0)'[v]" -map "[v]" -map 0:a -c:v libx264 -crf 18 -pix_fmt yuv420p -r 30 -c:a copy -movflags +faststart out/post.mp4`
+and host/post `out/post.mp4`.
 
 ## 8. Host and publish
 1. Host on the `media` branch exactly as `skills/brainsnck-reel/SKILL.md` section 6 describes, file names
@@ -97,13 +101,20 @@ gradient tag), like reel 1's cover. Keep the title between y 600 and y 1300.
 2. Publish with Zapier Instagram for Business raw requests (`selected_api` InstagramBusinessCLIAPI,
    `connection_id` `02430411-5018-80e8-bb13-f7b4036307c6`, IG account id `17841461730434810` = howzat.tech;
    never post to BrainSnck's id). Shrey's Zapier is on the free plan (100 tasks/month, 2 tasks per successful
-   call, failed calls are free), so a reel gets **exactly 2 successful Zapier calls = 4 tasks**. No status-check
-   GET, no permalink GET, no other execute calls (`inspect_zapier_actions` for the schema is fine):
-   - POST `https://graph.facebook.com/v21.0/17841461730434810/media` with JSON
-     `{"media_type": "REELS", "share_to_feed": true, "video_url": ..., "cover_url": ..., "caption": ...}`
-   - wait 4 minutes (`sleep 240`), then POST `https://graph.facebook.com/v21.0/17841461730434810/media_publish`
-     with `{"creation_id": "<id>"}`. If the error only says the media isn't ready yet, wait 2 more minutes and
-     retry the publish (at most 2 retries); any other error: report and stop.
+   call, failed calls are free), and the BrainSnck task uses the same Zapier connection. Budget: **1 successful
+   Zapier call = 2 tasks per reel**, 4 only in the fallback. No status-check GET, no permalink GET, no other
+   execute calls (`inspect_zapier_actions` for the schema is fine):
+   - **One call:** `execute_zapier_write_action` with `selected_api` InstagramBusinessCLIAPI, action
+     `publish_video`, params `video` = the hosted `.mp4` raw URL (the `out/post.mp4` file), `caption`, `instagramPageId`
+     `17841461730434810` (label Howzat.Tech). It returns the media `id`. Call it once only.
+   - **Fallback, only if that call returned an error** (it costs nothing; it can give up while Instagram is
+     still processing): wait 3 minutes, open `https://www.instagram.com/howzat.tech/reels/` in Chrome; if a new
+     reel is already there, it posted, use it. Otherwise use the raw requests (`connection_id`
+     `02430411-5018-80e8-bb13-f7b4036307c6`): POST `https://graph.facebook.com/v21.0/17841461730434810/media`
+     with JSON `{"media_type": "REELS", "share_to_feed": true, "video_url": ..., "cover_url": ..., "caption": ...}`,
+     wait 4 minutes (`sleep 240`), then POST `https://graph.facebook.com/v21.0/17841461730434810/media_publish`
+     with `{"creation_id": "<id>"}`. If the publish error only says the media isn't ready yet, wait 2 more
+     minutes and retry it (at most 2 retries); any other error: report and stop.
    - Permalink without Zapier: in Shrey's Chrome open `https://www.instagram.com/howzat.tech/reels/` in a new MCP
      tab, take the newest `/reel/<code>/` link (it must not already be in `log.json`), close the tab. If that
      doesn't work, use `https://www.instagram.com/howzat.tech/` as the permalink.
