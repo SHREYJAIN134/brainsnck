@@ -1,0 +1,306 @@
+{
+  "title": "3 animal facts you won't believe",
+  "series": "BrainSnck",
+  "handle": "@BrainSnck",
+  "theme": "nature",
+  "voice": "female",
+  "scenes": [
+    {
+      "layout": "hook",
+      "say": "Okay... three animal facts that you won't believe. Ready?",
+      "text": "These animals are *unreal*",
+      "icon": "Sloth",
+      "minis": [
+        "Flamingo",
+        "Koala"
+      ],
+      "speech": {
+        "intent": "hook the viewer with odd animal facts",
+        "emotion": "playful",
+        "delivery": {
+          "pace": 1.0,
+          "energy": "high",
+          "pitch_style": "natural",
+          "overall_style": "conversational"
+        },
+        "segments": [
+          {
+            "text": "Okay...",
+            "emphasis": 0,
+            "reason": "opener"
+          },
+          {
+            "text": "three animal facts that you won't",
+            "emphasis": 0,
+            "reason": "set-up"
+          },
+          {
+            "text": "believe.",
+            "emphasis": 2,
+            "reason": "the hook word"
+          },
+          {
+            "text": "Ready?",
+            "emphasis": 0,
+            "reason": "invite"
+          }
+        ],
+        "pauses": [
+          {
+            "after_text": "Okay...",
+            "duration_ms": 300,
+            "reason": "settle in"
+          },
+          {
+            "after_text": "believe.",
+            "duration_ms": 200,
+            "reason": "let the question come"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "counter",
+      "say": "A sloth can hold its breath underwater for up to — *40 minutes*! It just slows its heart right down.",
+      "headline": "Sloth *breath hold*",
+      "icon": "Sloth",
+      "value": 40,
+      "suffix": " MIN",
+      "sync": "40",
+      "label": "holding its breath *underwater*",
+      "note": "it slows its heart down",
+      "speech": {
+        "intent": "reveal how long a sloth can hold its breath",
+        "emotion": "amazed",
+        "delivery": {
+          "pace": 1.0,
+          "energy": "moderate",
+          "pitch_style": "natural",
+          "overall_style": "conversational"
+        },
+        "segments": [
+          {
+            "text": "A sloth can hold its breath underwater for up to —",
+            "emphasis": 0,
+            "reason": "set-up and lead-in"
+          },
+          {
+            "text": "40 minutes!",
+            "emphasis": 3,
+            "reason": "the payoff"
+          },
+          {
+            "text": "It just slows its heart right down.",
+            "emphasis": 0,
+            "reason": "explanation"
+          }
+        ],
+        "pauses": [
+          {
+            "after_text": "A sloth can hold its breath underwater for up to —",
+            "duration_ms": 200,
+            "reason": "beat before the reveal"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "compare",
+      "say": "Flamingos aren't born pink... they hatch *gray*! The color comes from the algae and tiny shrimp they eat.",
+      "headline": "Flamingos *start gray*",
+      "left": {
+        "icon": "Hatching chick",
+        "title": "Chick",
+        "value": "Gray",
+        "color": "#9CA3AF"
+      },
+      "right": {
+        "icon": "Flamingo",
+        "title": "Adult",
+        "value": "Pink",
+        "color": "#F472B6",
+        "hi": true
+      },
+      "left_sync": "gray",
+      "right_sync": "algae",
+      "speech": {
+        "intent": "correct the idea that flamingos are born pink",
+        "emotion": "playful",
+        "delivery": {
+          "pace": 1.0,
+          "energy": "moderate",
+          "pitch_style": "natural",
+          "overall_style": "conversational"
+        },
+        "segments": [
+          {
+            "text": "Flamingos aren't born",
+            "emphasis": 0,
+            "reason": "set-up"
+          },
+          {
+            "text": "pink...",
+            "emphasis": 1,
+            "reason": "the assumption"
+          },
+          {
+            "text": "they hatch",
+            "emphasis": 0,
+            "reason": "lead-in"
+          },
+          {
+            "text": "gray!",
+            "emphasis": 3,
+            "reason": "the correction"
+          },
+          {
+            "text": "The color comes from the",
+            "emphasis": 0,
+            "reason": "explanation"
+          },
+          {
+            "text": "algae and tiny shrimp",
+            "emphasis": 2,
+            "reason": "the cause"
+          },
+          {
+            "text": "they eat.",
+            "emphasis": 0,
+            "reason": "given"
+          }
+        ],
+        "pauses": [
+          {
+            "after_text": "pink...",
+            "duration_ms": 250,
+            "reason": "pause before the twist"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "ring",
+      "say": "And koalas? They sleep over *20 hours* a day. That's more than eighty percent of the day. Crazy, right?",
+      "headline": "Koala *nap time*",
+      "icon": "Koala",
+      "value": 83,
+      "sync": "20",
+      "label": "of the day *asleep*",
+      "note": "over 20 hours a day",
+      "speech": {
+        "intent": "reveal how much koalas sleep",
+        "emotion": "amazed",
+        "delivery": {
+          "pace": 1.0,
+          "energy": "moderate",
+          "pitch_style": "natural",
+          "overall_style": "conversational"
+        },
+        "segments": [
+          {
+            "text": "And koalas?",
+            "emphasis": 1,
+            "reason": "new subject"
+          },
+          {
+            "text": "They sleep over",
+            "emphasis": 0,
+            "reason": "lead-in"
+          },
+          {
+            "text": "20 hours",
+            "emphasis": 3,
+            "reason": "the payoff"
+          },
+          {
+            "text": "a day.",
+            "emphasis": 0,
+            "reason": "given"
+          },
+          {
+            "text": "That's more than eighty percent of the day.",
+            "emphasis": 1,
+            "reason": "puts it in context"
+          },
+          {
+            "text": "Crazy, right?",
+            "emphasis": 0,
+            "reason": "reaction"
+          }
+        ],
+        "pauses": [
+          {
+            "after_text": "And koalas?",
+            "duration_ms": 300,
+            "reason": "let the question land"
+          },
+          {
+            "after_text": "a day.",
+            "duration_ms": 200,
+            "reason": "let it sink in"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "cta",
+      "say": "Follow BrainSnck for a new brain snack every day.",
+      "text": "A new *brain snack* every day",
+      "icon": "Brain",
+      "pointer": "Backhand index pointing up",
+      "speech": {
+        "intent": "invite the viewer to follow",
+        "emotion": "reassuring",
+        "delivery": {
+          "pace": 1.0,
+          "energy": "moderate",
+          "pitch_style": "natural",
+          "overall_style": "conversational"
+        },
+        "segments": [
+          {
+            "text": "Follow BrainSnck for a new",
+            "emphasis": 0,
+            "reason": "call to action"
+          },
+          {
+            "text": "brain snack",
+            "emphasis": 2,
+            "reason": "the brand idea"
+          },
+          {
+            "text": "every day.",
+            "emphasis": 0,
+            "reason": "given"
+          }
+        ],
+        "pauses": []
+      }
+    }
+  ],
+  "thumb": {
+    "title": "Sloths hold breath *40 min*",
+    "icon": "Sloth",
+    "minis": [
+      "Flamingo",
+      "Stopwatch"
+    ],
+    "badge": "TRUE STORY"
+  },
+  "caption": "These animals break all the rules 🦥\n\n1. A sloth can hold its breath underwater for up to 40 minutes by slowing its heart.\n2. Flamingos hatch gray, and turn pink from the pigments in the algae and tiny shrimp they eat.\n3. Koalas sleep for over 20 hours a day.\n\nWhich one surprised you most? Follow @BrainSnck for a daily brain snack.",
+  "hashtags": [
+    "#brainsnck",
+    "#animalfacts",
+    "#sloth",
+    "#flamingo",
+    "#koala",
+    "#didyouknow",
+    "#funfacts",
+    "#naturelovers"
+  ],
+  "sources": [
+    "https://superstem.scholastic.com/issues/2023-24/020124/surprise-sloths-can-swim.html",
+    "https://www.livescience.com/32968-why-are-flamingos-pink.html",
+    "https://www.wildlife.vic.gov.au/__data/assets/pdf_file/0027/92439/Koala.pdf"
+  ]
+}
