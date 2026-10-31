@@ -3,7 +3,7 @@
 Make one Hinglish "ye kaise hota hai?" explainer reel (15–20 s) for Instagram @howzat.tech and post it.
 Owner: Shrey Jain. Talk to him in Hinglish (Hindi in Roman script), short and simple.
 Reel 1 (Google Maps traffic, `scripts/2026-10-31_google-maps.json`, engine files in `engine/`) is the
-reference for quality and look: match it. Reels are now short (15–20 s) so the free ElevenLabs credits last a
+reference for quality and pacing (the look is now the flat pop theme in section 5). Reels are now short (15–20 s) so the free ElevenLabs credits last a
 reel a day: about 320 credits per reel, 10,000 a month.
 
 ## 0. Setup (fresh container)
@@ -17,8 +17,13 @@ reel a day: about 320 credits per reel, 10,000 a month.
 First check `log.json`: if it already has an entry for today's India date (Asia/Kolkata), a reel is already up
 today, so do nothing else and stop without messaging Shrey.
 
-Take the first entry in `topics.json` without `"status": "posted"`. Check the last entries in `log.json` so no
-topic repeats. Research it with web search: every fact and number must come from a reliable source (keep 1–3).
+Good content first. Look at the next 5 entries in `topics.json` without `"status": "posted"` and pick the one
+with the strongest hook for Indian viewers: tech they use every day, plus one specific surprising fact, number
+or true mini story that makes people stop scrolling (a recent news angle is a bonus). Check the last entries in
+`log.json` so no topic repeats. Research it with web search before writing: every fact and number must come from
+a reliable source (keep 1–3). If the research finds a better hook than the one in `topics.json`, use it. If
+none of the 5 has a strong, sourced hook, find a fresh topic with web search and add it to `topics.json`.
+In 15–20 s there is room for one idea only: one wow fact, the "kaise" in 2–3 steps, the payoff.
 If a company's internals aren't public, say "aam taur pe" instead of claiming exact details. No politics,
 religion, medical or financial advice.
 
@@ -65,8 +70,14 @@ Zapier ElevenLabs `text_to_speech` with voice_id `FZkK3TvQ0pjyDmT8fzIW`, model `
 
 ## 5. Animation
 Work in a copy of `engine/` (`<work>/`, link `node_modules`, put `timings.js` and `voice.wav` there).
-- `theme.js` is the look (poppy purple gradient, glow chips, keyword pills, sparkle bursts, colour wipes, end card
-  with the logo and "Follow @howzat.tech"). Don't change it.
+- `theme.js` is the look, "flat pop": one plain solid background colour, bright flat colours (`C.yel`, `C.pink`,
+  `C.cyan`, `C.grn`, `C.org`, `C.red`), dark navy cards (`C.box`), thick ink outlines (`INK`) and hard offset
+  shadows (`hardShadow()`), keyword pills, sparkle bursts, flat colour-band wipes, end card with the logo and
+  "Follow @howzat.tech". Don't change it. Shrey wants plain, bright, eye-catching colours: **no glow, no neon,
+  no gradients, no blur** in scene code (theme.js already ignores `shadowBlur`). Start `<slug>.js` with
+  `window.BG = '#2b35ff';` (electric blue) or `'#7a2cff'` (bright purple): the other one than the last
+  `bg` in `log.json` (blue if there is none).
+  Don't use pink or red as the background (red alerts disappear on it).
 - Make `<slug>.js` from `maps.js`: keep everything up to and including `phoneBody()` (helpers, background,
   chips, map, phone, eye), replace the Maps scenes with this topic's scenes, and define
   `window.TOPIC` (header word, e.g. 'UPI'), `function sceneList()` returning `[[start, end, fn], ...]`
@@ -88,8 +99,9 @@ correct/tick moment, alert + thud on a big reveal, msg sounds in chat scenes), k
 Check: the voice must be clearly louder than the background (about 14 dB, as in reel 1).
 
 ## 7. Cover
-1080×1920 JPEG: a dimmed frame of the reel plus the `cover` title (white lines, one yellow pill line, an orange
-gradient tag), like reel 1's cover. Keep the title between y 600 and y 1300.
+1080×1920 JPEG in the same flat pop style: the reel's plain background colour, one key visual from the reel,
+and the `cover` title (white lines with a thick ink outline, one flat yellow pill line with ink outline and hard
+shadow, a solid orange tag). No glow, no gradients, no dimming. Keep the title between y 600 and y 1300.
 Then put the cover on the very first frame of the video (Instagram uses frame 0 as the cover when no
 `cover_url` is sent, which is the case with the one-call publish in section 8):
 `ffmpeg -i out/final.mp4 -i <cover>.jpg -filter_complex "[0:v][1:v]overlay=enable='eq(n,0)'[v]" -map "[v]" -map 0:a -c:v libx264 -crf 18 -pix_fmt yuv420p -r 30 -c:a copy -movflags +faststart out/post.mp4`
@@ -123,7 +135,7 @@ and host/post `out/post.mp4`.
    If Instagram or Zapier returns an error (including Zapier being out of tasks), report it word for word and stop.
 
 ## 9. Log and report
-Mark the topic `"status": "posted"` in `topics.json`, append to `log.json` (`date`, `slug`, `title`,
+Mark the topic `"status": "posted"` in `topics.json`, append to `log.json` (`date`, `slug`, `title`, `bg`,
 `sources`, `video_url`, `cover_url`, `permalink`), commit the script, scene file and logs, push to `main`. The BrainSnck task pushes to the same repo, so if a push
 is rejected, `git fetch` + `git rebase` and push again (never `--force`).
 Send Shrey one short Hinglish message: the reel title, the Instagram link and the ElevenLabs credits left. If

@@ -1,14 +1,21 @@
 const LOGO = new Image(); LOGO.src = window.LOGO_SRC; window.logoOK = false; LOGO.decode().then(() => { window.logoOK = true; });
-// "Pop premium" theme — overrides the look of maps.js (palette, background, cards, chips, captions, transitions)
+// "Flat pop" theme — overrides the look of maps.js: plain solid colours, bright eye-catchy accents,
+// thick ink outlines and hard offset shadows. No glow, no blur, no gradients.
+const BG = window.BG || '#2b35ff';   // plain background colour (one solid colour per reel)
+const INK = '#0d0a26';               // outlines, hard shadows, text on bright pills
 Object.assign(C, {
-  bg1: '#12062e', bg2: '#0a1440',
-  box: 'rgba(28,14,70,0.92)', boxLine: '#8a6bff',
-  text: '#ffffff', mute: '#b9b0e6', dim: '#7d74b3',
-  yel: '#ffe14d', grn: '#5dff8f', red: '#ff3b6b', org: '#ff9a3d', cyan: '#2ee6ff', blue: '#4d7cff',
-  pink: '#ff3d9a', purple: '#9b5cff',
-  screen: '#170b3d', road: 'rgba(130,100,255,0.26)', roadEdge: 'rgba(170,140,255,0.45)',
-  block: 'rgba(255,255,255,0.045)', blockLine: 'rgba(170,140,255,0.22)'
+  bg1: BG, bg2: BG,
+  box: '#15114d', boxLine: INK,
+  text: '#ffffff', mute: '#d6d8ff', dim: '#a9aef5',
+  yel: '#ffd60a', grn: '#21e27c', red: '#ff3355', org: '#ff8a00', cyan: '#18d6ff', blue: '#8fa6ff',
+  pink: '#ff3ea5', purple: '#b58cff',
+  screen: '#15114d', road: 'rgba(255,255,255,0.16)', roadEdge: 'rgba(255,255,255,0.35)',
+  block: 'rgba(255,255,255,0.07)', blockLine: 'rgba(255,255,255,0.20)'
 });
+// no glow anywhere: any shadowBlur set by scene code is ignored
+Object.defineProperty(ctx, 'shadowBlur', { get() { return 0; }, set(v) {}, configurable: true });
+// hard flat shadow: the same round rect drawn in ink, offset down-right
+function hardShadow(x, y, w, h, r, d = 8) { rr(x + d, y + d, w, h, r); ctx.fillStyle = INK; ctx.fill(); }
 const POP = [C.pink, C.yel, C.cyan, C.grn, C.org, C.purple];
 function hexA(hex, a) {
   if (!hex.startsWith('#')) return hex;
@@ -16,54 +23,24 @@ function hexA(hex, a) {
 }
 function glassFill(col, lw = 4) {
   ctx.save();
-  ctx.fillStyle = 'rgba(24,10,62,0.93)'; ctx.fill();
-  ctx.fillStyle = hexA(col, 0.14); ctx.fill();
-  ctx.shadowColor = col; ctx.shadowBlur = 28; ctx.lineWidth = lw; ctx.strokeStyle = col; ctx.stroke();
+  ctx.fillStyle = C.box; ctx.fill();
+  ctx.lineWidth = lw + 2; ctx.strokeStyle = col; ctx.stroke();
   ctx.restore();
 }
 
-// ---------- background: gradient + drifting colour blobs + dot grid + grain ----------
-const grain = document.createElement('canvas'); grain.width = grain.height = 256;
-{ const g = grain.getContext('2d'); const id = g.createImageData(256, 256);
-  for (let i = 0; i < id.data.length; i += 4) { const v = Math.random() * 255; id.data[i] = id.data[i + 1] = id.data[i + 2] = v; id.data[i + 3] = 255; }
-  g.putImageData(id, 0, 0); }
-function background(t) {
-  const g = ctx.createLinearGradient(0, 0, W * 0.6, H);
-  g.addColorStop(0, '#16073a'); g.addColorStop(0.5, '#200a52'); g.addColorStop(1, '#0b1546');
-  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
-  const blobs = [[160, 420, 560, '255,61,154', 0], [960, 820, 600, '46,230,255', 1.7], [240, 1560, 640, '155,92,255', 3.1], [980, 1720, 520, '255,154,61', 4.4]];
-  ctx.save(); ctx.globalCompositeOperation = 'screen';
-  for (const [x, y, r, col, ph] of blobs) {
-    const bx = x + Math.sin(t * 0.35 + ph) * 90, by = y + Math.cos(t * 0.28 + ph) * 80;
-    const rg = ctx.createRadialGradient(bx, by, 0, bx, by, r);
-    rg.addColorStop(0, `rgba(${col},0.30)`); rg.addColorStop(1, `rgba(${col},0)`);
-    ctx.fillStyle = rg; ctx.fillRect(0, 0, W, H);
-  }
-  ctx.restore();
-  ctx.fillStyle = 'rgba(255,255,255,0.07)';
-  const s = 40, off = (t * 10) % s;
-  for (let y = -s + off; y < H; y += s) for (let x = 20; x < W; x += s) ctx.fillRect(x, y, 2.4, 2.4);
-}
-function vignette() {
-  const g = ctx.createRadialGradient(540, 960, 380, 540, 960, 1200);
-  g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, 'rgba(5,0,20,0.5)');
-  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
-}
-function grainLayer(t) {
-  ctx.save(); ctx.globalAlpha = 0.045; ctx.globalCompositeOperation = 'overlay';
-  const ox = Math.floor(hash(t * 30, 1) * 256), oy = Math.floor(hash(t * 30, 2) * 256);
-  ctx.translate(-ox, -oy); ctx.fillStyle = ctx.createPattern(grain, 'repeat'); ctx.fillRect(0, 0, W + 256, H + 256);
-  ctx.restore();
-}
+// ---------- background: one plain colour ----------
+function background(t) { ctx.fillStyle = BG; ctx.fillRect(0, 0, W, H); }
+function vignette() {}
+function grainLayer(t) {}
 
 // ---------- header ----------
 function header(t) {
   ctx.font = `700 24px ${MONO}`; const bw = ctx.measureText('HOWZAT TECH').width + 40;
-  const g = ctx.createLinearGradient(70, 0, 70 + bw, 0); g.addColorStop(0, C.pink); g.addColorStop(1, C.org);
-  rr(70, 160, bw, 52, 26); ctx.fillStyle = g; ctx.fill();
-  txt('HOWZAT TECH', 70 + bw / 2, 187, `700 24px ${MONO}`, '#1a0634');
+  hardShadow(70, 160, bw, 52, 26, 5);
+  rr(70, 160, bw, 52, 26); ctx.fillStyle = C.yel; ctx.fill(); ctx.lineWidth = 3; ctx.strokeStyle = INK; ctx.stroke();
+  txt('HOWZAT TECH', 70 + bw / 2, 187, `700 24px ${MONO}`, INK);
   txt(window.TOPIC || 'Google Maps', 70 + bw + 22, 188, `800 34px ${SANS}`, '#ffffff', 'left');
-  txt('@howzat.tech', W - 70, 188, `500 26px ${MONO}`, 'rgba(255,255,255,0.65)', 'right');
+  txt('@howzat.tech', W - 70, 188, `500 26px ${MONO}`, 'rgba(255,255,255,0.8)', 'right');
   const steps = window.STEPS ? STEPS() : [[0, 'THE HACK'], [LS(4), 'ASLI RAAZ'], [LS(7), 'GREEN vs LAAL'], [LS(9), 'HACK SAMJHO'], [LS(13), 'SHARE KARO']];
   let cur = steps[0], k = 0; steps.forEach((s, i) => { if (t >= s[0]) { cur = s; k = i; } });
   const n = Math.max(0, Math.floor((t - cur[0]) * 40));
@@ -77,11 +54,9 @@ function chip(x, y, label, col, f, opts = {}) {
   ctx.save(); ctx.translate(x, y); const s = back(f); ctx.scale(s, s); ctx.globalAlpha *= Math.min(1, f * 3);
   const size = opts.size || 28; ctx.font = `700 ${size}px ${MONO}`;
   const w = ctx.measureText(label).width + (opts.pad || 52), h = opts.h || 62;
-  rr(-w / 2, -h / 2, w, h, h / 2);
-  ctx.save(); ctx.shadowColor = col; ctx.shadowBlur = 30; ctx.fillStyle = col; ctx.fill(); ctx.restore();
-  const hl = ctx.createLinearGradient(0, -h / 2, 0, h / 2); hl.addColorStop(0, 'rgba(255,255,255,0.35)'); hl.addColorStop(0.5, 'rgba(255,255,255,0)');
-  rr(-w / 2, -h / 2, w, h, h / 2); ctx.fillStyle = hl; ctx.fill();
-  txt(label, 0, 2, `700 ${size}px ${MONO}`, '#1a0634');
+  hardShadow(-w / 2, -h / 2, w, h, h / 2, 6);
+  rr(-w / 2, -h / 2, w, h, h / 2); ctx.fillStyle = col; ctx.fill(); ctx.lineWidth = 4; ctx.strokeStyle = INK; ctx.stroke();
+  txt(label, 0, 2, `700 ${size}px ${MONO}`, INK);
   ctx.restore();
 }
 
@@ -90,7 +65,8 @@ const MAPCARD = [36, 330, 1008, 1090, 44];
 function cityMap() {
   const [mx, my, mw, mh, mr] = MAPCARD;
   ctx.save();
-  rr(mx, my, mw, mh, mr); ctx.fillStyle = 'rgba(14,6,40,0.62)'; ctx.fill();
+  hardShadow(mx, my, mw, mh, mr, 12);
+  rr(mx, my, mw, mh, mr); ctx.fillStyle = C.box; ctx.fill();
   ctx.clip();
   const xs = [0, ...VX, W], ys = [my, UP_Y, MAIN_Y, LOW_Y, my + mh];
   for (let i = 0; i < xs.length - 1; i++) for (let j = 0; j < ys.length - 1; j++) {
@@ -98,8 +74,8 @@ function cityMap() {
     const y0 = ys[j] + (ys[j] === MAIN_Y ? 46 : 26), y1 = ys[j + 1] - (ys[j + 1] === MAIN_Y ? 46 : 26);
     rr(x0, y0, x1 - x0, y1 - y0, 18);
     const park = (i === 3 && j === 0) || (i === 0 && j === 3);
-    ctx.fillStyle = park ? 'rgba(93,255,143,0.13)' : C.block; ctx.fill();
-    ctx.lineWidth = 2; ctx.strokeStyle = park ? 'rgba(93,255,143,0.35)' : C.blockLine; ctx.stroke();
+    ctx.fillStyle = park ? 'rgba(33,226,124,0.30)' : C.block; ctx.fill();
+    ctx.lineWidth = 2; ctx.strokeStyle = park ? 'rgba(33,226,124,0.6)' : C.blockLine; ctx.stroke();
   }
   ctx.fillStyle = C.road;
   for (const y of [UP_Y, LOW_Y]) ctx.fillRect(0, y - 20, W, 40);
@@ -108,8 +84,7 @@ function cityMap() {
   ctx.setLineDash([26, 22]); ctx.strokeStyle = 'rgba(255,255,255,0.18)'; ctx.lineWidth = 3;
   ctx.beginPath(); ctx.moveTo(0, MAIN_Y); ctx.lineTo(W, MAIN_Y); ctx.stroke(); ctx.setLineDash([]);
   ctx.restore();
-  const g = ctx.createLinearGradient(mx, my, mx + mw, my + mh); g.addColorStop(0, C.pink); g.addColorStop(0.5, C.purple); g.addColorStop(1, C.cyan);
-  ctx.save(); rr(mx, my, mw, mh, mr); ctx.shadowColor = C.purple; ctx.shadowBlur = 30; ctx.lineWidth = 4; ctx.strokeStyle = g; ctx.stroke(); ctx.restore();
+  ctx.save(); rr(mx, my, mw, mh, mr); ctx.lineWidth = 6; ctx.strokeStyle = INK; ctx.stroke(); ctx.restore();
 }
 
 // ---------- sparkle bursts ----------
@@ -145,10 +120,7 @@ function wipe(t, a) {
   const u = P(t, a - 0.32, a + 0.22); if (u <= 0 || u >= 1) return;
   const x = L(-900, W + 900, eio(u));
   ctx.save(); ctx.translate(x, 960); ctx.rotate(-0.38);
-  const g = ctx.createLinearGradient(-300, 0, 300, 0);
-  g.addColorStop(0, 'rgba(255,61,154,0)'); g.addColorStop(0.25, 'rgba(255,61,154,0.9)'); g.addColorStop(0.5, 'rgba(255,225,77,0.95)');
-  g.addColorStop(0.75, 'rgba(46,230,255,0.9)'); g.addColorStop(1, 'rgba(46,230,255,0)');
-  ctx.fillStyle = g; ctx.fillRect(-300, -1500, 600, 3000);
+  [[C.pink, -270], [C.yel, -90], [C.cyan, 90]].forEach(([col, x0]) => { ctx.fillStyle = col; ctx.fillRect(x0, -1500, 180, 3000); });
   ctx.restore();
 }
 
@@ -176,17 +148,18 @@ function captions(t) {
       if (f > 0) {
         const x0 = kws[0].x - pad, x1 = kws[kws.length - 1].x + kws[kws.length - 1].width + pad;
         ctx.save(); ctx.translate((x0 + x1) / 2, 4); ctx.rotate(-0.035); const s = back(f); ctx.scale(s, s);
-        rr(-(x1 - x0) / 2, -50, x1 - x0, 104, 26);
-        ctx.shadowColor = kc; ctx.shadowBlur = 34; ctx.fillStyle = kc; ctx.fill(); ctx.restore();
+        hardShadow(-(x1 - x0) / 2, -50, x1 - x0, 104, 26, 8);
+        rr(-(x1 - x0) / 2, -50, x1 - x0, 104, 26); ctx.fillStyle = kc; ctx.fill();
+        ctx.lineWidth = 5; ctx.strokeStyle = INK; ctx.stroke(); ctx.restore();
       }
     }
     info.forEach((o, k) => {
       const wt = c.s + k * 0.06; const f = P(t, wt, wt + 0.18); if (f <= 0) return;
       const s = L(0.5, 1, back(f));
       ctx.save(); ctx.translate(o.x + o.width / 2, 0); if (o.kw) ctx.rotate(-0.035); ctx.scale(s, s); ctx.globalAlpha = Math.min(1, f * 3);
-      if (o.kw) { ctx.fillStyle = '#1a0634'; ctx.fillText(o.w, -o.width / 2, 4); }
+      if (o.kw) { ctx.fillStyle = INK; ctx.fillText(o.w, -o.width / 2, 4); }
       else {
-        ctx.lineWidth = 14; ctx.strokeStyle = 'rgba(20,6,52,0.92)'; ctx.strokeText(o.w, -o.width / 2, 2);
+        ctx.lineWidth = 16; ctx.strokeStyle = INK; ctx.strokeText(o.w, -o.width / 2, 2);
         ctx.fillStyle = '#ffffff'; ctx.fillText(o.w, -o.width / 2, 2);
       }
       ctx.restore();
@@ -204,19 +177,22 @@ function endCard(t) {
   if (LOGO.complete && LOGO.naturalWidth) {
     const ls = back(P(t, END + 0.1, END + 0.5)), r = 175;
     ctx.save(); ctx.translate(540, 560); ctx.scale(ls, ls); ctx.rotate(Math.sin(t * 2) * 0.02);
-    ctx.shadowColor = C.purple; ctx.shadowBlur = 50; ctx.beginPath(); ctx.arc(0, 0, r, 0, 7); ctx.fillStyle = '#12062e'; ctx.fill(); ctx.shadowBlur = 0;
+    ctx.beginPath(); ctx.arc(10, 10, r + 8, 0, 7); ctx.fillStyle = INK; ctx.fill();
+    ctx.beginPath(); ctx.arc(0, 0, r + 8, 0, 7); ctx.fillStyle = C.yel; ctx.fill();
+    ctx.beginPath(); ctx.arc(0, 0, r, 0, 7); ctx.fillStyle = C.box; ctx.fill();
     ctx.beginPath(); ctx.arc(0, 0, r, 0, 7); ctx.clip(); ctx.drawImage(LOGO, -r, -r, 2 * r, 2 * r); ctx.restore();
   }
   txt('Roz ek', 540, 830, `800 84px ${SANS}`, '#ffffff');
   ctx.save(); ctx.translate(540, 945); ctx.rotate(-0.035);
   ctx.font = `800 78px ${SANS}`; const w = ctx.measureText('"ye kaise hota hai?"').width + 50;
-  rr(-w / 2, -62, w, 124, 30); ctx.shadowColor = C.yel; ctx.shadowBlur = 40; ctx.fillStyle = C.yel; ctx.fill(); ctx.shadowBlur = 0;
-  txt('"ye kaise hota hai?"', 0, 6, `800 78px ${SANS}`, '#1a0634'); ctx.restore();
+  hardShadow(-w / 2, -62, w, 124, 30, 10);
+  rr(-w / 2, -62, w, 124, 30); ctx.fillStyle = C.yel; ctx.fill(); ctx.lineWidth = 5; ctx.strokeStyle = INK; ctx.stroke();
+  txt('"ye kaise hota hai?"', 0, 6, `800 78px ${SANS}`, INK); ctx.restore();
   const pf = back(P(t, END + 0.4, END + 0.7));
   ctx.translate(540, 1110); ctx.scale(pf, pf);
-  const g = ctx.createLinearGradient(-240, 0, 240, 0); g.addColorStop(0, C.pink); g.addColorStop(1, C.org);
-  rr(-240, -44, 480, 88, 44); ctx.shadowColor = C.pink; ctx.shadowBlur = 30; ctx.fillStyle = g; ctx.fill(); ctx.shadowBlur = 0;
-  txt('Follow @howzat.tech', 0, 3, `700 34px ${MONO}`, '#1a0634');
+  hardShadow(-240, -44, 480, 88, 44, 8);
+  rr(-240, -44, 480, 88, 44); ctx.fillStyle = C.pink; ctx.fill(); ctx.lineWidth = 4; ctx.strokeStyle = INK; ctx.stroke();
+  txt('Follow @howzat.tech', 0, 3, `700 34px ${MONO}`, INK);
   ctx.restore();
 }
 
