@@ -37,9 +37,16 @@ Shrey is on the ElevenLabs **free plan**: Bunty works on the website only, not t
 1. Claude in Chrome (Shrey's real Chrome; load the chrome-browser skill first): open
    `https://elevenlabs.io/app/speech-synthesis/text-to-speech` in a new tab in the MCP tab group.
 2. Voice: if it doesn't already show Bunty, open the voice picker → **My voices** → hover Bunty → **Use**.
+   (Shrey may switch to another ElevenLabs account when credits run out: if Bunty isn't in My voices, find
+   "Bunty – Punchy, Crisp and Reel King" in the Voice Library and add it first; if it isn't there, fail.)
    Model must be **Eleven v4**.
+   Credits: read the account's remaining credits on the site. One reel costs about 950 credits (reel 1:
+   818-character script used 952, so about 1.17 × characters). If remaining < 1.2 × the script's characters,
+   don't generate: post nothing, tell Shrey "ElevenLabs credits khatam (<remaining> bache) — dusre account se
+   login karo", and stop.
 3. Click the text box, select all and delete any old text, type the full script (all lines joined with spaces,
    tags included). Click **Generate speech** once. No retakes, ever.
+   Note the remaining credits after generating; they go in the final message (section 9).
 4. When it finishes, pause playback, click the download icon in the bottom player (Generation 1).
 5. `device_list_dir` on `C:\Users\SHREY JAIN\Downloads`, take the newest `ElevenLabs_*Bunty*.mp3` (modified in the
    last few minutes), and `device_stage_files` it into the container. Close your Chrome tab.
@@ -103,4 +110,5 @@ gradient tag), like reel 1's cover. Keep the title between y 600 and y 1300.
 Mark the topic `"status": "posted"` in `topics.json`, append to `log.json` (`date`, `slug`, `title`,
 `sources`, `video_url`, `cover_url`, `permalink`), commit the script, scene file and logs, push to `main`. The BrainSnck task pushes to the same repo, so if a push
 is rejected, `git fetch` + `git rebase` and push again (never `--force`).
-Send Shrey one short Hinglish message: the reel title and the Instagram link.
+Send Shrey one short Hinglish message: the reel title, the Instagram link and the ElevenLabs credits left. If
+fewer than ~1,200 credits are left, add that the next reel won't fit and he should log in with another account.
