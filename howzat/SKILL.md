@@ -98,5 +98,6 @@ gradient tag), like reel 1's cover. Keep the title between y 600 and y 1300.
 
 ## 9. Log and report
 Mark the topic `"status": "posted"` in `topics.json`, append to `log.json` (`date`, `slug`, `title`,
-`sources`, `video_url`, `cover_url`, `permalink`), commit the script, scene file and logs, push to `main`.
+`sources`, `video_url`, `cover_url`, `permalink`), commit the script, scene file and logs, push to `main`. The BrainSnck task pushes to the same repo, so if a push
+is rejected, `git fetch` + `git rebase` and push again (never `--force`).
 Send Shrey one short Hinglish message: the reel title and the Instagram link.
