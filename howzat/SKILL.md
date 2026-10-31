@@ -75,8 +75,11 @@ Work in a copy of `engine/` (`<work>/`, link `node_modules`, put `timings.js` an
   (`hardShadow()`), keyword pills, sparkle bursts, flat colour-band wipes, end card with the logo and
   "Follow @howzat.tech". Don't change it. Shrey wants plain colours that are easy on the eyes: **no glow, no
   neon, no gradients, no blur, no harsh saturated colours** in scene code (use the `C` palette; theme.js already
-  ignores `shadowBlur`). Start `<slug>.js` with `window.BG = '<colour>';`, rotating in this order after the last
-  `bg` in `log.json`: `#33407a` (soft navy, also the default), `#5a4e8c` (dusty purple), `#2f6b70` (soft teal).
+  ignores `shadowBlur`). Start `<slug>.js` with `window.BG = '<colour>';` and choose the colour by the script's
+  vibe (Shrey leaves it to you), e.g. `#33407a` soft navy (internet, security, "andar ka raaz"), `#5a4e8c` dusty
+  purple (apps, fun, mystery), `#2f6b70` soft teal (money, travel, India systems, everyday life). Other colours
+  are fine if they stay soft and muted, mid-dark enough for white captions, and not red or pink (red alerts
+  vanish on them). Try not to repeat the last `bg` in `log.json`.
 - Make `<slug>.js` from `maps.js`: keep everything up to and including `phoneBody()` (helpers, background,
   chips, map, phone, eye), replace the Maps scenes with this topic's scenes, and define
   `window.TOPIC` (header word, e.g. 'UPI'), `function sceneList()` returning `[[start, end, fn], ...]`
