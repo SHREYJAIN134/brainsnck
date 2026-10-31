@@ -13,6 +13,9 @@ reference for quality, look and pacing: match it.
 - Chromium + Playwright are pre-installed; ffmpeg is available.
 
 ## 1. Topic
+First check `log.json`: if it already has an entry for today's India date (Asia/Kolkata), a reel is already up
+today, so do nothing else and stop without messaging Shrey.
+
 Take the first entry in `topics.json` without `"status": "posted"`. Check the last entries in `log.json` so no
 topic repeats. Research it with web search: every fact and number must come from a reliable source (keep 1–3).
 If a company's internals aren't public, say "aam taur pe" instead of claiming exact details. No politics,
