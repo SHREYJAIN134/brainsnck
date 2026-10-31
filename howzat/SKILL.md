@@ -96,13 +96,17 @@ gradient tag), like reel 1's cover. Keep the title between y 600 and y 1300.
    `videos/<YYYY-MM-DD>_<HHMM>_howzat-<slug>.mp4` and `.jpg`. Confirm both raw URLs give HTTP 200.
 2. Publish with Zapier Instagram for Business raw requests (`selected_api` InstagramBusinessCLIAPI,
    `connection_id` `02430411-5018-80e8-bb13-f7b4036307c6`, IG account id `17841461730434810` = howzat.tech;
-   never post to BrainSnck's id). Shrey's Zapier is on the free plan, so use as few Zapier calls as possible:
+   never post to BrainSnck's id). Shrey's Zapier is on the free plan (100 tasks/month, 2 tasks per successful
+   call, failed calls are free), so a reel gets **exactly 2 successful Zapier calls = 4 tasks**. No status-check
+   GET, no permalink GET, no other execute calls (`inspect_zapier_actions` for the schema is fine):
    - POST `https://graph.facebook.com/v21.0/17841461730434810/media` with JSON
      `{"media_type": "REELS", "share_to_feed": true, "video_url": ..., "cover_url": ..., "caption": ...}`
-   - wait 2 minutes (`sleep 120`), then GET `https://graph.facebook.com/v21.0/<container id>?fields=status_code`;
-     if not `FINISHED`, wait 2 more minutes and check again (at most 3 checks).
-   - POST `https://graph.facebook.com/v21.0/17841461730434810/media_publish` with `{"creation_id": "<id>"}`.
-   - GET `https://graph.facebook.com/v21.0/<media id>?fields=permalink`.
+   - wait 4 minutes (`sleep 240`), then POST `https://graph.facebook.com/v21.0/17841461730434810/media_publish`
+     with `{"creation_id": "<id>"}`. If the error only says the media isn't ready yet, wait 2 more minutes and
+     retry the publish (at most 2 retries); any other error: report and stop.
+   - Permalink without Zapier: in Shrey's Chrome open `https://www.instagram.com/howzat.tech/reels/` in a new MCP
+     tab, take the newest `/reel/<code>/` link (it must not already be in `log.json`), close the tab. If that
+     doesn't work, use `https://www.instagram.com/howzat.tech/` as the permalink.
    Caption = `caption` + blank line + "Voice: elevenlabs.io" + blank line + hashtags (always include
    #howzattech). The "Voice: elevenlabs.io" credit is required on the ElevenLabs free plan.
    If Instagram or Zapier returns an error (including Zapier being out of tasks), report it word for word and stop.
