@@ -12,3 +12,5 @@ Hinglish "ye kaise hota hai?" explainer reels, about 45–60 s, one a day.
   "Voice: elevenlabs.io".
 
 Reel 1 (2026-10-31): Google Maps traffic — https://www.instagram.com/reel/DfJzMydkab3/
+
+Daily procedure: see `SKILL.md`.

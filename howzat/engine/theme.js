@@ -62,9 +62,9 @@ function header(t) {
   const g = ctx.createLinearGradient(70, 0, 70 + bw, 0); g.addColorStop(0, C.pink); g.addColorStop(1, C.org);
   rr(70, 160, bw, 52, 26); ctx.fillStyle = g; ctx.fill();
   txt('HOWZAT TECH', 70 + bw / 2, 187, `700 24px ${MONO}`, '#1a0634');
-  txt('Google Maps', 70 + bw + 22, 188, `800 34px ${SANS}`, '#ffffff', 'left');
+  txt(window.TOPIC || 'Google Maps', 70 + bw + 22, 188, `800 34px ${SANS}`, '#ffffff', 'left');
   txt('@howzat.tech', W - 70, 188, `500 26px ${MONO}`, 'rgba(255,255,255,0.65)', 'right');
-  const steps = [[0, 'THE HACK'], [LS(4), 'ASLI RAAZ'], [LS(7), 'GREEN vs LAAL'], [LS(9), 'HACK SAMJHO'], [LS(13), 'SHARE KARO']];
+  const steps = window.STEPS ? STEPS() : [[0, 'THE HACK'], [LS(4), 'ASLI RAAZ'], [LS(7), 'GREEN vs LAAL'], [LS(9), 'HACK SAMJHO'], [LS(13), 'SHARE KARO']];
   let cur = steps[0], k = 0; steps.forEach((s, i) => { if (t >= s[0]) { cur = s; k = i; } });
   const n = Math.max(0, Math.floor((t - cur[0]) * 40));
   ctx.beginPath(); ctx.arc(80, 252, 7, 0, 7); ctx.fillStyle = POP[k % POP.length]; ctx.fill();
@@ -128,6 +128,7 @@ function burst(t, t0, x, y, cols, n = 22, spread = 1) {
   }
 }
 function bursts(t) {
+  if (window.reelBursts) return reelBursts(t);
   burst(t, CK('traffic jam'), 690, 790, [C.red, C.org, C.yel]);
   burst(t, CK('wo tumhare') + 0.9, 420, 760, [C.grn, C.cyan, C.yel], 18);
   burst(t, CK('Sadak green'), 540, 1060, [C.grn, C.cyan, '#ffffff'], 26, 1.3);
@@ -225,7 +226,7 @@ function draw(t) {
   background(t);
   vignette();
   header(t);
-  const scenes = [
+  const scenes = window.sceneList ? sceneList() : [
     [0, LS(4), sceneMap1], [LS(4), LS(7), sceneData], [LS(7), LS(9), sceneRoad],
     [LS(9), LS(13), sceneMap2], [LS(13), END + 0.4, sceneCTA],
   ];
@@ -240,7 +241,7 @@ function draw(t) {
     ctx.restore();
   });
   bursts(t);
-  for (const a of [LS(4), LS(7), LS(9), LS(13)]) wipe(t, a);
+  for (const a of scenes.slice(1).map(s => s[0])) wipe(t, a);
   captions(t);
   endCard(t);
   grainLayer(t);

@@ -1,5 +1,6 @@
-"""Generate narration with Kokoro (Hindi voice) line by line and write caption timings.
-usage: python3 gen_voice.py <voice> <out_dir>
+"""Generate the Kokoro (Hindi voice) REFERENCE narration line by line and write caption timings.
+usage: python3 gen_voice.py <voice> <out_dir> <script_module> <models_dir>
+  script_module: a .py file (without .py, importable from cwd) that defines LINES like script_maps.py
 writes <out_dir>/voice.wav (44.1 kHz) and <out_dir>/timings.js (window.TL)
 """
 import json, re, sys
@@ -8,14 +9,16 @@ import librosa
 import soundfile as sf
 from kokoro_onnx import Kokoro
 from kokoro_onnx.tokenizer import Tokenizer
-from script_maps import LINES
+import importlib
 
 VOICE = sys.argv[1]
 OUT = sys.argv[2]
+LINES = importlib.import_module(sys.argv[3] if len(sys.argv) > 3 else 'script_maps').LINES
+MODELS = sys.argv[4] if len(sys.argv) > 4 else 'models'
 SR = 44100
 LEAD = 0.30
 
-k = Kokoro('models/kokoro-v1.0.onnx', 'models/voices-v1.0.bin')
+k = Kokoro(f'{MODELS}/kokoro-v1.0.onnx', f'{MODELS}/voices-v1.0.bin')
 tok = Tokenizer()
 
 
