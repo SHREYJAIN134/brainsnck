@@ -114,15 +114,22 @@ and host/post `out/post.mp4`.
    `videos/<YYYY-MM-DD>_<HHMM>_howzat-<slug>.mp4` and `.jpg`. Confirm both raw URLs give HTTP 200.
 2. Publish with Zapier Instagram for Business raw requests (`selected_api` InstagramBusinessCLIAPI,
    `connection_id` `02430411-5018-80e8-bb13-f7b4036307c6`, IG account id `17841461730434810` = howzat.tech;
-   never post to BrainSnck's id). Shrey's Zapier is on the free plan (100 tasks/month, 2 tasks per successful
-   call, failed calls are free), and the BrainSnck task uses the same Zapier connection. Budget: **1 successful
-   Zapier call = 2 tasks per reel**, 4 only in the fallback. No status-check GET, no permalink GET, no other
-   execute calls (`inspect_zapier_actions` for the schema is fine):
+   never post to BrainSnck's id). The BrainSnck task uses the same Zapier connection. Zapier charges
+   **2 tasks per MCP tool call**. Zapier budget (Shrey's rule, set 2026-11-01):
+   - **Before 2026-11-13 (India date): Pro trial** (1,000 tasks, trial ends 2026-11-13, no payment method saved,
+     so nothing is charged). Use as many Zapier calls as the reel needs: the one call below, and the full
+     fallback if it errors.
+   - **From 2026-11-13: free plan, at most 2 tasks per reel = exactly ONE execute call.** No
+     `inspect_zapier_actions` (the schema is written below), no raw requests, no retries, no GETs. If that one
+     call errors: wait 3 minutes and open `https://www.instagram.com/howzat.tech/reels/` in Chrome; if the new
+     reel is there, use it; otherwise post nothing, send Shrey the error word for word plus "2-task limit ki
+     wajah se fallback nahi chalaya", and stop.
+   No status-check GET and no permalink GET on any day:
    - **One call:** `execute_zapier_write_action` with `selected_api` InstagramBusinessCLIAPI, action
      `publish_video`, params `video` = the hosted `.mp4` raw URL (the `out/post.mp4` file), `caption`, `instagramPageId`
      `17841461730434810` (label Howzat.Tech). It returns the media `id`. Call it once only.
-   - **Fallback, only if that call returned an error** (it costs nothing; it can give up while Instagram is
-     still processing): wait 3 minutes, open `https://www.instagram.com/howzat.tech/reels/` in Chrome; if a new
+   - **Fallback, trial only (before 2026-11-13), only if that call returned an error** (it can give up with
+     "Video is still processing", as on 2026-11-01): wait 3 minutes, open `https://www.instagram.com/howzat.tech/reels/` in Chrome; if a new
      reel is already there, it posted, use it. Otherwise use the raw requests (`connection_id`
      `02430411-5018-80e8-bb13-f7b4036307c6`): POST `https://graph.facebook.com/v21.0/17841461730434810/media`
      with JSON `{"media_type": "REELS", "share_to_feed": true, "video_url": ..., "cover_url": ..., "caption": ...}`,
