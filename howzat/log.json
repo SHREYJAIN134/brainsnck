@@ -38,5 +38,19 @@
     "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-02_1812_howzat-hawkeye.mp4",
     "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-02_1812_howzat-hawkeye.jpg",
     "permalink": "https://www.instagram.com/reel/DfPV5dygX1h/"
+  },
+  {
+    "date": "2026-11-03",
+    "slug": "captcha",
+    "title": "'I'm not a robot' tick se kaise pata chalta hai tum robot nahi?",
+    "bg": "#33407a",
+    "sources": [
+      "https://www.npr.org/sections/alltechconsidered/2014/12/03/368311184/no-more-word-puzzles-google-can-tell-youre-human-with-one-click",
+      "https://csmonitor.com/Technology/2014/1203/Are-you-a-robot-Google-says-it-can-tell-with-one-click",
+      "https://thenextweb.com/news/meet-googles-ambitious-new-captcha-hopes-make-easier-prove-youre-human"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-03_1811_howzat-captcha.mp4",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-03_1811_howzat-captcha.jpg",
+    "permalink": "https://www.instagram.com/reel/DfR7-G5HUVT/"
   }
 ]
