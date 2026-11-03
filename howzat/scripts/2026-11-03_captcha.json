@@ -1,0 +1,21 @@
+{
+  "title": "'I'm not a robot' tick se kaise pata chalta hai tum robot nahi?",
+  "voice": "ElevenLabs Bunty – Punchy, Crisp and Reel King (website, Eleven v4)",
+  "lines": [
+    "[curious] \"I'm not a robot\" wala tick... asli test hai hi nahi!",
+    "Kaise?",
+    "Click se pehle mouse ki chaal dekhi.",
+    "Insaan ka cursor tedha... bot ka SEEDHA!",
+    "Plus IP aur cookies.",
+    "Shaq hua? Tab traffic light wali photos!",
+    "[laughs] Ye reel CAPTCHA me atke dost ko bhejo!"
+  ],
+  "caption": "\"I'm not a robot\" pe tick kiya... par asli test wo tick hai hi nahi! 🤖\n\nClick se pehle tumhara cursor kaise chala, wo dekha jaata hai: insaan ka haath thoda idhar-udhar hilta hai, simple bot ekdum seedha jaata hai. Saath me IP aur cookies jaise signals bhi. Shaq hua, tabhi traffic light wali photos aati hain. Google ke hisaab se uske AI ne purane tedhe-medhe text wale CAPTCHA 99.8% accuracy se solve kar diye the, isliye ye naya tarika aaya! 🤯\n\nAgla \"kaise\" kis cheez ka chahiye? Comment karo 👇",
+  "hashtags": "#howzattech #captcha #imnotarobot #recaptcha #internet #techfacts #techinhindi #hinglish #yekaisehotahai #cybersecurity",
+  "sources": [
+    "https://www.npr.org/sections/alltechconsidered/2014/12/03/368311184/no-more-word-puzzles-google-can-tell-youre-human-with-one-click",
+    "https://csmonitor.com/Technology/2014/1203/Are-you-a-robot-Google-says-it-can-tell-with-one-click",
+    "https://thenextweb.com/news/meet-googles-ambitious-new-captcha-hopes-make-easier-prove-youre-human"
+  ],
+  "cover": {"lines": ["Tick kiya...", "par test kahan?"], "pill": "KAISE?", "tag": "MOUSE KI CHAAL"}
+}
