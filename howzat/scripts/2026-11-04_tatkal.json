@@ -1,0 +1,21 @@
+{
+  "title": "Tatkal 1 minute me full kyun ho jaata hai?",
+  "voice": "ElevenLabs Bunty – Punchy, Crisp and Reel King (website, Eleven v4)",
+  "lines": [
+    "[curious] Das baje Tatkal khula... ek minute me WAITING!",
+    "Aadhe se zyada koshishein... bots ki thi!",
+    "Form pehle se bhara, captcha khud solve.",
+    "Kayi IDs ek saath!",
+    "Tum type karte raho... seat gayi!",
+    "Ab Aadhaar check, anti-bot shield!",
+    "Ye reel Tatkal me haare dost ko bhejo!"
+  ],
+  "caption": "10 baje Tatkal khula... aur 1 minute me sab WAITING? 😤\n\nRailway ministry ne July 2026 me Lok Sabha me bataya: online ticket booking ki lagbhag 58% requests bots ki thi! Gair-kaanooni software form pehle se bhar ke rakhte the, captcha khud solve karte the aur kayi IDs se ek saath booking karte the. Ek LocalCircles survey me 73% logon ne kaha ki booking khulte hi pehle minute me tickets khatam.\n\nIsliye ab Tatkal online ke liye Aadhaar authentication zaroori hai (kuch trains me Aadhaar OTP bhi), anti-bot system lagaya gaya hai, aur lagbhag 3 crore suspicious IDs band ki gayi hain. 🚆\n\nAgla \"kaise\" kis cheez ka chahiye? Comment karo 👇",
+  "hashtags": "#howzattech #tatkal #irctc #indianrailways #trainticket #bots #techinhindi #hinglish #yekaisehotahai #indiantech",
+  "sources": [
+    "https://www.wionews.com/india-news/bots-accounted-for-58-of-india-s-rail-booking-requests-here-s-how-centre-is-tackling-this-menace-gravitas-1784834203269",
+    "https://www.business-standard.com/india-news/irctc-tatkal-ticketing-error-indian-railways-agents-125060200354_1.html",
+    "https://www.drishtiias.com/daily-updates/daily-news-analysis/real-mango-an-illegal-software"
+  ],
+  "cover": {"lines": ["Tatkal 1 minute", "me full?"], "pill": "KYUN?", "tag": "58% BOTS"}
+}
