@@ -1,0 +1,20 @@
+{
+  "title": "Shazam 5 second me gaana kaise pehchanta hai?",
+  "voice": "ElevenLabs Bunty – Punchy, Crisp and Reel King (website, Eleven v4)",
+  "lines": [
+    "[curious] Shor me 5 second... Shazam ne gaana pakda!",
+    "Wo gaana sunta nahi... PHOTO banata hai!",
+    "Sabse tez sur ban jaate taare.",
+    "Taaron ke jode se banta code.",
+    "Laakhon gaanon se milaan!",
+    "[excited] Sirf 2% code bache... phir bhi match!",
+    "Ye reel apne DJ dost ko bhejo!"
+  ],
+  "caption": "Party ka shor, 5 second ka clip... aur Shazam ne gaana bata diya! 🎵\n\nRaaz: Shazam gaane ko \"sunta\" nahi, uski photo (spectrogram) banata hai. Usme sabse tez suron ke points chunta hai, jo aasmaan ke taaron jaise dikhte hain. Phir do-do taaron ke jode se chhote codes (hashes) banata hai aur unhe laakhon gaanon ke database se milaata hai. Shazam ke original research paper ke hisaab se, shor me sirf 1–2% codes bhi sahi bache toh match mil jaata hai!\n\nApple ke mutabik Shazam ab tak 100 billion se zyada gaane pehchaan chuka hai, yaani duniya ke har insaan ke liye lagbhag 12! 🤯\n\nAgla \"kaise\" kis cheez ka chahiye? Comment karo 👇",
+  "hashtags": "#howzattech #shazam #music #songs #audiofingerprint #techinhindi #hinglish #yekaisehotahai #indiantech #howitworks",
+  "sources": [
+    "https://www.princeton.edu/~cuff/ele201/files/Wang03-shazam.pdf",
+    "https://macrumors.com/2024/11/20/shazam-100-billion-songs-identified"
+  ],
+  "cover": {"lines": ["Shazam gaana", "kaise pakadta?"], "pill": "PHOTO!", "tag": "2% KAAFI"}
+}
