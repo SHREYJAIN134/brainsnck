@@ -31,7 +31,8 @@ religion, medical or financial advice.
 Write `scripts/<YYYY-MM-DD>_<slug>.json` like the reference: `title`, `lines` (6–8 lines, 35–45 spoken words
 total; the whole typed text, tags and spaces included, must be at most 270 characters: count it), and `caption`, `hashtags`, `sources`, `cover` (2–3 short title lines, one punchy word for the pill).
 - Lines: Hinglish, short, punchy; hook in line 1 (a surprising fact or mini story), 2–3 steps, a quick payoff,
-  and a short last line "Ye reel us dost ko bhejo jo ..." CTA (at most 8 words).
+  and a short last line asking people to follow for more (at most 6 words, must contain "follow"), e.g.
+  "Aise aur raaz ke liye... follow karo!". Shrey's rule (2026-11-05): no more "Ye reel dost ko bhejo" endings.
 - ElevenLabs tags in English brackets (they cost credits too), at most 2 in the whole script: [curious], [excited], [whispers], [mischievously],
   [laughs], [sarcastic]. "..." for pauses, CAPS for one stressed word.
 - Also write `engine/script_<slug>.py` with `LINES` in the format of `engine/script_maps.py`: per line
@@ -72,8 +73,8 @@ Zapier ElevenLabs `text_to_speech` with voice_id `FZkK3TvQ0pjyDmT8fzIW`, model `
 Work in a copy of `engine/` (`<work>/`, link `node_modules`, put `timings.js` and `voice.wav` there).
 - `theme.js` is the look, "soft flat": one plain, soft background colour, soft flat accents (`C.yel`, `C.pink`,
   `C.cyan`, `C.grn`, `C.org`, `C.red`), dark navy cards (`C.box`), ink outlines (`INK`) and hard offset shadows
-  (`hardShadow()`), keyword pills, sparkle bursts, flat colour-band wipes, end card with the logo and
-  "Follow @howzat.tech". Don't change it. Shrey wants plain colours that are easy on the eyes: **no glow, no
+  (`hardShadow()`), keyword pills, sparkle bursts, flat colour-band wipes, the "follow for more" ending
+  `sceneFollow`, end card with the logo and "Follow @howzat.tech". Don't change it. Shrey wants plain colours that are easy on the eyes: **no glow, no
   neon, no gradients, no blur, no harsh saturated colours** in scene code (use the `C` palette; theme.js already
   ignores `shadowBlur`). Start `<slug>.js` with `window.BG = '<colour>';` and choose the colour by the script's
   vibe (Shrey leaves it to you), e.g. `#33407a` soft navy (internet, security, "andar ka raaz"), `#5a4e8c` dusty
@@ -85,7 +86,11 @@ Work in a copy of `engine/` (`<work>/`, link `node_modules`, put `timings.js` an
   `window.TOPIC` (header word, e.g. 'UPI'), `function sceneList()` returning `[[start, end, fn], ...]`
   (use `LS(i)`/`LE(i)` line times and `CK('chunk text')` chunk times; last scene ends at `END + 0.4`),
   `function STEPS()` (2–3 short step labels with their start times), and `function reelBursts(t)` (sparkle
-  bursts on the 2–3 key reveals). Keep `captions`/`draw` from `theme.js`. Point `index.html` at `<slug>.js`
+  bursts on the 2–3 key reveals). Keep `captions`/`draw` from `theme.js`.
+  The last line always uses `sceneFollow` from `theme.js`: end `sceneList()` with
+  `[LS(N) - 0.4, END + 0.4, sceneFollow]` (N = last line). It shows the @howzat.tech profile card, taps the
+  Follow button on the caption chunk that contains "follow" and pops a FOLLOW FOR MORE pill. No "send to a
+  friend" chat scene any more. Point `index.html` at `<slug>.js`
   instead of `maps.js`.
 - Every line gets a visual that moves with it: phones, maps, servers, cards, counters, arrows, packets. Original
   drawings only: no brand logos, no real people, no copied footage. Keep important things between y 300 and
@@ -98,6 +103,8 @@ Copy `mix_maps.py`, replace its `ev` list with this reel's events (whoosh on sce
 correct/tick moment, alert + thud on a big reveal, msg sounds in chat scenes), keep the beat and ducking.
 `python3 mix_<slug>.py <dur>`, then
 `ffmpeg -i out/video.mp4 -i out/mix.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -movflags +faststart out/final.mp4`.
+Follow ending (t0 = last line start − 0.4; tap = start of the last line's chunk containing "follow" + 0.2, at
+least t0 + 0.95): whoosh at t0 − 0.25, pop at t0 + 0.1 and t0 + 0.45, click + ding at tap, pop at tap + 0.25.
 Check: the voice must be clearly louder than the background (about 14 dB, as in reel 1).
 
 ## 7. Cover

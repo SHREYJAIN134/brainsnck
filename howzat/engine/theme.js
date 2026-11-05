@@ -230,3 +230,67 @@ traffic = function (a, r0, r1) {
   const [mx, my, mw, mh, mr] = MAPCARD;
   ctx.save(); rr(mx + 2, my + 2, mw - 4, mh - 4, mr); ctx.clip(); _traffic(a, r0, r1); ctx.restore();
 };
+
+// ---------- last line: "follow for more" CTA (Shrey, 2026-11-05: replaces the "ye reel dost ko bhejo" scene) ----------
+// Use as the last scene of every reel: [LS(N) - 0.4, END + 0.4, sceneFollow], N = last line.
+// The Follow button gets tapped on the caption chunk that contains "follow".
+function followTimes() {
+  const n = TL.lines.length - 1, t0 = TL.lines[n].s - 0.4;
+  const fc = TL.chunks.find(c => c.line === n && /follow/i.test(c.text));
+  return { t0, tap: Math.max(t0 + 0.95, fc ? fc.s + 0.2 : TL.lines[n].s + 0.7) };
+}
+function sceneFollow(t) {
+  const { t0, tap } = followTimes();
+  const f = P(t, t0, t0 + 0.4); if (f <= 0) return;
+  // profile card
+  ctx.save(); ctx.globalAlpha *= Math.min(1, f * 2);
+  ctx.translate(540, 800); const s = L(0.9, 1, back(f)); ctx.scale(s, s); ctx.translate(-540, -800);
+  hardShadow(130, 410, 820, 720, 44, 12);
+  rr(130, 410, 820, 720, 44); ctx.fillStyle = C.box; ctx.fill(); ctx.lineWidth = 6; ctx.strokeStyle = INK; ctx.stroke();
+  ctx.restore();
+  // logo
+  const lf = P(t, t0 + 0.1, t0 + 0.45);
+  if (lf > 0 && LOGO.complete && LOGO.naturalWidth) {
+    const r = 125;
+    ctx.save(); ctx.translate(540, 590); const ls = back(lf); ctx.scale(ls, ls); ctx.globalAlpha *= Math.min(1, lf * 3); ctx.rotate(Math.sin(t * 2) * 0.02);
+    ctx.beginPath(); ctx.arc(9, 9, r + 8, 0, 7); ctx.fillStyle = INK; ctx.fill();
+    ctx.beginPath(); ctx.arc(0, 0, r + 8, 0, 7); ctx.fillStyle = C.yel; ctx.fill();
+    ctx.beginPath(); ctx.arc(0, 0, r, 0, 7); ctx.fillStyle = C.box; ctx.fill();
+    ctx.beginPath(); ctx.arc(0, 0, r, 0, 7); ctx.clip(); ctx.drawImage(LOGO, -r, -r, 2 * r, 2 * r); ctx.restore();
+  }
+  const hf = P(t, t0 + 0.25, t0 + 0.5);
+  if (hf > 0) {
+    ctx.save(); ctx.globalAlpha *= hf; ctx.translate(0, L(20, 0, eo(hf)));
+    txt('@howzat.tech', 540, 790, `800 60px ${SANS}`, '#ffffff');
+    txt('Roz ek "ye kaise hota hai?"', 540, 860, `600 32px ${SANS}`, C.mute);
+    ctx.restore();
+  }
+  // follow button
+  const bf = P(t, t0 + 0.4, t0 + 0.7);
+  if (bf > 0) {
+    const done = t >= tap, press = 1 - 0.1 * win(t, tap - 0.08, tap + 0.14, 0.06, 0.1);
+    ctx.save(); ctx.translate(540, 1010); const bs = back(bf) * press; ctx.scale(bs, bs); ctx.globalAlpha *= Math.min(1, bf * 3);
+    hardShadow(-260, -60, 520, 120, 60, 9);
+    rr(-260, -60, 520, 120, 60); ctx.fillStyle = done ? C.grn : C.yel; ctx.fill(); ctx.lineWidth = 6; ctx.strokeStyle = INK; ctx.stroke();
+    if (done) {
+      txt('FOLLOWING', 42, 4, `800 50px ${SANS}`, INK);
+      line([[-212, 2], [-190, 24], [-154, -18]], INK, 11);
+    } else txt('FOLLOW', 0, 4, `800 56px ${SANS}`, INK);
+    ctx.restore();
+    // tap ring
+    const rf = P(t, tap, tap + 0.5);
+    if (rf > 0 && rf < 1) { ctx.beginPath(); ctx.arc(540, 1010, 60 + 240 * eo(rf), 0, 7); ctx.lineWidth = 10 * (1 - rf); ctx.strokeStyle = '#ffffff'; ctx.stroke(); }
+  }
+  // pointer that taps the button
+  const pa = P(t, tap - 0.55, tap - 0.05), po = 1 - P(t, tap + 0.35, tap + 0.6);
+  if (t > tap - 0.6 && po > 0) {
+    const x = L(880, 610, eio(pa)), y = L(1330, 1035, eio(pa)), ps = t > tap - 0.05 && t < tap + 0.15 ? 0.82 : 1;
+    ctx.save(); ctx.globalAlpha *= Math.min(1, P(t, tap - 0.6, tap - 0.4)) * po; ctx.translate(x, y); ctx.scale(ps, ps);
+    ctx.beginPath(); ctx.arc(6, 6, 34, 0, 7); ctx.fillStyle = INK; ctx.fill();
+    ctx.beginPath(); ctx.arc(0, 0, 34, 0, 7); ctx.fillStyle = '#ffffff'; ctx.fill(); ctx.lineWidth = 5; ctx.strokeStyle = INK; ctx.stroke();
+    ctx.beginPath(); ctx.arc(0, 0, 14, 0, 7); ctx.fillStyle = C.pink; ctx.fill();
+    ctx.restore();
+  }
+  chip(540, 1270, 'FOLLOW FOR MORE', C.pink, P(t, tap + 0.25, tap + 0.55), { size: 36, h: 80 });
+  burst(t, tap + 0.05, 540, 1010, [C.grn, C.yel, '#ffffff'], 26, 1.2);
+}
