@@ -1,0 +1,28 @@
+{
+  "title": "FASTag se bina ruke toll kaise kat jaata hai?",
+  "voice": "ElevenLabs Bunty – Punchy, Crisp and Reel King (website, Eleven v4)",
+  "lines": [
+    "[curious] Jaipur highway pe toll booth gayab!",
+    "Full speed... phir bhi paise kat gaye!",
+    "Raaz? FASTag me BATTERY hi nahi!",
+    "Upar ka reader radio waves phenkta.",
+    "Usi energy se tag jaagta, ID bolta!",
+    "[excited] ID se account mila... paise kat!",
+    "Aise aur raaz ke liye... follow karo!"
+  ],
+  "caption": "Delhi–Jaipur highway (NH-48) pe ab toll pe rukna hi nahi padta! 🚗💨\n\nShahjahanpur toll plaza pe ab barrier-free tolling (MLFF) hai: upar gantry pe RFID readers aur number plate padhne wale cameras lage hain, aur gaadi full speed pe nikal jaati hai.\n\nRaaz: FASTag ek passive RFID tag hai, yaani usme koi battery hoti hi nahi! Reader ki radio waves se hi use energy milti hai, wo jaag ke apna Tag ID wapas bhejta hai. Toll system wo ID bank ko bhejta hai, NETC (NPCI) ke through tumhare FASTag account se paise kat jaate hain aur SMS aa jaata hai. 📲\n\nBalance kam hai? Dhyaan rakho: barrier-free toll pe 72 ghante me na bharo toh double toll lagta hai!\n\nAgla \"kaise\" kis cheez ka chahiye? Comment karo 👇",
+  "hashtags": "#howzattech #fastag #toll #highway #nhai #rfid #techinhindi #hinglish #yekaisehotahai #indiantech",
+  "sources": [
+    "https://npci.org.in/what-we-do/netc-fastag/product-overview",
+    "https://newsonair.gov.in/nhai-introduces-barrier-free-toll-collection-at-shahjahanpur-toll-plaza-on-delhi-jaipur-section-of-nh-48/",
+    "https://technav.ieee.org/topic/passive-rfid-tags/"
+  ],
+  "cover": {
+    "lines": [
+      "Bina ruke toll",
+      "kaise kat gaya?"
+    ],
+    "pill": "RADIO!",
+    "tag": "NO BATTERY"
+  }
+}
