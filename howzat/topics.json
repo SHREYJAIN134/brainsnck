@@ -243,11 +243,14 @@
     "hook": "Video call pe 'police' bola: tum arrest ho... aur ghar baithe crore chale gaye. Ye scam kaise chalta hai?",
     "pillar": "safety",
     "score": 7,
-    "why": "huge news + villain + viewer's money/safety; reported losses ~Rs 4,057 crore 2022-May 2026 (verify)",
+    "why": "passion 2 (paisa, phone) + villain 2 (fake CBI officer) + stakes 2 (your/parents' savings) + news 1 (Rs 4,057.7 crore lost 2022-May 2026, govt data Jul 2026); picked 2026-11-07",
     "leads": [
       "https://www.newsbytesapp.com/news/science/india-s-digital-arrest-scam-causes-4-000cr-losses-in-3-years/story",
       "https://openthemagazine.com/india/how-digital-arrest-scams-work-and-why-mhas-kill-switch-could-be-a-game-changer"
-    ]
+    ],
+    "status": "posted",
+    "permalink": "https://www.instagram.com/reel/Dfb5tGTgY58/",
+    "hook_used": "Video call pe CBI officer... aap ARREST ho!"
   },
   {
     "n": 32,
@@ -272,5 +275,21 @@
     "pillar": "apps",
     "score": 5,
     "why": "everyone uses it + privacy villain angle"
+  },
+  {
+    "n": 35,
+    "topic": "Shaadi ka WhatsApp card phone kaise hack kar leta hai?",
+    "hook": "Dost ki shaadi ka card aaya... khola, aur bank account khaali!",
+    "pillar": "safety",
+    "score": 7,
+    "why": "wedding season now (Nov-Dec) + WhatsApp life + APK villain + your bank OTPs; police alerts (Rajasthan, Apr 2026). Next pick, before the season ends"
+  },
+  {
+    "n": 36,
+    "topic": "Fake e-challan SMS se paise kaise udte hain?",
+    "hook": "SMS aaya: 'aapka challan kata'... link dabaya, aur paise gaye.",
+    "pillar": "safety",
+    "score": 5,
+    "why": "everyone fears a challan + scam villain + your money; no fresh news angle"
   }
 ]
