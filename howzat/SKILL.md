@@ -17,12 +17,33 @@ reel a day: about 320 credits per reel, 10,000 a month.
 First check `log.json`: if it already has an entry for today's India date (Asia/Kolkata), a reel is already up
 today, so do nothing else and stop without messaging Shrey.
 
-Good content first. Look at the next 5 entries in `topics.json` without `"status": "posted"` and pick the one
-with the strongest hook for Indian viewers: tech they use every day, plus one specific surprising fact, number
-or true mini story that makes people stop scrolling (a recent news angle is a bonus). Check the last entries in
-`log.json` so no topic repeats. Research it with web search before writing: every fact and number must come from
-a reliable source (keep 1–3). If the research finds a better hook than the one in `topics.json`, use it. If
-none of the 5 has a strong, sourced hook, find a fresh topic with web search and add it to `topics.json`.
+**Data first, never random (Shrey's rule, 2026-11-07).** Pick the topic from what got the most reach:
+1. Refresh the numbers: in Shrey's Chrome open `https://www.instagram.com/howzat.tech/reels/` in a new MCP tab, run
+   `[...document.querySelectorAll('a[href*="/reel/"]')].map(a => [a.getAttribute('href'), a.innerText])`
+   (the number on each tile = views), close the tab. Update `views` in `insights.json` for every reel (match the
+   `/reel/<code>/` with `log.json` permalinks; add new reels with their `angle` and `conflict`), set `checked`.
+   No Zapier calls for this: the Zapier connection has no Insights permission, and the task budget is tight.
+2. Learn: only compare reels at least 48 h old. A winner has ≥ 3× the median views. If new data changes the
+   "What works" list below, update it (short, with numbers).
+3. What works (2026-11-07, 9 reels):
+   - Winners, 1,100–1,600 views: Hawk-Eye/DRS (cricket + umpire-vs-machine controversy), Tatkal (everyone's
+     pain + a villain: 58% bots), Google Maps (true story: one man fooled Maps with 99 phones). Gym myth-buster
+     extra: 682.
+   - Losers, 113–153 views (10× less): UPI, CAPTCHA, Shazam, FASTag, squat study. All neutral "X kaise kaam
+     karta hai" with no villain and nothing at stake for the viewer.
+   - Not the reason: length, posting time, look and voice were the same for all of them.
+   - So: mass Indian passion (cricket, trains, paisa, phone/WhatsApp life) + conflict (villain, scam, cheat,
+     controversy, unfair system, or a true mini story with a character) + the viewer's own stakes (paise,
+     ticket, time, safety).
+4. Score every topic in `topics.json` without `"status": "posted"`, plus 2–3 fresh ideas from today's news (web
+   search): passion 0–2 + conflict/story 0–2 + viewer's stakes 0–2 + fresh news angle 0–1, minus 2 for a
+   neutral "how X works". Write `score` and a one-line `why` on each. Pick the highest score; no same pillar as
+   yesterday unless it is a winner pillar (cricket, trains). Check `log.json` so no topic repeats.
+5. Line 1 of the script is a scene with tension or a character (like the 3 winners), never a bare number or
+   an app name.
+
+Research the chosen topic with web search before writing: every fact and number must come from a reliable
+source (keep 1–3). If the research finds a better hook than the one in `topics.json`, use it.
 In 15–20 s there is room for one idea only: one wow fact, the "kaise" in 2–3 steps, the payoff.
 If a company's internals aren't public, say "aam taur pe" instead of claiming exact details. No politics,
 religion, medical or financial advice.
