@@ -1,0 +1,21 @@
+{
+  "title": "Kam waiting wala ticket confirm kyun nahi hua?",
+  "voice": "ElevenLabs Bunty – Punchy, Crisp and Reel King (website, Eleven v4)",
+  "lines": [
+    "Chhath ki train... tumhara WL 12 atka.",
+    "Dost ka WL 90... CONFIRM!",
+    "[whispers] Raaz: waiting list ek nahi, kai hain.",
+    "Pehle station ki list... sabse badi.",
+    "Beech ke station ki... bahut chhoti.",
+    "[excited] Number nahi... list ka TYPE dekho!",
+    "Aise aur raaz ke liye... follow karo!"
+  ],
+  "caption": "Chhath ki train me tumhara WL 12 confirm nahi hua... aur dost ka WL 90 CONFIRM ho gaya? 🤯\n\nRaaz: train me waiting list ek nahi hoti. Har ticket pe number se pehle uska TYPE likha hota hai:\n• GNWL (General): jis station se train chalti hai (ya uske paas wale stations) wahan ki list. Sabse zyada seats isi quota me hoti hain, isliye ye aam taur pe sabse jaldi confirm hoti hai.\n• RLWL (Remote Location): beech ke bade stations ki list. Iska quota chhota hota hai, ye wahin ke cancel tickets se aage badhti hai.\n• PQWL (Pooled Quota): beech ke do stations ke beech ka safar. Iske confirm hone ke chances sabse kam.\n\nHar list sirf apne quota ke cancel tickets se aage badhti hai. Isliye GNWL 90 confirm ho sakta hai aur RLWL 12 atka reh sakta hai. Pehla chart ab train chalne se lagbhag 10 ghante pehle banta hai, tab tak status kaafi had tak saaf ho jaata hai. 🚆\n\nAgla \"kaise\" kis cheez ka chahiye? Comment karo 👇",
+  "hashtags": "#howzattech #waitinglist #indianrailways #irctc #chhath #trainticket #techinhindi #hinglish #yekaisehotahai #indiantech",
+  "sources": [
+    "https://zeebiz.com/hindi/railways/indian-railways-issues-many-types-of-waiting-tickets-gnwl-rlwl-pqwl-tqwl-rswl-rac-know-which-waiting-ticket-gets-confirmed-fast-interesting-facts-irctc-113700",
+    "https://www.lokmattimes.com/national/why-do-railways-confirm-high-waiting-tickets-but-reject-low-ones-a525",
+    "https://www.theweek.in/news/india/2025/12/18/new-railway-rules-check-rac-status-10-hours-before-journey.html"
+  ],
+  "cover": {"lines": ["WL 90 confirm,", "WL 12 nahi?"], "pill": "KAISE?", "tag": "WL KA RAAZ"}
+}

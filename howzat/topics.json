@@ -68,7 +68,7 @@
     "hook": "Scammer tumse password nahi, sirf 6 digit maangta hai. Kyun?",
     "pillar": "safety",
     "score": 6,
-    "why": "scam villain + your money at stake"
+    "why": "scam villain + your money at stake; skipped 2026-11-08 (safety was yesterday's pillar)"
   },
   {
     "n": 10,
@@ -115,7 +115,7 @@
     "hook": "Baarish shuru hui... aur cab ka kiraya double. Ye kaun tay karta hai?",
     "pillar": "business",
     "score": 6,
-    "why": "surge pricing everyone hates + your money"
+    "why": "surge pricing everyone hates + your money; Diwali-night surge angle possible"
   },
   {
     "n": 16,
@@ -265,8 +265,11 @@
     "topic": "Waiting list ticket confirm hoga ya nahi, kaise pata?",
     "hook": "WL 40... confirm hoga ya nahi? Railway ka system pehle se andaza laga leta hai.",
     "pillar": "india systems",
-    "score": 5,
-    "why": "trains (Tatkal 1,560 views) + your ticket at stake"
+    "score": 7,
+    "why": "passion 2 (trains, Tatkal 1,565 views) + story 2 (tum WL 12 atka, dost WL 90 confirm) + stakes 2 (your ticket home) + news 1 (Chhath rush: Delhi-Patna trains 'No Room' in 30 min); picked 2026-11-08",
+    "status": "posted",
+    "permalink": "https://www.instagram.com/reel/DffvqSRDrTQ/",
+    "hook_used": "Chhath ki train... tumhara WL 12 atka. Dost ka WL 90... CONFIRM!"
   },
   {
     "n": 34,
@@ -282,7 +285,7 @@
     "hook": "Dost ki shaadi ka card aaya... khola, aur bank account khaali!",
     "pillar": "safety",
     "score": 7,
-    "why": "wedding season now (Nov-Dec) + WhatsApp life + APK villain + your bank OTPs; police alerts (Rajasthan, Apr 2026). Next pick, before the season ends"
+    "why": "wedding season now (Nov-Dec) + WhatsApp life + APK villain + your bank OTPs; police alerts (Rajasthan, Apr 2026). Next pick, before the season ends; skipped 2026-11-08 (safety was yesterday's pillar)"
   },
   {
     "n": 36,
@@ -290,6 +293,30 @@
     "hook": "SMS aaya: 'aapka challan kata'... link dabaya, aur paise gaye.",
     "pillar": "safety",
     "score": 5,
-    "why": "everyone fears a challan + scam villain + your money; no fresh news angle"
+    "why": "everyone fears a challan + scam villain + your money; no fresh news angle; skipped 2026-11-08 (safety was yesterday's pillar)"
+  },
+  {
+    "n": 37,
+    "topic": "Sale me 'sirf 2 bache' aur timer sach hote hain?",
+    "hook": "Timer bola 2 minute bache... refresh kiya, phir se 10 minute!",
+    "pillar": "business",
+    "score": 6,
+    "why": "Diwali sale season + villain (fake urgency, dark patterns) + your money; fresh idea 2026-11-08"
+  },
+  {
+    "n": 38,
+    "topic": "Green cracker asli hai ya nakli, QR kaise batata hai?",
+    "hook": "Dabbe pe likha 'green'... par QR scan kiya toh kuch nahi mila!",
+    "pillar": "india systems",
+    "score": 4,
+    "why": "Diwali + fake product villain, but stale right after Diwali; fresh idea 2026-11-08"
+  },
+  {
+    "n": 39,
+    "topic": "Chhath trains 30 minute me 'No Room' kaise ho gayi?",
+    "hook": "Booking khuli... 30 minute me 14 trains 'No Room'!",
+    "pillar": "india systems",
+    "score": 4,
+    "why": "trains + Chhath news, but same story as Tatkal bots (already posted); fresh idea 2026-11-08"
   }
 ]

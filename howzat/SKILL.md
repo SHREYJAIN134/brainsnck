@@ -25,12 +25,13 @@ today, so do nothing else and stop without messaging Shrey.
    No Zapier calls for this: the Zapier connection has no Insights permission, and the task budget is tight.
 2. Learn: only compare reels at least 48 h old. A winner has ≥ 3× the median views. If new data changes the
    "What works" list below, update it (short, with numbers).
-3. What works (2026-11-07, 9 reels):
-   - Winners, 1,100–1,600 views: Hawk-Eye/DRS (cricket + umpire-vs-machine controversy), Tatkal (everyone's
+3. What works (2026-11-08, 9 reels ≥ 48 h old, median 155):
+   - Winners, 1,118–1,589 views: Hawk-Eye/DRS (cricket + umpire-vs-machine controversy), Tatkal (everyone's
      pain + a villain: 58% bots), Google Maps (true story: one man fooled Maps with 99 phones). Gym myth-buster
-     extra: 682.
-   - Losers, 113–153 views (10× less): UPI, CAPTCHA, Shazam, FASTag, squat study. All neutral "X kaise kaam
+     extra: 685.
+   - Losers, 115–155 views (10× less): UPI, CAPTCHA, Shazam, FASTag, squat study. All neutral "X kaise kaam
      karta hai" with no villain and nothing at stake for the viewer.
+   - Too early to judge: Digital arrest (scam villain) 288 at 29 h.
    - Not the reason: length, posting time, look and voice were the same for all of them.
    - So: mass Indian passion (cricket, trains, paisa, phone/WhatsApp life) + conflict (villain, scam, cheat,
      controversy, unfair system, or a true mini story with a character) + the viewer's own stakes (paise,
