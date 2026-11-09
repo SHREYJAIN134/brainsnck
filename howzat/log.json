@@ -123,5 +123,20 @@
     "media_id": "18102806903545350",
     "permalink": "https://www.instagram.com/reel/DffvqSRDrTQ/",
     "note": "posted 2026-11-09 03:15 IST (session ran late); publish_video gave \"Video is still processing\", posted with the raw-request fallback"
+  },
+  {
+    "date": "2026-11-09",
+    "slug": "lower-berth",
+    "title": "Lower berth maanga, upper kyun mila?",
+    "bg": "#5a4e8c",
+    "sources": [
+      "https://www.millenniumpost.in/nation/automatic-allotment-of-lower-berths-to-senior-citizens-45-plus-women-if-available-638564",
+      "https://www.thenewsminute.com/news/saw-whatsapp-forward-physics-behind-irctc-ticketing-its-rubbish-43972"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-09_1413_howzat-lower-berth.mp4",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-09_1413_howzat-lower-berth.jpg",
+    "media_id": "17904623040372729",
+    "permalink": "https://www.instagram.com/reel/Dfg75dfGRoK/",
+    "note": "first reel of the railway niche (Shrey, 2026-11-09); publish_video said \"still processing\", posted with the raw-request fallback"
   }
 ]

@@ -1,17 +1,18 @@
 {
-  "checked": "2026-11-08 20:35 IST",
+  "checked": "2026-11-09 13:37 IST",
   "how": "views = number on each tile of instagram.com/howzat.tech/reels (Shrey's Chrome); likes/comments = Graph API media list via Zapier. The Zapier connection has no Insights permission (reach, watch time, shares, saves give error #10).",
   "reels": [
     {"date": "2026-10-31", "slug": "google-maps", "kind": "main", "views": 1118, "likes": 22, "comments": 0, "angle": "true viral story with a character (99 phones prank)", "conflict": true},
     {"date": "2026-11-01", "slug": "upi", "kind": "main", "views": 152, "likes": 4, "comments": 0, "angle": "big number + neutral 'how it works'", "conflict": false},
     {"date": "2026-11-01", "slug": "extra-muscle-growth", "kind": "extra", "views": 685, "likes": 20, "comments": 0, "angle": "gym myth-buster (gym me nahi, BAAD me banta hai)", "conflict": true},
-    {"date": "2026-11-02", "slug": "extra-squat-depth", "kind": "extra", "views": 134, "likes": 3, "comments": 0, "angle": "gym study comparison", "conflict": false},
-    {"date": "2026-11-02", "slug": "hawkeye", "kind": "main", "views": 1589, "likes": 22, "comments": 0, "angle": "cricket + DRS controversy (umpire vs machine)", "conflict": true},
-    {"date": "2026-11-03", "slug": "captcha", "kind": "main", "views": 155, "likes": 3, "comments": 0, "angle": "neutral 'how it works' (internet)", "conflict": false},
-    {"date": "2026-11-04", "slug": "tatkal", "kind": "main", "views": 1565, "likes": 25, "comments": 0, "angle": "shared frustration + villain (58% bots) + viewer loses tickets", "conflict": true},
-    {"date": "2026-11-05", "slug": "shazam", "kind": "main", "views": 115, "likes": 2, "comments": 0, "angle": "neutral app 'how it works'", "conflict": false},
-    {"date": "2026-11-06", "slug": "fastag", "kind": "main", "views": 148, "likes": 1, "comments": 0, "angle": "neutral process + regional news (only 18 h old when checked)", "conflict": false},
-    {"date": "2026-11-07", "slug": "digital-arrest", "kind": "main", "views": 288, "likes": 0, "comments": 0, "angle": "scam villain (fake CBI officer on video call) + viewer's savings at stake + Rs 4,057 cr number", "conflict": true},
-    {"date": "2026-11-08", "slug": "waiting-list", "kind": "main", "views": 0, "likes": 0, "comments": 0, "angle": "trains + mini story (tum WL 12 atka, dost WL 90 confirm) + your ticket home + Chhath rush", "conflict": true}
+    {"date": "2026-11-02", "slug": "extra-squat-depth", "kind": "extra", "views": 135, "likes": 3, "comments": 0, "angle": "gym study comparison", "conflict": false},
+    {"date": "2026-11-02", "slug": "hawkeye", "kind": "main", "views": 1590, "likes": 22, "comments": 0, "angle": "cricket + DRS controversy (umpire vs machine)", "conflict": true},
+    {"date": "2026-11-03", "slug": "captcha", "kind": "main", "views": 157, "likes": 3, "comments": 0, "angle": "neutral 'how it works' (internet)", "conflict": false},
+    {"date": "2026-11-04", "slug": "tatkal", "kind": "main", "views": 1568, "likes": 25, "comments": 0, "angle": "shared frustration + villain (58% bots) + viewer loses tickets", "conflict": true},
+    {"date": "2026-11-05", "slug": "shazam", "kind": "main", "views": 117, "likes": 2, "comments": 0, "angle": "neutral app 'how it works'", "conflict": false},
+    {"date": "2026-11-06", "slug": "fastag", "kind": "main", "views": 152, "likes": 1, "comments": 0, "angle": "neutral process + regional news (only 18 h old when checked)", "conflict": false},
+    {"date": "2026-11-07", "slug": "digital-arrest", "kind": "main", "views": 292, "likes": 0, "comments": 0, "angle": "scam villain (fake CBI officer on video call) + viewer's savings at stake + Rs 4,057 cr number", "conflict": true},
+    {"date": "2026-11-08", "slug": "waiting-list", "kind": "main", "views": 2599, "likes": 0, "comments": 0, "angle": "trains + mini story (tum WL 12 atka, dost WL 90 confirm) + your ticket home + Chhath rush", "conflict": true},
+    {"date": "2026-11-09", "slug": "lower-berth", "kind": "main", "views": 0, "likes": 0, "comments": 0, "angle": "railway niche: tum (upper) vs aunty (lower) story + reserved lower berth quota + WhatsApp myth busted", "conflict": true}
   ]
 }

@@ -36,7 +36,8 @@
     "hook": "Tumhara order pack hone me 2 minute lagte hain. Baaki 8 minute ka raaz?",
     "pillar": "business",
     "score": -1,
-    "why": "neutral business process, no villain"
+    "why": "neutral business process, no villain",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 6,
@@ -60,7 +61,8 @@
     "hook": "Button dabaya... aur 5 second me OTP aa gaya. Beech me kya hua?",
     "pillar": "india systems",
     "score": 0,
-    "why": "neutral 'how it works'"
+    "why": "neutral 'how it works'",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 9,
@@ -68,7 +70,8 @@
     "hook": "Scammer tumse password nahi, sirf 6 digit maangta hai. Kyun?",
     "pillar": "safety",
     "score": 6,
-    "why": "scam villain + your money at stake; skipped 2026-11-08 (safety was yesterday's pillar)"
+    "why": "scam villain + your money at stake; skipped 2026-11-08 (safety was yesterday's pillar)",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 10,
@@ -83,7 +86,8 @@
     "hook": "Card ko gate ne chhua bhi nahi... phir bhi gate khul gaya.",
     "pillar": "city",
     "score": -1,
-    "why": "neutral, same type as FASTag (145 views)"
+    "why": "neutral, same type as FASTag (145 views)",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 12,
@@ -91,7 +95,8 @@
     "hook": "Pilot ko kuch dikh nahi raha... phir bhi plane seedha runway pe. Kaise?",
     "pillar": "travel",
     "score": 4,
-    "why": "tension (pilot can't see) + fog-season flight delays"
+    "why": "tension (pilot can't see) + fog-season flight delays",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 13,
@@ -99,7 +104,8 @@
     "hook": "Last over... crore log ek saath live. Aur stream atka bhi nahi.",
     "pillar": "internet",
     "score": 1,
-    "why": "cricket passion but neutral infra"
+    "why": "cricket passion but neutral infra",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 14,
@@ -107,7 +113,8 @@
     "hook": "Kal 4,000 tha, aaj 6,500. Same flight, same seat. Kyun?",
     "pillar": "business",
     "score": 5,
-    "why": "unfair pricing + your money"
+    "why": "unfair pricing + your money",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 15,
@@ -115,7 +122,8 @@
     "hook": "Baarish shuru hui... aur cab ka kiraya double. Ye kaun tay karta hai?",
     "pillar": "business",
     "score": 6,
-    "why": "surge pricing everyone hates + your money; Diwali-night surge angle possible"
+    "why": "surge pricing everyone hates + your money; Diwali-night surge angle possible",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 16,
@@ -123,7 +131,8 @@
     "hook": "Tumne kuch search nahi kiya... phir bhi Insta ko pata hai tumhe kya pasand hai.",
     "pillar": "apps",
     "score": 4,
-    "why": "everyone's app, 'Insta is watching you' angle"
+    "why": "everyone's app, 'Insta is watching you' angle",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 17,
@@ -131,7 +140,8 @@
     "hook": "Ek video dekha... aur 3 ghante kaise nikle pata hi nahi chala. Ye kaise?",
     "pillar": "apps",
     "score": 4,
-    "why": "relatable 3-hours-gone angle"
+    "why": "relatable 3-hours-gone angle",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 18,
@@ -139,7 +149,8 @@
     "hook": "Net band hai... phir bhi blue dot sahi jagah. Kaise?",
     "pillar": "phone",
     "score": -1,
-    "why": "neutral phone tech"
+    "why": "neutral phone tech",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 19,
@@ -147,7 +158,8 @@
     "hook": "QR ka ek kona phata hai... phir bhi scan ho gaya. Kaise?",
     "pillar": "phone",
     "score": -1,
-    "why": "neutral phone tech"
+    "why": "neutral phone tech",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 20,
@@ -155,7 +167,8 @@
     "hook": "Kamra bilkul andhera... phir bhi phone ne tumhe pehchan liya.",
     "pillar": "phone",
     "score": -1,
-    "why": "neutral phone tech"
+    "why": "neutral phone tech",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 21,
@@ -163,7 +176,8 @@
     "hook": "20 minute me aadha charge. Phir aakhri 20% itna dheere kyun?",
     "pillar": "phone",
     "score": 1,
-    "why": "neutral, mild stakes"
+    "why": "neutral, mild stakes",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 22,
@@ -171,7 +185,8 @@
     "hook": "Earbuds awaaz rokte nahi... ulti awaaz bana ke use mita dete hain.",
     "pillar": "gadgets",
     "score": -1,
-    "why": "neutral gadget tech"
+    "why": "neutral gadget tech",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 23,
@@ -179,7 +194,8 @@
     "hook": "Router doosre kamre me hai... phir bhi signal aa raha hai. Kaise?",
     "pillar": "internet",
     "score": -1,
-    "why": "neutral"
+    "why": "neutral",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 24,
@@ -187,7 +203,8 @@
     "hook": "ATM kisi aur bank ka... phir bhi use tumhara balance pata hai.",
     "pillar": "paisa",
     "score": 0,
-    "why": "neutral, mild stakes"
+    "why": "neutral, mild stakes",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 25,
@@ -195,7 +212,8 @@
     "hook": "Ek 3 digit ka number decide karta hai ki tumhe loan milega ya nahi.",
     "pillar": "paisa",
     "score": 5,
-    "why": "loan rejected = big stakes (explain only, no advice)"
+    "why": "loan rejected = big stakes (explain only, no advice)",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 26,
@@ -203,7 +221,8 @@
     "hook": "Khaana restaurant ka, delivery boy ka... toh Zomato kamata kaise hai?",
     "pillar": "business",
     "score": 4,
-    "why": "money curiosity, platform cut angle"
+    "why": "money curiosity, platform cut angle",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 27,
@@ -211,7 +230,8 @@
     "hook": "ChatGPT sochta nahi... wo bas agla word guess karta hai. Par itna sahi kaise?",
     "pillar": "internet",
     "score": 0,
-    "why": "neutral 'how it works'"
+    "why": "neutral 'how it works'",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 28,
@@ -219,7 +239,8 @@
     "hook": "Ek tick, do tick, phir blue. Har tick ka asli matlab?",
     "pillar": "apps",
     "score": 3,
-    "why": "WhatsApp drama (seen, no reply)"
+    "why": "WhatsApp drama (seen, no reply)",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 29,
@@ -227,7 +248,8 @@
     "hook": "Kuch signal 30 second, kuch 3 minute. Ye kaun decide karta hai?",
     "pillar": "city",
     "score": 4,
-    "why": "daily traffic frustration"
+    "why": "daily traffic frustration",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 30,
@@ -235,7 +257,8 @@
     "hook": "12 baje sale khuli... lakhon log ek saath. Site kaise bachi?",
     "pillar": "business",
     "score": -1,
-    "why": "neutral infra"
+    "why": "neutral infra",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 31,
@@ -256,9 +279,9 @@
     "n": 32,
     "topic": "UltraEdge: bat ne ball chhuyi ya nahi, kaise pata?",
     "hook": "Umpire ne out diya... batsman bola bat laga hi nahi. Machine ne kaise pakda?",
-    "pillar": "sports",
+    "pillar": "cricket",
     "score": 4,
-    "why": "cricket + caught-behind controversy, same family as Hawk-Eye (1,585 views)"
+    "why": "cricket + caught-behind controversy, same family as Hawk-Eye (1,585 views); cricket = weekly test slot"
   },
   {
     "n": 33,
@@ -277,7 +300,8 @@
     "hook": "Number save hi nahi... phir bhi screen pe naam aa gaya. Kisne bataya?",
     "pillar": "apps",
     "score": 5,
-    "why": "everyone uses it + privacy villain angle"
+    "why": "everyone uses it + privacy villain angle",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 35,
@@ -285,7 +309,8 @@
     "hook": "Dost ki shaadi ka card aaya... khola, aur bank account khaali!",
     "pillar": "safety",
     "score": 7,
-    "why": "wedding season now (Nov-Dec) + WhatsApp life + APK villain + your bank OTPs; police alerts (Rajasthan, Apr 2026). Next pick, before the season ends; skipped 2026-11-08 (safety was yesterday's pillar)"
+    "why": "wedding season now (Nov-Dec) + WhatsApp life + APK villain + your bank OTPs; police alerts (Rajasthan, Apr 2026). Next pick, before the season ends; skipped 2026-11-08 (safety was yesterday's pillar)",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 36,
@@ -293,7 +318,8 @@
     "hook": "SMS aaya: 'aapka challan kata'... link dabaya, aur paise gaye.",
     "pillar": "safety",
     "score": 5,
-    "why": "everyone fears a challan + scam villain + your money; no fresh news angle; skipped 2026-11-08 (safety was yesterday's pillar)"
+    "why": "everyone fears a challan + scam villain + your money; no fresh news angle; skipped 2026-11-08 (safety was yesterday's pillar)",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 37,
@@ -301,7 +327,8 @@
     "hook": "Timer bola 2 minute bache... refresh kiya, phir se 10 minute!",
     "pillar": "business",
     "score": 6,
-    "why": "Diwali sale season + villain (fake urgency, dark patterns) + your money; fresh idea 2026-11-08"
+    "why": "Diwali sale season + villain (fake urgency, dark patterns) + your money; fresh idea 2026-11-08",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 38,
@@ -309,7 +336,8 @@
     "hook": "Dabbe pe likha 'green'... par QR scan kiya toh kuch nahi mila!",
     "pillar": "india systems",
     "score": 4,
-    "why": "Diwali + fake product villain, but stale right after Diwali; fresh idea 2026-11-08"
+    "why": "Diwali + fake product villain, but stale right after Diwali; fresh idea 2026-11-08",
+    "parked": "2026-11-09: niche = railway (Shrey)"
   },
   {
     "n": 39,
@@ -317,6 +345,224 @@
     "hook": "Booking khuli... 30 minute me 14 trains 'No Room'!",
     "pillar": "india systems",
     "score": 4,
-    "why": "trains + Chhath news, but same story as Tatkal bots (already posted); fresh idea 2026-11-08"
+    "why": "trains + Chhath news, but same story as Tatkal bots (already posted); fresh idea 2026-11-08",
+    "parked": "2026-11-09: niche = railway (Shrey)"
+  },
+  {
+    "n": 40,
+    "topic": "Lower berth maanga, upper kyun mila?",
+    "hook": "Tumne lower berth maanga... mila UPPER! Bagal wali aunty ko bina maange LOWER!",
+    "pillar": "railway",
+    "angle": "booking",
+    "score": 7,
+    "why": "passion 2 + story 2 (tum vs aunty) + stakes 2 (your berth) + news 1 (Rajya Sabha reply Dec 2025, myth vs fact); picked 2026-11-09",
+    "status": "posted",
+    "permalink": "https://www.instagram.com/reel/Dfg75dfGRoK/"
+  },
+  {
+    "n": 41,
+    "topic": "Tumhari train side me khadi, Vande Bharat aage kyun nikal gayi?",
+    "hook": "Tumhari train 40 minute se khadi... aur Vande Bharat seedha nikal gayi!",
+    "pillar": "railway",
+    "angle": "delays",
+    "score": 7,
+    "why": "passion 2 + villain 2 (train priority, VIP trains) + stakes 2 (your time) + news 1 (Chhath/winter delays)"
+  },
+  {
+    "n": 42,
+    "topic": "Ticket current booking: chart ke baad bhi seat kaise milti hai?",
+    "hook": "Train chalne me 30 minute... ticket WAITING. Phir bhi seat mil gayi!",
+    "pillar": "railway",
+    "angle": "booking",
+    "score": 7,
+    "why": "passion 2 + story 2 + stakes 2 (your seat, practical) + news 1 (charts now 10 h before); verify current-booking rules"
+  },
+  {
+    "n": 43,
+    "topic": "WL ticket confirm nahi hua, phir bhi paise kyun kate?",
+    "hook": "Ticket confirm hi nahi hua... phir bhi railway ne paise kaat liye!",
+    "pillar": "railway",
+    "angle": "money",
+    "score": 7,
+    "why": "passion 2 + villain 2 (clerkage on WL, crores earned) + stakes 2 (your money) + news 1; verify charge and RTI numbers"
+  },
+  {
+    "n": 44,
+    "topic": "TTE ko bina list dekhe kaise pata kaun si berth khaali?",
+    "hook": "TTE ne tablet dekha... aur bola: B3 ki 42 khaali hai, le lo!",
+    "pillar": "railway",
+    "angle": "booking",
+    "score": 6,
+    "why": "passion 2 + story 2 (TTE character) + stakes 2 (your seat); same family as the waiting list hit (2,599)"
+  },
+  {
+    "n": 45,
+    "topic": "Ticket confirm hone ka chance apps kaise batate hain?",
+    "hook": "App bola 92% chance... aur ticket sach me confirm! Usko kaise pata?",
+    "pillar": "railway",
+    "angle": "booking",
+    "score": 6,
+    "why": "passion 2 + story 1 + stakes 2 + news 1 (festival WL); waiting list hit family"
+  },
+  {
+    "n": 46,
+    "topic": "Chain kheenchi, RPF seedha usi coach pe kaise pahunchi?",
+    "hook": "Kisi ne chain kheenchi... aur 2 minute me RPF seedha usi coach pe!",
+    "pillar": "railway",
+    "angle": "rules",
+    "score": 6,
+    "why": "passion 2 + story 2 (caught) + stakes 2 (fine/jail); verify Railway Act section and fine"
+  },
+  {
+    "n": 47,
+    "topic": "WL ticket le ke AC coach me chadhe toh kya hota hai?",
+    "hook": "WL ticket le ke AC coach me baith gaye... TTE ne utaar diya!",
+    "pillar": "railway",
+    "angle": "rules",
+    "score": 6,
+    "why": "passion 2 + story 2 + stakes 2 (fine, deboarding); verify current rule"
+  },
+  {
+    "n": 48,
+    "topic": "Kohre me loco pilot ko signal kaise dikhta hai?",
+    "hook": "Kohre me 10 meter bhi nahi dikh raha... phir bhi driver ko pata hai signal aa raha hai!",
+    "pillar": "railway",
+    "angle": "safety",
+    "score": 6,
+    "why": "passion 2 + tension 2 + stakes 1 + news 1 (fog season Dec-Jan delays)"
+  },
+  {
+    "n": 49,
+    "topic": "Kavach: do trains aamne-saamne, kaun rokta hai?",
+    "hook": "Do trains ek hi track pe, aamne-saamne... aur dono khud ruk gayi!",
+    "pillar": "railway",
+    "angle": "safety",
+    "score": 6,
+    "why": "passion 2 + tension 2 + stakes 2 (safety); verify Kavach coverage numbers"
+  },
+  {
+    "n": 50,
+    "topic": "Laal coach vs neela coach: accident me kaun sa zyada safe?",
+    "hook": "Accident hua... laal dabba seedha khada raha, neela ek ke upar ek chadh gaya!",
+    "pillar": "railway",
+    "angle": "safety",
+    "score": 6,
+    "why": "passion 2 + tension 2 + stakes 2 (ICF vs LHB anti-telescopic)"
+  },
+  {
+    "n": 51,
+    "topic": "Premium Tatkal ka daam kaise badhta jaata hai?",
+    "hook": "Same train, same seat... Premium Tatkal me daam double. Kaun badhata hai?",
+    "pillar": "railway",
+    "angle": "money",
+    "score": 6,
+    "why": "passion 2 + villain 2 (dynamic fare) + stakes 2 (your money); Tatkal hit family (1,568)"
+  },
+  {
+    "n": 52,
+    "topic": "Agent ke paas confirmed ticket kaise, jab tumhare liye WAITING?",
+    "hook": "Tumhe WAITING... aur agent bola: 'confirm chahiye? 500 extra.'",
+    "pillar": "railway",
+    "angle": "booking",
+    "score": 6,
+    "why": "passion 2 + villain 2 (touts) + stakes 2; close to Tatkal bots, use a new angle"
+  },
+  {
+    "n": 53,
+    "topic": "Emergency brake ke baad bhi train 1 km tak kyun nahi rukti?",
+    "hook": "Driver ne track pe kuch dekha, brake maara... par train rukti hi nahi!",
+    "pillar": "railway",
+    "angle": "safety",
+    "score": 5,
+    "why": "passion 2 + tension 2 + stakes 1; verify braking distance"
+  },
+  {
+    "n": 54,
+    "topic": "RAC me ek berth pe do log: kaun decide karta hai?",
+    "hook": "Ticket RAC... aur ek anjaan ke saath aadhi seat raat bhar!",
+    "pillar": "railway",
+    "angle": "booking",
+    "score": 5,
+    "why": "passion 2 + story 2 + stakes 1"
+  },
+  {
+    "n": 55,
+    "topic": "Bina ticket pakde gaye toh ab kitna fine?",
+    "hook": "TTE ne pakda, bina ticket... ab fine kitna aur jail kab?",
+    "pillar": "railway",
+    "angle": "rules",
+    "score": 5,
+    "why": "passion 2 + story 1 + stakes 2 + news 1 (penalties raised July 2026); verify numbers"
+  },
+  {
+    "n": 56,
+    "topic": "Vande Bharat 160 chal sakti hai, phir average 80 kyun?",
+    "hook": "Vande Bharat 160 ki speed wali... phir bhi average sirf 80. Kyun?",
+    "pillar": "railway",
+    "angle": "delays",
+    "score": 5,
+    "why": "passion 2 + conflict 1 + stakes 1 + news 1"
+  },
+  {
+    "n": 57,
+    "topic": "Train me steering nahi, phir track kaise badalti hai?",
+    "hook": "Driver ke paas steering hi nahi... phir train ne track kaise badla?",
+    "pillar": "railway",
+    "angle": "tech",
+    "score": 4,
+    "why": "passion 2 + curiosity 1 + stakes 0 + story 1"
+  },
+  {
+    "n": 58,
+    "topic": "General dabba hamesha aage ya peeche hi kyun?",
+    "hook": "Sabse bheed wala dabba hamesha engine ke paas ya sabse last me. Kyun?",
+    "pillar": "railway",
+    "angle": "tech",
+    "score": 4,
+    "why": "passion 2 + conflict 1 + stakes 1; verify the real reason"
+  },
+  {
+    "n": 59,
+    "topic": "Last coach pe X kyun likha hota hai?",
+    "hook": "Agar last coach pe X na dikhe... station master turant alert!",
+    "pillar": "railway",
+    "angle": "tech",
+    "score": 4,
+    "why": "passion 2 + tension 1 + stakes 1"
+  },
+  {
+    "n": 60,
+    "topic": "Chhath/Kumbh ki bheed railway kaise sambhalti hai?",
+    "hook": "Ek platform, ek train... aur 20 hazaar log. Phir bhi bhagdad nahi.",
+    "pillar": "railway",
+    "angle": "safety",
+    "score": 4,
+    "why": "passion 2 + tension 1 + stakes 1 + news 1; verify crowd numbers"
+  },
+  {
+    "n": 61,
+    "topic": "Train ka toilet kachra ab kahan jaata hai?",
+    "hook": "Pehle sab track pe girta tha... ab kahan jaata hai?",
+    "pillar": "railway",
+    "angle": "tech",
+    "score": 3,
+    "why": "passion 2 + curiosity 1"
+  },
+  {
+    "n": 62,
+    "topic": "Loco pilot ke har horn ka alag matlab?",
+    "hook": "Driver ne 2 chhote horn bajaye... iska matlab pata hai?",
+    "pillar": "railway",
+    "angle": "tech",
+    "score": 3,
+    "why": "passion 2 + curiosity 1"
+  },
+  {
+    "n": 63,
+    "topic": "DRS me 'umpire's call' kya hai?",
+    "hook": "Ball stumps ko chhoo rahi thi... phir bhi NOT OUT! Kyun?",
+    "pillar": "cricket",
+    "score": 6,
+    "why": "cricket test slot: passion 2 + controversy 2 + stakes 1 + news 1 (Hawk-Eye 1,590)"
   }
 ]
