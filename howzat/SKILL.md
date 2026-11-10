@@ -42,6 +42,8 @@ at 48 h.
      karta hai" with no villain and nothing at stake for the viewer.
    - 2026-11-09: Waiting list (trains, tum vs dost story) 2,599 in 10 h = best ever. Digital arrest (scam
      villain + money) only 292 at 46 h, so a villain alone isn't enough: the niche (trains) matters most.
+   - 2026-11-10: railway 2/2 since the niche lock and still climbing: Waiting list 3,211 at 41 h, Lower berth
+     1,352 at 30 h. Median of the 10 reels ≥ 48 h old is now 227.
    - Not the reason: length, posting time, look and voice were the same for all of them.
    - So: mass Indian passion (cricket, trains, paisa, phone/WhatsApp life) + conflict (villain, scam, cheat,
      controversy, unfair system, or a true mini story with a character) + the viewer's own stakes (paise,

@@ -138,5 +138,21 @@
     "media_id": "17904623040372729",
     "permalink": "https://www.instagram.com/reel/Dfg75dfGRoK/",
     "note": "first reel of the railway niche (Shrey, 2026-11-09); publish_video said \"still processing\", posted with the raw-request fallback"
+  },
+  {
+    "date": "2026-11-10",
+    "slug": "train-priority",
+    "title": "Tumhari train khadi, Vande Bharat aage kyun nikli?",
+    "bg": "#3b5b78",
+    "sources": [
+      "https://irfca.org/faq/faq-ops3.html",
+      "https://www.thenewsminute.com/news/the-new-india-of-vande-bharats-who-it-accommodates-and-sidelines",
+      "https://www.freepressjournal.in/india/indian-railways-suspends-official-who-delayed-vande-bharat-train-by-2-minutes-in-kerala-reinstated-later"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-10_2052_howzat-train-priority.mp4",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-10_2052_howzat-train-priority.jpg",
+    "media_id": "18153621976505923",
+    "permalink": "https://www.instagram.com/reel/DfkOioejWBv/",
+    "note": "publish_video said \"Video is still processing\", posted with the raw-request fallback (container 17955180750057682); ElevenLabs credits left: 4,142"
   }
 ]

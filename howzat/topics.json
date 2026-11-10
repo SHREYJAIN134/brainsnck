@@ -366,7 +366,10 @@
     "pillar": "railway",
     "angle": "delays",
     "score": 7,
-    "why": "passion 2 + villain 2 (train priority, VIP trains) + stakes 2 (your time) + news 1 (Chhath/winter delays)"
+    "why": "passion 2 + villain 2 (train priority, Vande Bharat first) + stakes 2 (your time) + story 1 (controller suspended for a 2-min VB delay, Kerala 2023); picked 2026-11-10",
+    "status": "posted",
+    "permalink": "https://www.instagram.com/reel/DfkOioejWBv/",
+    "hook_used": "Tumhari train 40 minute se khadi... Vande Bharat nikal gayi!"
   },
   {
     "n": 42,
@@ -384,7 +387,7 @@
     "pillar": "railway",
     "angle": "money",
     "score": 7,
-    "why": "passion 2 + villain 2 (clerkage on WL, crores earned) + stakes 2 (your money) + news 1; verify charge and RTI numbers"
+    "why": "passion 2 + villain 2 (clerkage on WL, crores earned) + stakes 2 (your money) + news 1; verify charge and RTI numbers; 2026-11-10: clerkage amount differs by source (Rs 20+GST vs Rs 60) and a waiver was floated in June 2025, verify current rule first"
   },
   {
     "n": 44,
@@ -564,5 +567,14 @@
     "pillar": "cricket",
     "score": 6,
     "why": "cricket test slot: passion 2 + controversy 2 + stakes 1 + news 1 (Hawk-Eye 1,590)"
+  },
+  {
+    "n": 64,
+    "topic": "Train me khana fake app se order kiya?",
+    "hook": "Train me khana order kiya... paise gaye, khana nahi aaya!",
+    "pillar": "railway",
+    "angle": "safety",
+    "score": 5,
+    "why": "fresh news 2026-11-09: IRCTC drive against unauthorised e-catering sites/apps (only e-Catering site, Food on Track app, authorised vendors; RPF 182); passion 2 + villain 1 + stakes 1 + news 1, thin 'kaise'"
   }
 ]
