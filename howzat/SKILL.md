@@ -17,14 +17,19 @@ reel a day: about 320 credits per reel, 10,000 a month.
 First check `log.json`: if it already has an entry for today's India date (Asia/Kolkata), a reel is already up
 today, so do nothing else and stop without messaging Shrey.
 
-**Niche: "Railway ke raaz" (Shrey's choice, 2026-11-09).** Trains won 2 out of 2 (Tatkal 1,568, Waiting list
-2,599 in its first 10 h) while every other tech topic got 117–157 and the scam reel 292. So every main reel is a
-`"pillar": "railway"` topic from `topics.json`, except one cricket test reel a week (`"pillar": "cricket"`, Hawk-Eye
-did 1,590). Other pillars are `parked`: don't pick them. Within railway, don't repeat yesterday's `angle`
-(booking, money, delays, rules, safety, tech). The best format so far is a mini story of "tum vs someone"
-(tum WL 12 vs dost WL 90, tum upper vs aunty lower) with a booking/ticket twist. End line: "Aise aur railway
-raaz... follow karo!", hashtag `#railwayraaz`. Review the niche if 3 railway reels in a row stay under 500 views
-at 48 h.
+**Topic mix: trains at most 2 a week (Shrey, 2026-11-11; replaces the train-only niche of 2026-11-09).** Trains
+did best (railway 3/3 since 2026-11-09, 1,368–3,417 views) but Shrey doesn't want a train-only page. So:
+- `"pillar": "railway"` at most 2 reels per Monday–Sunday week (India date) and never on 2 days in a row. Count
+  them with the `pillar` field in `log.json`. (The week of 2026-11-09 already had 3, so no train reel before
+  Monday 2026-11-16.)
+- All other days: the best-scoring non-railway topic from any pillar: cricket (Hawk-Eye 1,597; aim for one
+  cricket reel a week), scams/safety, paisa/prices, phone/WhatsApp/apps, travel, city life. Same data rule as
+  below: it needs conflict or a mini story plus the viewer's own stakes; a neutral "how X works" lost 10×.
+- Never the same `pillar` as yesterday.
+- The "tum vs someone" mini story format works for every pillar (tum WL 12 vs dost WL 90, tum upper vs aunty
+  lower). Railway reels end "Aise aur railway raaz... follow karo!" with `#railwayraaz`, and within railway
+  don't repeat the last railway `angle` (booking, money, delays, rules, safety, tech). Other reels end
+  "Aise aur raaz ke liye... follow karo!".
 
 **Data first, never random (Shrey's rule, 2026-11-07).** Pick the topic from what got the most reach:
 1. Refresh the numbers: in Shrey's Chrome open `https://www.instagram.com/howzat.tech/reels/` in a new MCP tab, run
@@ -52,9 +57,8 @@ at 48 h.
      ticket, time, safety).
 4. Score every topic in `topics.json` without `"status": "posted"`, plus 2–3 fresh ideas from today's news (web
    search): passion 0–2 + conflict/story 0–2 + viewer's stakes 0–2 + fresh news angle 0–1, minus 2 for a
-   neutral "how X works". Write `score` and a one-line `why` on each (skip `parked` ones). Pick the highest
-   railway score (or the cricket topic on the weekly test day); fresh ideas must be railway or cricket too. Check
-   `log.json` so no topic repeats.
+   neutral "how X works". Write `score` and a one-line `why` on each. Pick the highest score that the topic mix
+   rule above allows (fresh ideas can be from any pillar). Check `log.json` so no topic repeats.
 5. Line 1 of the script is a scene with tension or a character (like the 3 winners), never a bare number or
    an app name.
 
@@ -188,8 +192,8 @@ and host/post `out/post.mp4`.
    If Instagram or Zapier returns an error (including Zapier being out of tasks), report it word for word and stop.
 
 ## 9. Log and report
-Mark the topic `"status": "posted"` in `topics.json`, append to `log.json` (`date`, `slug`, `title`, `bg`,
-`sources`, `video_url`, `cover_url`, `permalink`), commit the script, scene file and logs, push to `main`. The BrainSnck task pushes to the same repo, so if a push
+Mark the topic `"status": "posted"` in `topics.json`, append to `log.json` (`date`, `slug`, `title`, `pillar`,
+`bg`, `sources`, `video_url`, `cover_url`, `permalink`), commit the script, scene file and logs, push to `main`. The BrainSnck task pushes to the same repo, so if a push
 is rejected, `git fetch` + `git rebase` and push again (never `--force`).
 Send Shrey one short Hinglish message: the reel title, the Instagram link and the ElevenLabs credits left. If
 fewer than ~400 credits are left, add that the next reel won't fit and he should log in with another account.

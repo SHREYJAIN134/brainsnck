@@ -1,7 +1,8 @@
 # Howzat Tech (@howzat.tech)
 
 Hinglish "ye kaise hota hai?" explainer reels, about 15–20 s, one a day.
-Niche since 2026-11-09: **Railway ke raaz** (trains won 2/2; one cricket test reel a week). See SKILL.md section 1.
+Topic mix since 2026-11-11: trains at most 2 reels a week (never 2 days in a row); other days cricket, scams,
+paisa, phone/apps and more, always with a story or villain. See SKILL.md section 1.
 
 - `topics.json`: topic bank (30 ideas with hooks).
 - `scripts/`: voice scripts with ElevenLabs audio tags (voice: Bunty, model Eleven v4).

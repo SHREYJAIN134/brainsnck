@@ -3,6 +3,7 @@
     "date": "2026-10-31",
     "slug": "google-maps",
     "title": "Google Maps ko traffic kaise pata chalta hai?",
+    "pillar": "viral story",
     "sources": [
       "https://edition.cnn.com/style/article/artist-google-traffic-jam-alert-trick-scli-intl",
       "https://tomsguide.com/news/99-smartphones-google-maps-hack"
@@ -15,6 +16,7 @@
     "date": "2026-11-01",
     "slug": "upi",
     "title": "UPI pal bhar me paise kaise bhejta hai?",
+    "pillar": "apps",
     "bg": "#2f6b70",
     "sources": [
       "https://entrackr.com/news/upi-hits-record-2547-bn-transactions-in-october-daily-value-crosses-rs-1-lakh-crore-12772871",
@@ -29,6 +31,7 @@
     "date": "2026-11-02",
     "slug": "hawkeye",
     "title": "Hawk-Eye ko kaise pata ball stumps pe lagti?",
+    "pillar": "cricket",
     "bg": "#3d6650",
     "sources": [
       "https://en.wikipedia.org/wiki/Decision_Review_System",
@@ -43,6 +46,7 @@
     "date": "2026-11-03",
     "slug": "captcha",
     "title": "'I'm not a robot' tick se kaise pata chalta hai tum robot nahi?",
+    "pillar": "internet",
     "bg": "#33407a",
     "sources": [
       "https://www.npr.org/sections/alltechconsidered/2014/12/03/368311184/no-more-word-puzzles-google-can-tell-youre-human-with-one-click",
@@ -57,6 +61,7 @@
     "date": "2026-11-04",
     "slug": "tatkal",
     "title": "Tatkal 1 minute me full kyun ho jaata hai?",
+    "pillar": "railway",
     "bg": "#2f6b70",
     "sources": [
       "https://www.wionews.com/india-news/bots-accounted-for-58-of-india-s-rail-booking-requests-here-s-how-centre-is-tackling-this-menace-gravitas-1784834203269",
@@ -71,6 +76,7 @@
     "date": "2026-11-05",
     "slug": "shazam",
     "title": "Shazam 5 second me gaana kaise pehchanta hai?",
+    "pillar": "apps",
     "bg": "#5a4e8c",
     "sources": [
       "https://www.princeton.edu/~cuff/ele201/files/Wang03-shazam.pdf",
@@ -84,6 +90,7 @@
     "date": "2026-11-06",
     "slug": "fastag",
     "title": "FASTag se bina ruke toll kaise kat jaata hai?",
+    "pillar": "india systems",
     "bg": "#2f6b70",
     "sources": [
       "https://npci.org.in/what-we-do/netc-fastag/product-overview",
@@ -98,6 +105,7 @@
     "date": "2026-11-07",
     "slug": "digital-arrest",
     "title": "Digital arrest scam kaise chalta hai?",
+    "pillar": "safety",
     "bg": "#33407a",
     "sources": [
       "https://www.newsbytesapp.com/news/science/india-s-digital-arrest-scam-causes-4-000cr-losses-in-3-years/story",
@@ -112,6 +120,7 @@
     "date": "2026-11-08",
     "slug": "waiting-list",
     "title": "Kam waiting wala ticket confirm kyun nahi hua?",
+    "pillar": "railway",
     "bg": "#2f6b70",
     "sources": [
       "https://zeebiz.com/hindi/railways/indian-railways-issues-many-types-of-waiting-tickets-gnwl-rlwl-pqwl-tqwl-rswl-rac-know-which-waiting-ticket-gets-confirmed-fast-interesting-facts-irctc-113700",
@@ -128,6 +137,7 @@
     "date": "2026-11-09",
     "slug": "lower-berth",
     "title": "Lower berth maanga, upper kyun mila?",
+    "pillar": "railway",
     "bg": "#5a4e8c",
     "sources": [
       "https://www.millenniumpost.in/nation/automatic-allotment-of-lower-berths-to-senior-citizens-45-plus-women-if-available-638564",
@@ -143,6 +153,7 @@
     "date": "2026-11-10",
     "slug": "train-priority",
     "title": "Tumhari train khadi, Vande Bharat aage kyun nikli?",
+    "pillar": "railway",
     "bg": "#3b5b78",
     "sources": [
       "https://irfca.org/faq/faq-ops3.html",
@@ -159,6 +170,7 @@
     "date": "2026-11-11",
     "slug": "current-booking",
     "title": "Chart ke baad bhi seat kaise milti hai?",
+    "pillar": "railway",
     "bg": "#2f6b70",
     "sources": [
       "https://pib.gov.in/PressReleasePage.aspx?PRID=1566500",
