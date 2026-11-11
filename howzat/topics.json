@@ -378,7 +378,10 @@
     "pillar": "railway",
     "angle": "booking",
     "score": 7,
-    "why": "passion 2 + story 2 + stakes 2 (your seat, practical) + news 1 (charts now 10 h before); verify current-booking rules"
+    "why": "passion 2 + story 2 (tum WL cancel vs dost confirm 30 min pehle) + stakes 2 (your seat, practical) + news 1 (Chhath return rush; NewsX 3 Oct 2026 explainer); picked 2026-11-11",
+    "status": "posted",
+    "permalink": "https://www.instagram.com/reel/DfmbOcHFDx7/",
+    "hook_used": "Tumhara ticket WAITING... chart bana, CANCEL! Train chalne me 30 minute... dost ko CONFIRM seat!"
   },
   {
     "n": 43,
@@ -396,7 +399,7 @@
     "pillar": "railway",
     "angle": "booking",
     "score": 6,
-    "why": "passion 2 + story 2 (TTE character) + stakes 2 (your seat); same family as the waiting list hit (2,599)"
+    "why": "passion 2 + story 2 (TTE character) + stakes 2 (your seat); same family as the waiting list hit (2,599); 2026-11-11: close to current booking (posted), wait a few days"
   },
   {
     "n": 45,
@@ -405,7 +408,7 @@
     "pillar": "railway",
     "angle": "booking",
     "score": 6,
-    "why": "passion 2 + story 1 + stakes 2 + news 1 (festival WL); waiting list hit family"
+    "why": "passion 2 + story 1 + stakes 2 + news 1 (festival WL); waiting list hit family; 2026-11-11: booking angle used today, pick on another day"
   },
   {
     "n": 46,
@@ -576,5 +579,26 @@
     "angle": "safety",
     "score": 5,
     "why": "fresh news 2026-11-09: IRCTC drive against unauthorised e-catering sites/apps (only e-Catering site, Food on Track app, authorised vendors; RPF 182); passion 2 + villain 1 + stakes 1 + news 1, thin 'kaise'"
+  },
+  {
+    "n": 65,
+    "topic": "Station pe platform ticket kyun band ho gaya?",
+    "hook": "Mummy ko chhodne station gaye... platform ticket hi nahi mila!",
+    "pillar": "railway",
+    "angle": "safety",
+    "score": 5,
+    "why": "fresh news 2026-11-11: platform ticket sales suspended at 6 Delhi stations till 14 Nov for Chhath crowd (India TV, 4 Nov 2026); passion 2 + story 1 + stakes 1 + news 1, thin 'kaise', expires 14 Nov",
+    "leads": [
+      "https://www.indiatvnews.com/business/news/indian-railways-suspends-platform-ticket-sales-at-six-delhi-stations-check-new-rules-latest-updates-2026-11-04-1058617"
+    ]
+  },
+  {
+    "n": 66,
+    "topic": "Booking khulte hi pehle 15 minute sirf Aadhaar walon ke liye?",
+    "hook": "8 baje booking khuli... tumhe ticket dikha hi nahi, Aadhaar wale le gaye!",
+    "pillar": "railway",
+    "angle": "booking",
+    "score": 5,
+    "why": "fresh idea 2026-11-11: Aadhaar-verified first window vs bots/agents (Tatkal family); passion 2 + villain 1 + stakes 2; verify current rule with an official source (HelloRail claims unverified)"
   }
 ]

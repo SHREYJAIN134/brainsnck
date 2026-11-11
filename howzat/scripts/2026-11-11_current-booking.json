@@ -1,0 +1,20 @@
+{
+  "title": "Chart ke baad bhi seat kaise milti hai?",
+  "voice": "ElevenLabs Bunty – Punchy, Crisp and Reel King (website, Eleven v4)",
+  "lines": [
+    "Tumhara ticket WAITING... chart bana, CANCEL!",
+    "Train chalne me 30 minute... dost ko CONFIRM seat!",
+    "[whispers] Chart ke baad bhi seats KHAALI hoti hain.",
+    "Railway unhe current booking me bechti hai.",
+    "App me chart vacancy dekho... seat lo!",
+    "Aise aur railway raaz... follow karo!"
+  ],
+  "caption": "Tumhara ticket WAITING tha... chart bana aur ticket CANCEL. Par train chalne se 30 minute pehle dost ko CONFIRM seat mil gayi! 🤯\n\nRaaz: pehla chart banne ke baad bhi kuch berths khaali reh jaati hain (aakhri waqt ke cancellation, ya berth sirf route ke ek hisse ke liye khaali). Railway in khaali berths ko \"Current Booking\" me bechti hai: IRCTC website/app aur station ke counter pe, aam taur pe second chart tak, jo train chalne se lagbhag 30 minute pehle banta hai. Isme sirf CONFIRM ticket milta hai, waiting nahi.\n\nKaise dekho: IRCTC app me \"Chart Vacancy\" kholo, train aur class chuno... khaali berths dikh jaayengi. Kuch Vande Bharat trains me beech ke station se bhi train aane ke 15 minute pehle tak booking ho jaati hai. 🚆\n\nDhyan rahe: jo e-ticket chart ke baad bhi poora waiting reh jaata hai, wo apne aap cancel hota hai aur refund khud aata hai.\n\nAgla railway raaz kya chahiye? Comment karo 👇",
+  "hashtags": "#howzattech #railwayraaz #indianrailways #irctc #currentbooking #trainticket #waitinglist #techinhindi #hinglish #yekaisehotahai",
+  "sources": [
+    "https://pib.gov.in/PressReleasePage.aspx?PRID=1566500",
+    "https://www.newsx.com/regionals/chart-prepared-ticket-still-waiting-dont-give-up-yet-this-railway-rule-could-get-you-a-seat-279064/",
+    "https://www.freepressjournal.in/india/indian-railways-introduces-last-minute-booking-on-vande-bharat-trains-all-you-need-to-know"
+  ],
+  "cover": {"lines": ["Ticket WAITING,", "phir bhi SEAT?"], "pill": "KAISE?", "tag": "CHART KA RAAZ"}
+}
