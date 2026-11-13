@@ -1,0 +1,21 @@
+{
+  "title": "Shaadi ka card khola, account khaali kaise?",
+  "voice": "ElevenLabs Bunty – Punchy, Crisp and Reel King (website, Eleven v4)",
+  "lines": [
+    "Dost ke number se SHAADI card aaya...",
+    "Aunty ne khola... 2.6 LAKH gaye!",
+    "[whispers] Wo card nahi, APP tha.",
+    "Permission di... OTP padh liye!",
+    "Ab aunty ke number se sabko card!",
+    "Asli card: PDF ya photo. APK? Kabhi nahi!",
+    "Aise aur raaz ke liye... follow karo!"
+  ],
+  "caption": "Dost ke number se shaadi ka card aaya... Ahmedabad me ek aunty ne khola, aur ₹2.62 lakh account se gaye! 😨\n\nRaaz: wo card nahi, ek APK file thi, yaani ek Android app. Install karke permission di, toh scammers ko phone ka access mil gaya: messages, OTP, bank ki details. Phir wahi \"card\" usi ke WhatsApp se uske contacts ko jaata hai, isliye ye message aksar kisi jaan-pehchaan wale ke number se aata hai.\n\nBachne ka tarika (police advisory): asli shaadi card photo (JPG) ya PDF hota hai, .APK kabhi nahi. WhatsApp pe aayi APK file install mat karo, chahe dost ke number se aaye. Shaq ho toh call karke poocho. Fraud ho jaaye toh turant 1930 pe call karo ya cybercrime.gov.in pe report karo. 🚨\n\nShaadi ka season hai... ye mummy-papa aur family group ko zaroor batao. Agla raaz kis cheez ka chahiye? Comment karo 👇",
+  "hashtags": "#howzattech #shaadicard #weddinginvitescam #apkscam #whatsappscam #cyberfraud #scamalert #techinhindi #hinglish #yekaisehotahai",
+  "sources": [
+    "https://english.gujaratsamachar.com/news/ahmedabad/ahmedabad-woman-loses-Rs-262-lakh-after-opening-fake-wedding-invitation-apk-sent-from-acquaintances-whatsapp-42366994422",
+    "https://www.thequint.com/news/webqoof/scammers-send-fake-wedding-invitations-on-whatsapp-with-apk-files-that-are-malware",
+    "https://www.tribuneindia.com/news/himachal/invited-to-wedding-police-say-check-the-link-before-you-click"
+  ],
+  "cover": {"lines": ["Shaadi ka card", "khola..."], "pill": "SCAM!", "tag": "₹2.6 LAKH GAYE"}
+}
