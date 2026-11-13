@@ -199,5 +199,22 @@
     "media_id": "18142614802540916",
     "permalink": "https://www.instagram.com/reel/DfqwrE-mbLt/",
     "note": "scheduled run: publish_video said \"Video is still processing\" (one-call free-plan rule, nothing posted); Shrey then asked to publish, posted with raw requests (container 17955870654057682); ElevenLabs credits left: 3,872 (site counter did not change after generating)"
+  },
+  {
+    "date": "2026-11-13",
+    "slug": "ipl-max-fee",
+    "title": "Boli 25 crore, player ko sirf 18 kyun?",
+    "pillar": "cricket",
+    "bg": "#3a5f55",
+    "sources": [
+      "https://www.freepressjournal.in/sports/ipl-2026-auction-18-crore-to-cameron-green-72-crore-to-bcci-explaining-ipls-maximum-fee-rule",
+      "https://africa.espn.com/cricket/story/_/id/41502788/ipl-2025-overseas-players-auction-price-capped-inr-18-crore",
+      "https://www.businesstoday.in/latest/trends/photo/why-cameron-green-won-rs2520-crore-but-took-home-rs18-crore-506904-2025-12-16"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-13_2335_howzat-ipl-max-fee.mp4",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-13_2335_howzat-ipl-max-fee.jpg",
+    "media_id": "17946885378087881",
+    "permalink": "https://www.instagram.com/reel/DfsPyJjlOCr/",
+    "note": "extra reel, 2nd today (Shrey asked live); publish_video said \"Video is still processing\" (nothing posted), then on Shrey's go-ahead posted with raw requests at 23:47 IST (container 17956048659057682); ElevenLabs credits left: 3,366"
   }
 ]
