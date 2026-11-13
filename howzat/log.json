@@ -182,5 +182,22 @@
     "media_id": "18135763039740298",
     "permalink": "https://www.instagram.com/reel/DfmbOcHFDx7/",
     "note": "publish_video said \"Video is still processing\", posted with the raw-request fallback (container 17955399486057682); ElevenLabs credits left: 3,872 (6,128 / 10,000 used)"
+  },
+  {
+    "date": "2026-11-13",
+    "slug": "shaadi-card",
+    "title": "Shaadi ka card khola, account khaali kaise?",
+    "pillar": "safety",
+    "bg": "#5a4e8c",
+    "sources": [
+      "https://english.gujaratsamachar.com/news/ahmedabad/ahmedabad-woman-loses-Rs-262-lakh-after-opening-fake-wedding-invitation-apk-sent-from-acquaintances-whatsapp-42366994422",
+      "https://www.thequint.com/news/webqoof/scammers-send-fake-wedding-invitations-on-whatsapp-with-apk-files-that-are-malware",
+      "https://www.tribuneindia.com/news/himachal/invited-to-wedding-police-say-check-the-link-before-you-click"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-13_0936_howzat-shaadi-card.mp4",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-13_0936_howzat-shaadi-card.jpg",
+    "media_id": "18142614802540916",
+    "permalink": "https://www.instagram.com/reel/DfqwrE-mbLt/",
+    "note": "scheduled run: publish_video said \"Video is still processing\" (one-call free-plan rule, nothing posted); Shrey then asked to publish, posted with raw requests (container 17955870654057682); ElevenLabs credits left: 3,872 (site counter did not change after generating)"
   }
 ]

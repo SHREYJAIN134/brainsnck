@@ -285,7 +285,10 @@
     "hook": "Dost ki shaadi ka card aaya... khola, aur bank account khaali!",
     "pillar": "safety",
     "score": 7,
-    "why": "wedding season now (Nov-Dec) + WhatsApp life + APK villain + your bank OTPs; police alerts (Rajasthan, Apr 2026). Next pick, before the season ends; skipped 2026-11-08 (safety was yesterday's pillar)"
+    "why": "wedding season now (Nov-Dec) + WhatsApp life + APK villain + your bank OTPs; police alerts (Rajasthan, Apr 2026). Next pick, before the season ends; skipped 2026-11-08 (safety was yesterday's pillar); 2026-11-13: posted (true story: Ahmedabad aunty lost Rs 2.62 lakh, Sept 2026)",
+    "status": "posted",
+    "permalink": "https://www.instagram.com/reel/DfqwrE-mbLt/",
+    "hook_used": "Dost ke number se SHAADI card aaya..."
   },
   {
     "n": 36,
@@ -539,8 +542,8 @@
     "topic": "DRS me 'umpire's call' kya hai?",
     "hook": "Ball stumps ko chhoo rahi thi... phir bhi NOT OUT! Kyun?",
     "pillar": "cricket",
-    "score": 6,
-    "why": "cricket test slot: passion 2 + controversy 2 + stakes 1 + news 1 (Hawk-Eye 1,590)"
+    "score": 5,
+    "why": "cricket test slot: passion 2 + controversy 2 + stakes 1 + news 1 (Hawk-Eye 1,590); 2026-11-13: no fresh DRS news found, so news 0 (score 5 today); next cricket slot"
   },
   {
     "n": 64,
@@ -571,5 +574,13 @@
     "angle": "booking",
     "score": 5,
     "why": "fresh idea 2026-11-11: Aadhaar-verified first window vs bots/agents (Tatkal family); passion 2 + villain 1 + stakes 2; verify current rule with an official source (HelloRail claims unverified)"
+  },
+  {
+    "n": 67,
+    "topic": "Supreme Court ne WhatsApp se poocha: scam kaise rokoge?",
+    "hook": "Supreme Court ne WhatsApp ko bulaya... scam rokne ka plan do!",
+    "pillar": "safety",
+    "score": 4,
+    "why": "fresh news Nov 2026 (SC asks WhatsApp/platforms for anti-scam plan, digital arrest cases); passion 2 + conflict 1 + stakes 1 + news 1 - overlaps digital arrest (306 views)"
   }
 ]
