@@ -98,8 +98,10 @@ Shrey is on the ElevenLabs **free plan**: Bunty works on the website only, not t
 4. When it finishes, pause playback, click the download icon in the bottom player (Generation 1).
 5. `device_list_dir` on `C:\Users\SHREY JAIN\Downloads`, take the newest `ElevenLabs_*Bunty*.mp3` (modified in the
    last few minutes), and `device_stage_files` it into the container. Close your Chrome tab.
-If Chrome/the computer can't be reached, or ElevenLabs is logged out or out of credits: post nothing, tell Shrey
-in one short message what failed, and stop. (If Shrey ever says he upgraded to a paid plan, the API route through
+If ElevenLabs is logged out or out of credits: post nothing, tell Shrey in one short message what failed, and stop.
+If Chrome/the computer can't be reached (Shrey's rule, 2026-11-13): post nothing and don't wait for Shrey: schedule
+a one-time retry 30 minutes later exactly as step 5 of the scheduled-task prompt says, every 30 minutes until the
+reel runs (section 1 stops a run once today's India date is in `log.json`), and give up only after 23:30 IST. (If Shrey ever says he upgraded to a paid plan, the API route through
 Zapier ElevenLabs `text_to_speech` with voice_id `FZkK3TvQ0pjyDmT8fzIW`, model `eleven_v4`, works instead; its
 `audio_url` is copied into the repo with the Zapier GitHub `create_file` action, content = that URL.)
 
