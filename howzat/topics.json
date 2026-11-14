@@ -115,7 +115,8 @@
     "hook": "Baarish shuru hui... aur cab ka kiraya double. Ye kaun tay karta hai?",
     "pillar": "business",
     "score": 6,
-    "why": "surge pricing everyone hates + your money; Diwali-night surge angle possible"
+    "why": "passion 2 (cab/auto apps, city life) + story 2 (true: Delhi-NCR rain, Rs 450 cab became Rs 1,285, WION Jul 2026) + stakes 2 (your money) + news 0; made 2026-11-15 (script 2026-11-15_cab-surge), NOT posted: Zapier publish_video said 'Video is still processing' (free-plan one-call rule); video hosted on media branch 2026-11-15_0154_howzat-cab-surge.mp4",
+    "hook_used": "Baarish aayi... 450 wali cab, 1285 ki!"
   },
   {
     "n": 16,
@@ -592,5 +593,13 @@
     "why": "fresh news Nov 2026 (IPL 2027 retention deadline, mini auction next); passion 2 (IPL) + conflict 2 (team pays 25.2, player gets 18, 7.2 to BCCI; stars skipping mega auction) + stakes 1 (your team's purse) + news 1; first cricket reel this week",
     "status": "posted",
     "permalink": "https://www.instagram.com/reel/DfsPyJjlOCr/"
+  },
+  {
+    "n": 69,
+    "topic": "Shaadi season me flight 10 guna mehngi kaise?",
+    "hook": "Patna-Delhi ticket kal 6,000 ka tha... aaj 60,000!",
+    "pillar": "travel",
+    "score": 6,
+    "why": "fresh idea 2026-11-15: wedding-season fare spikes (india.com, Nov 2026) + fare buckets villain + your money; passion 1 + conflict 2 + stakes 2 + news 1; verify numbers"
   }
 ]

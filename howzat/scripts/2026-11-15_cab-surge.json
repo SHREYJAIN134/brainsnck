@@ -1,0 +1,21 @@
+{
+  "title": "Baarish me cab 3 guna mehngi kyun?",
+  "voice": "ElevenLabs Bunty – Punchy, Crisp and Reel King (website, Eleven v4)",
+  "lines": [
+    "[sarcastic] Baarish aayi... 450 wali cab, 1285 ki!",
+    "Ye ALGORITHM ka khel hai.",
+    "Jaise 3,000 log cab maang rahe... driver sirf 600.",
+    "Toh kiraya BADHA...",
+    "taaki door ke driver aayein!",
+    "Rate kuch sau meter pe badalta hai... aage chalo!",
+    "Aise aur raaz ke liye... follow karo!"
+  ],
+  "caption": "Baarish aayi aur Delhi-NCR me jo cab roz ₹450 ki thi, wahi ₹1,285 ki ho gayi! (WION, July 2026) 🌧️🚕\n\nRaaz: surge pricing. Kiraya koi insaan nahi, app ka algorithm tay karta hai. Ek chhote area me cab maangne wale zyada aur khaali driver kam (jaise 3,000 log, sirf 600 driver), toh us area ka rate upar. Mehnga rate dekh ke 3-4 km door ke khaali driver us taraf aate hain, jab tak demand aur supply barabar na ho jaaye.\n\nYe rate aam taur pe bahut chhote zone me badalta hai, kuch sau meter tak. Isliye thoda aage chal ke ya kuch minute baad dobara check karna kaam aa sakta hai.\n\nRule: Centre ki Motor Vehicle Aggregator Guidelines 2025 me surge base fare ke zyada se zyada 2 guna tak, aur driver ko kiraye ka kam se kam 80%. (States apne rule bhi bana sakti hain.)\n\nTumhari sabse mehngi cab kitne ki padi thi? Comment karo 👇",
+  "hashtags": "#howzattech #surgepricing #cab #baarish #delhincr #paisa #techinhindi #hinglish #yekaisehotahai",
+  "sources": [
+    "https://www.wionews.com/india-news/rs-450-to-rs-1-285-auto-cab-surge-delhi-ncr-commuters-forced-to-shell-over-3-times-the-fare-1783581467975",
+    "https://www.outlookbusiness.com/in-depth/rain-rush-too-few-cabs-why-ola-uber-rapido-prices-surge-and-who-really-pays",
+    "https://www.business-standard.com/india-news/cab-aggregators-surge-pricing-rapido-uber-ola-125070200228_1.html"
+  ],
+  "cover": {"lines": ["Baarish aayi...", "cab 3 GUNA?"], "pill": "SURGE!", "tag": "₹450 → ₹1,285"}
+}

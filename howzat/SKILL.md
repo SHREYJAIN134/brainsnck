@@ -51,6 +51,9 @@ did best (railway 3/3 since 2026-11-09, 1,368–3,417 views) but Shrey doesn't w
      1,352 at 30 h. Median of the 10 reels ≥ 48 h old is now 227.
    - 2026-11-11: railway 3/3 since the lock: Train priority (delays, tum vs Vande Bharat) 1,536 at 20 h, Lower
      berth 1,368 at 51 h, Waiting list 3,417 at 3 days. Median of the 12 reels ≥ 48 h old is now ~500.
+   - 2026-11-15: Current booking (railway, practical tip, no real villain) only 150 at 3.5 days: the first railway
+     flop, so trains alone aren't enough either. IPL max-fee (cricket + paisa + villain) 1,353 in ~1 day. Shaadi
+     card (safety) 187 at 40 h, like digital arrest (307): scam reels stay low. Median of 14 reels ≥ 48 h ~500.
    - Not the reason: length, posting time, look and voice were the same for all of them.
    - So: mass Indian passion (cricket, trains, paisa, phone/WhatsApp life) + conflict (villain, scam, cheat,
      controversy, unfair system, or a true mini story with a character) + the viewer's own stakes (paise,
