@@ -115,8 +115,10 @@
     "hook": "Baarish shuru hui... aur cab ka kiraya double. Ye kaun tay karta hai?",
     "pillar": "business",
     "score": 6,
-    "why": "passion 2 (cab/auto apps, city life) + story 2 (true: Delhi-NCR rain, Rs 450 cab became Rs 1,285, WION Jul 2026) + stakes 2 (your money) + news 0; made 2026-11-15 (script 2026-11-15_cab-surge), NOT posted: Zapier publish_video said 'Video is still processing' (free-plan one-call rule); video hosted on media branch 2026-11-15_0154_howzat-cab-surge.mp4",
-    "hook_used": "Baarish aayi... 450 wali cab, 1285 ki!"
+    "why": "passion 2 (cab/auto apps, city life) + story 2 (true: Delhi-NCR rain, Rs 450 cab became Rs 1,285, WION Jul 2026) + stakes 2 (your money) + news 0; made 2026-11-15 (script 2026-11-15_cab-surge), scheduled publish_video said 'Video is still processing'; posted on Shrey's go-ahead with raw requests",
+    "hook_used": "Baarish aayi... 450 wali cab, 1285 ki!",
+    "status": "posted",
+    "permalink": "https://www.instagram.com/reel/DfvEaiJgHkm/"
   },
   {
     "n": 16,

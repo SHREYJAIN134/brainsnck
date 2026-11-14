@@ -216,5 +216,22 @@
     "media_id": "17946885378087881",
     "permalink": "https://www.instagram.com/reel/DfsPyJjlOCr/",
     "note": "extra reel, 2nd today (Shrey asked live); publish_video said \"Video is still processing\" (nothing posted), then on Shrey's go-ahead posted with raw requests at 23:47 IST (container 17956048659057682); ElevenLabs credits left: 3,366"
+  },
+  {
+    "date": "2026-11-15",
+    "slug": "cab-surge",
+    "title": "Baarish me cab 3 guna mehngi kyun?",
+    "pillar": "paisa",
+    "bg": "#33407a",
+    "sources": [
+      "https://www.wionews.com/india-news/rs-450-to-rs-1-285-auto-cab-surge-delhi-ncr-commuters-forced-to-shell-over-3-times-the-fare-1783581467975",
+      "https://www.outlookbusiness.com/in-depth/rain-rush-too-few-cabs-why-ola-uber-rapido-prices-surge-and-who-really-pays",
+      "https://www.business-standard.com/india-news/cab-aggregators-surge-pricing-rapido-uber-ola-125070200228_1.html"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-15_0154_howzat-cab-surge.mp4",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-15_0154_howzat-cab-surge.jpg",
+    "media_id": "18121713668322851",
+    "permalink": "https://www.instagram.com/reel/DfvEaiJgHkm/",
+    "note": "scheduled run: publish_video said \"Video is still processing\" (one-call free-plan rule, nothing posted); Shrey then said \"post it\", posted with raw requests (container 17956360482057682); ElevenLabs credits left: 3,102"
   }
 ]
