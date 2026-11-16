@@ -367,7 +367,8 @@
     "pillar": "railway",
     "angle": "money",
     "score": 7,
-    "why": "passion 2 + villain 2 (clerkage on WL, crores earned) + stakes 2 (your money) + news 1; verify charge and RTI numbers; 2026-11-10: clerkage amount differs by source (Rs 20+GST vs Rs 60) and a waiver was floated in June 2025, verify current rule first"
+    "why": "passion 2 + villain 2 (clerkage on WL, Rs 1,229 cr from cancelled WL tickets) + stakes 2 (your money) + news 1; 2026-11-16 verified: Rs 60/passenger clerkage (+GST in AC) still applies (Business Today, Mar 2026); waiver was only proposed (June 2025)",
+    "made": "2026-11-16: reel made (wl-refund), Zapier publish said video still processing, not posted yet"
   },
   {
     "n": 44,
@@ -603,5 +604,30 @@
     "pillar": "travel",
     "score": 6,
     "why": "fresh idea 2026-11-15: wedding-season fare spikes (india.com, Nov 2026) + fare buckets villain + your money; passion 1 + conflict 2 + stakes 2 + news 1; verify numbers"
+  },
+  {
+    "n": 70,
+    "topic": "Pension update ke naam pe retired railway karmchari ke 7.49 lakh kaise gaye?",
+    "hook": "Phone aaya: 'DRM office se bol raha hoon, pension update karni hai'... aur 7.49 lakh gaye!",
+    "pillar": "safety",
+    "score": 4,
+    "why": "fresh idea 2026-11-16: fake DRM official scam, Raipur (Amar Ujala); passion 1 + villain 2 + stakes 1 (older relatives) + news 1, minus 1: scam reels stay low (digital arrest 308, shaadi card 191)"
+  },
+  {
+    "n": 71,
+    "topic": "Fake call centre traders ko kaise loot raha tha?",
+    "hook": "Call aaya: 'aapka GST number band hone wala hai'... aur dukaandaar ne paise bhej diye!",
+    "pillar": "safety",
+    "score": 4,
+    "why": "fresh idea 2026-11-16: fake call centre busted in Dwarka (Asianet); passion 1 + villain 2 + stakes 1 + news 1, minus 1: scam reels stay low; details unverified"
+  },
+  {
+    "n": 72,
+    "topic": "Ayodhya se Janakpur seedhi train kaise chalegi?",
+    "hook": "Ek train, do desh... aur passport check kahan hoga?",
+    "pillar": "railway",
+    "angle": "rules",
+    "score": 2,
+    "why": "fresh idea 2026-11-16: India-Nepal Ramayana train approved (Organiser); passion 2 + news 1, no villain or stakes; close to a neutral 'how it works'"
   }
 ]

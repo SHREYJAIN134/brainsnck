@@ -1,0 +1,28 @@
+{
+  "title": "Ticket confirm nahi, phir bhi paise kyun kate?",
+  "voice": "ElevenLabs Bunty – Punchy, Crisp and Reel King (website, Eleven v4)",
+  "lines": [
+    "[sarcastic] Tumhara WL ticket... confirm nahi hua.",
+    "Phir bhi 60 rupaye KAT gaye!",
+    "Chart bante hi ticket khud cancel.",
+    "Ye clerkage hai... har passenger pe 60.",
+    "IRCTC fee bhi wapas nahi.",
+    "3 saal me railway ne aise 1229 crore kamaye!",
+    "Aise aur railway raaz... follow karo!"
+  ],
+  "caption": "WL ticket confirm hi nahi hua... phir bhi refund me paise kam aaye? 🚆💸\n\nRaaz: clerkage charge. Chart bante hi jo e-ticket poora waiting me reh jaata hai, wo khud cancel ho jaata hai aur kiraya wapas aata hai, par har passenger pe ₹60 clerkage kaat ke (AC class me upar se GST). WL/RAC ticket tum khud cancel karo, tab bhi yahi ₹60 katta hai.\n\nAur IRCTC ki convenience fee? Wo cancel hone pe wapas nahi hoti.\n\nRTI (Business Standard, March 2024): 2021 se January 2024 tak 12.8 crore se zyada waiting tickets cancel hue, aur railway ko inse ₹1,229 crore mile.\n\nClerkage hatane ka proposal June 2025 me aaya tha, par March 2026 ke refund rules me bhi WL/RAC cancel pe ₹60 clerkage hi likha hai (Business Today).\n\nTumhare kitne paise aise kate? Comment karo 👇",
+  "hashtags": "#howzattech #railwayraaz #indianrailways #waitinglist #irctc #refund #trainticket #paisa #techinhindi #hinglish #yekaisehotahai",
+  "sources": [
+    "https://www.business-standard.com/india-news/indian-railways-earned-rs-1-229-cr-from-cancelled-waiting-list-tickets-124032000421_1.html",
+    "https://www.business-standard.com/india-news/railways-may-waive-off-clerkage-charge-on-waitlisted-ticket-refund-125062900579_1.html",
+    "https://www.businesstoday.in/india/story/before-you-cancel-your-train-ticket-check-these-new-refund-rules-by-indian-railways-522453-2026-03-28"
+  ],
+  "cover": {
+    "lines": [
+      "Ticket CANCEL...",
+      "paise kyun KATE?"
+    ],
+    "pill": "CLERKAGE!",
+    "tag": "RTI: ₹1,229 CRORE"
+  }
+}

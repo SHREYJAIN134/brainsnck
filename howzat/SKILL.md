@@ -54,6 +54,8 @@ did best (railway 3/3 since 2026-11-09, 1,368–3,417 views) but Shrey doesn't w
    - 2026-11-15: Current booking (railway, practical tip, no real villain) only 150 at 3.5 days: the first railway
      flop, so trains alone aren't enough either. IPL max-fee (cricket + paisa + villain) 1,353 in ~1 day. Shaadi
      card (safety) 187 at 40 h, like digital arrest (307): scam reels stay low. Median of 14 reels ≥ 48 h ~500.
+   - 2026-11-16: IPL max-fee 1,355 at ~3 days (2.7× median, just under winner); cab surge (paisa + true rain
+     story + algorithm villain) 1,206 in ~1.5 days. Paisa/cricket with a villain hold up. Median of 16 reels ≥ 48 h ~500.
    - Not the reason: length, posting time, look and voice were the same for all of them.
    - So: mass Indian passion (cricket, trains, paisa, phone/WhatsApp life) + conflict (villain, scam, cheat,
      controversy, unfair system, or a true mini story with a character) + the viewer's own stakes (paise,
