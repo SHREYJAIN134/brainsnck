@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-16 19:52 IST",
+  "checked": "2026-11-17 21:14 IST",
   "how": "views = number on each tile of instagram.com/howzat.tech/reels (Shrey's Chrome); likes/comments = Graph API media list via Zapier. The Zapier connection has no Insights permission (reach, watch time, shares, saves give error #10).",
   "reels": [
     {"date": "2026-10-31", "slug": "google-maps", "kind": "main", "views": 1121, "likes": 22, "comments": 0, "angle": "true viral story with a character (99 phones prank)", "conflict": true},
@@ -12,12 +12,12 @@
     {"date": "2026-11-05", "slug": "shazam", "kind": "main", "views": 131, "likes": 2, "comments": 0, "angle": "neutral app 'how it works'", "conflict": false},
     {"date": "2026-11-06", "slug": "fastag", "kind": "main", "views": 167, "likes": 1, "comments": 0, "angle": "neutral process + regional news (only 18 h old when checked)", "conflict": false},
     {"date": "2026-11-07", "slug": "digital-arrest", "kind": "main", "views": 308, "likes": 0, "comments": 0, "angle": "scam villain (fake CBI officer on video call) + viewer's savings at stake + Rs 4,057 cr number", "conflict": true},
-    {"date": "2026-11-08", "slug": "waiting-list", "kind": "main", "views": 3772, "likes": 0, "comments": 0, "angle": "trains + mini story (tum WL 12 atka, dost WL 90 confirm) + your ticket home + Chhath rush", "conflict": true},
-    {"date": "2026-11-09", "slug": "lower-berth", "kind": "main", "views": 1381, "likes": 0, "comments": 0, "angle": "railway niche: tum (upper) vs aunty (lower) story + reserved lower berth quota + WhatsApp myth busted", "conflict": true},
+    {"date": "2026-11-08", "slug": "waiting-list", "kind": "main", "views": 3828, "likes": 0, "comments": 0, "angle": "trains + mini story (tum WL 12 atka, dost WL 90 confirm) + your ticket home + Chhath rush", "conflict": true},
+    {"date": "2026-11-09", "slug": "lower-berth", "kind": "main", "views": 1385, "likes": 0, "comments": 0, "angle": "railway niche: tum (upper) vs aunty (lower) story + reserved lower berth quota + WhatsApp myth busted", "conflict": true},
     {"date": "2026-11-10", "slug": "train-priority", "kind": "main", "views": 1571, "likes": 0, "comments": 0, "angle": "railway delays: tum (40 min khadi) vs Vande Bharat + train ranking + true story (controller suspended for 2-min VB delay)", "conflict": true},
     {"date": "2026-11-11", "slug": "current-booking", "kind": "main", "views": 154, "likes": 0, "comments": 0, "angle": "railway booking: tum (WL cancel at chart) vs dost (CONFIRM 30 min before) + current booking / chart vacancy, practical save-worthy tip", "conflict": true},
     {"date": "2026-11-13", "slug": "shaadi-card", "kind": "main", "views": 191, "likes": 0, "comments": 0, "angle": "safety: true mini story (aunty opens shaadi card from dost ka number, Rs 2.6 lakh gone) + WhatsApp life + wedding season + practical tip (asli card = PDF/JPG, never APK)", "conflict": true},
     {"date": "2026-11-13", "slug": "ipl-max-fee", "kind": "main", "views": 1355, "likes": 0, "comments": 0, "angle": "cricket + paisa: IPL auction max-fee rule (boli 25.2 cr, player ko 18, 7.2 BCCI ko) + villain (stars skipping mega auction, Starc 24.75) + fresh news (IPL 2027 retention); 2nd reel of the day", "conflict": true},
-    {"date": "2026-11-15", "slug": "cab-surge", "kind": "main", "views": 1206, "likes": 0, "comments": 0, "angle": "paisa/city life: true mini story (Delhi-NCR rain, Rs 450 cab became Rs 1,285) + villain (surge algorithm) + your money + practical tip (rate changes every few hundred metres)", "conflict": true}
+    {"date": "2026-11-15", "slug": "cab-surge", "kind": "main", "views": 1208, "likes": 0, "comments": 0, "angle": "paisa/city life: true mini story (Delhi-NCR rain, Rs 450 cab became Rs 1,285) + villain (surge algorithm) + your money + practical tip (rate changes every few hundred metres)", "conflict": true}
   ]
 }

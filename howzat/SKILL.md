@@ -56,6 +56,8 @@ did best (railway 3/3 since 2026-11-09, 1,368–3,417 views) but Shrey doesn't w
      card (safety) 187 at 40 h, like digital arrest (307): scam reels stay low. Median of 14 reels ≥ 48 h ~500.
    - 2026-11-16: IPL max-fee 1,355 at ~3 days (2.7× median, just under winner); cab surge (paisa + true rain
      story + algorithm villain) 1,206 in ~1.5 days. Paisa/cricket with a villain hold up. Median of 16 reels ≥ 48 h ~500.
+   - 2026-11-17: cab surge 1,208 at ~3 days (flat after day 2); Waiting list still climbing (3,828). All 17 reels
+     ≥ 48 h, median 694, so a winner now needs ~2,100. Nothing new posted 2026-11-16 (publish failed).
    - Not the reason: length, posting time, look and voice were the same for all of them.
    - So: mass Indian passion (cricket, trains, paisa, phone/WhatsApp life) + conflict (villain, scam, cheat,
      controversy, unfair system, or a true mini story with a character) + the viewer's own stakes (paise,

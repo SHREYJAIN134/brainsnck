@@ -368,7 +368,7 @@
     "angle": "money",
     "score": 7,
     "why": "passion 2 + villain 2 (clerkage on WL, Rs 1,229 cr from cancelled WL tickets) + stakes 2 (your money) + news 1; 2026-11-16 verified: Rs 60/passenger clerkage (+GST in AC) still applies (Business Today, Mar 2026); waiver was only proposed (June 2025)",
-    "made": "2026-11-16: reel made (wl-refund), Zapier publish said video still processing, not posted yet"
+    "made": "2026-11-16: reel made (wl-refund), Zapier publish said video still processing, not posted yet; 2026-11-17: still the top allowed topic, same finished reel sent again, publish_video again said still processing"
   },
   {
     "n": 44,
@@ -629,5 +629,21 @@
     "angle": "rules",
     "score": 2,
     "why": "fresh idea 2026-11-16: India-Nepal Ramayana train approved (Organiser); passion 2 + news 1, no villain or stakes; close to a neutral 'how it works'"
+  },
+  {
+    "n": 73,
+    "topic": "Ola pe ride se pehle hi tip kyun maangi gayi, aur sarkar ne fine kyun lagaya?",
+    "hook": "Ride shuru bhi nahi hui... aur app bola: 'tip do, cab jaldi milegi!'",
+    "pillar": "paisa",
+    "score": 5,
+    "why": "fresh idea 2026-11-17: CCPA fined Ola Rs 10 lakh for pre-ride tip prompts, a dark pattern (Telangana Today, 13 Nov 2026); passion 1 + villain 2 + stakes 1 + news 1, minus 0; too close to cab surge (2026-11-15), use after a week; verify details"
+  },
+  {
+    "n": 74,
+    "topic": "Cash on delivery pe Zomato extra paise kyun le raha hai?",
+    "hook": "Khaana same, bill same... par cash bola toh 21 rupaye extra!",
+    "pillar": "paisa",
+    "score": 5,
+    "why": "fresh idea 2026-11-17: Zomato charging COD customers up to Rs 21 extra (Inc42) + platform fee hikes; passion 1 + villain 2 + stakes 2, news date unverified (0); verify current charge first"
   }
 ]
