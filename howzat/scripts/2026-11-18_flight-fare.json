@@ -1,0 +1,21 @@
+{
+  "title": "Same seat, flight 12 guna mehngi kaise?",
+  "voice": "ElevenLabs Bunty – Punchy, Crisp and Reel King (website, Eleven v4)",
+  "lines": [
+    "[sarcastic] Patna-Delhi flight... aam din 6,000. Shaadi season me? 72,000!",
+    "Seat wahi... phir itna kyun?",
+    "Seats BUCKETS me bikti hain.",
+    "Sasta bucket bika... agla mehenga khula.",
+    "Bheed badhi, software ne daam badhaya!",
+    "Jaldi book karo!",
+    "Aise aur raaz ke liye... follow karo!"
+  ],
+  "caption": "Patna se Delhi ki flight aam din me lagbhag ₹6,000 ki... aur shaadi season me ek din fares ₹72,285 tak pahunch gaye! (india.com, December 2025) ✈️💸\n\nRaaz: fare buckets. Airline ek hi cabin ki seats ko alag-alag daam ke 'buckets' (RBD) me baant ke bechti hai. Sabse sasta bucket pehle bikta hai, phir agla, thoda mehenga bucket khulta hai. Software booking ki speed aur bachi hui seats dekhta rehta hai: bheed badhi ya flight ka din paas aaya, toh booking upar wale buckets me chali jaati hai.\n\nSarkar aam dinon me airfare fix nahi karti: Aircraft Rules ke hisaab se airlines apna kiraya khud tay karti hain (Rajya Sabha jawab, August 2025). Isliye pehle book kiya ticket aam taur pe sasta padta hai.\n\nAur ab ye maamla Supreme Court me bhi hai: surge pricing par PIL pe Centre ne October 2026 me bataya ki 98% se zyada tickets neeche aur beech ke buckets me bikte hain.\n\nTumhara sabse mehnga flight ticket kitne ka tha? Comment karo 👇",
+  "hashtags": "#howzattech #flight #airfare #shaadiseason #travel #paisa #flightticket #techinhindi #hinglish #yekaisehotahai",
+  "sources": [
+    "https://www.india.com/news/india/ticket-that-cost-rs-6000-has-now-reached-fares-of-patna-delhi-bengaluru-flight-soars-more-than-10-times-due-to-wedding-season-8213512/",
+    "https://www.outlookmoney.com/personal-finance/govt-cannot-fix-airfares-for-senior-citizen-travellers-says-minister-in-parliament",
+    "https://superkalam.com/current-affairs/articles/airfare-regulation-india-surge-pricing-sc-pil"
+  ],
+  "cover": {"lines": ["Same SEAT...", "12 GUNA daam?"], "pill": "BUCKETS!", "tag": "₹6,000 → ₹72,000"}
+}

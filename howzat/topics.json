@@ -605,7 +605,7 @@
     "hook": "Patna-Delhi ticket kal 6,000 ka tha... aaj 60,000!",
     "pillar": "travel",
     "score": 6,
-    "why": "fresh idea 2026-11-15: wedding-season fare spikes (india.com, Nov 2026) + fare buckets villain + your money; passion 1 + conflict 2 + stakes 2 + news 1; verify numbers"
+    "why": "passion 1 + conflict 2 (fare buckets + pricing software villain) + stakes 2 (your money) + news 1 (wedding season now; SC PIL on airfare surge pricing, Centre's reply Oct 2026); 2026-11-18: verified india.com story is Dec 2025 (Patna-Delhi normal ~Rs 6,000, up to Rs 72,285)"
   },
   {
     "n": 70,
@@ -647,5 +647,13 @@
     "pillar": "paisa",
     "score": 5,
     "why": "fresh idea 2026-11-17: Zomato charging COD customers up to Rs 21 extra (Inc42) + platform fee hikes; passion 1 + villain 2 + stakes 2, news date unverified (0); verify current charge first"
+  },
+  {
+    "n": 75,
+    "topic": "Gas connection katne ki dhamki wala scam kaise kaam karta hai?",
+    "hook": "SMS aaya: 'aaj raat aapka gas connection kat jayega'... aur 45 logon ke 26 lakh gaye!",
+    "pillar": "safety",
+    "score": 4,
+    "why": "fresh idea 2026-11-18: cyber scamsters threatened gas disconnection, defrauded 45 people of Rs 26 lakh (ThePrint); passion 1 + villain 2 + stakes 1 + news 1, minus 1: scam reels stay low (digital arrest 310, shaadi card 194)"
   }
 ]
