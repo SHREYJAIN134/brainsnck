@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-18 21:47 IST",
+  "checked": "2026-11-19 00:16 IST",
   "how": "views = number on each tile of instagram.com/howzat.tech/reels (Shrey's Chrome); likes/comments = Graph API media list via Zapier. The Zapier connection has no Insights permission (reach, watch time, shares, saves give error #10).",
   "reels": [
     {"date": "2026-10-31", "slug": "google-maps", "kind": "main", "views": 1121, "likes": 22, "comments": 0, "angle": "true viral story with a character (99 phones prank)", "conflict": true},
@@ -19,7 +19,8 @@
     {"date": "2026-11-13", "slug": "shaadi-card", "kind": "main", "views": 194, "likes": 0, "comments": 0, "angle": "safety: true mini story (aunty opens shaadi card from dost ka number, Rs 2.6 lakh gone) + WhatsApp life + wedding season + practical tip (asli card = PDF/JPG, never APK)", "conflict": true},
     {"date": "2026-11-13", "slug": "ipl-max-fee", "kind": "main", "views": 1357, "likes": 0, "comments": 0, "angle": "cricket + paisa: IPL auction max-fee rule (boli 25.2 cr, player ko 18, 7.2 BCCI ko) + villain (stars skipping mega auction, Starc 24.75) + fresh news (IPL 2027 retention); 2nd reel of the day", "conflict": true},
     {"date": "2026-11-15", "slug": "cab-surge", "kind": "main", "views": 1210, "likes": 0, "comments": 0, "angle": "paisa/city life: true mini story (Delhi-NCR rain, Rs 450 cab became Rs 1,285) + villain (surge algorithm) + your money + practical tip (rate changes every few hundred metres)", "conflict": true},
-    {"date": "2026-11-17", "slug": "wl-refund", "kind": "main", "views": 1435, "likes": 0, "comments": 0, "angle": "railway money: tum (WL ticket cancel) vs railway (Rs 60 clerkage kata) + RTI Rs 1,229 cr villain number", "conflict": true},
-    {"date": "2026-11-18", "slug": "dhoni-tribute", "kind": "collab", "views": 148, "likes": 0, "comments": 0, "angle": "MS Dhoni tribute collab with @aadityaa2007 (not made by this routine, not in log.json); cricket emotion, no 'kaise'", "conflict": false}
+    {"date": "2026-11-17", "slug": "wl-refund", "kind": "main", "views": 1441, "likes": 0, "comments": 0, "angle": "railway money: tum (WL ticket cancel) vs railway (Rs 60 clerkage kata) + RTI Rs 1,229 cr villain number", "conflict": true},
+    {"date": "2026-11-18", "slug": "dhoni-tribute", "kind": "collab", "views": 151, "likes": 0, "comments": 0, "angle": "MS Dhoni tribute collab with @aadityaa2007 (not made by this routine, not in log.json); cricket emotion, no 'kaise'", "conflict": false},
+    {"date": "2026-11-19", "slug": "flight-fare", "kind": "main", "views": 0, "likes": 0, "comments": 0, "angle": "travel/paisa: true story (Patna-Delhi Rs 6,000 normal, up to Rs 72,285 in wedding season) + fare buckets/pricing software villain + your money + tip (book early)", "conflict": true}
   ]
 }

@@ -251,5 +251,23 @@
     "media_id": "18033242576859397",
     "permalink": "https://www.instagram.com/reel/Df2T74xDqqN/",
     "note": "reel made 2026-11-16 (publish failed then); scheduled run 2026-11-17 re-sent it: publish_video said \"Video is still processing\" again (nothing posted); Shrey then said keep trying till it posts, posted with raw requests at 21:35 IST (container 17957216265057682); no new ElevenLabs generation today"
+  },
+  {
+    "date": "2026-11-19",
+    "slug": "flight-fare",
+    "title": "Same seat, flight 12 guna mehngi kaise?",
+    "pillar": "travel",
+    "angle": "money",
+    "bg": "#3a6488",
+    "sources": [
+      "https://www.india.com/news/india/ticket-that-cost-rs-6000-has-now-reached-fares-of-patna-delhi-bengaluru-flight-soars-more-than-10-times-due-to-wedding-season-8213512/",
+      "https://www.outlookmoney.com/personal-finance/govt-cannot-fix-airfares-for-senior-citizen-travellers-says-minister-in-parliament",
+      "https://superkalam.com/current-affairs/articles/airfare-regulation-india-surge-pricing-sc-pil"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-19_0012_howzat-flight-fare.mp4",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-19_0012_howzat-flight-fare.jpg",
+    "media_id": "18399593944163172",
+    "permalink": "https://www.instagram.com/reel/Df5LZ5xCcKd/",
+    "note": "meant for 2026-11-18: ElevenLabs US outage (UI and voices would not load) 21:50-23:35 IST, nothing generated; Shrey said try again after midnight, so it went up 2026-11-19 00:20 IST. New ElevenLabs account (S): Bunty added from the Voice Library, generated once (267 chars), 2,572 credits left. First publish_video said \"Video is still processing\" (not posted, checked Chrome after 3 min); second publish_video on Shrey's go-ahead worked (4 Zapier tasks in all)"
   }
 ]
