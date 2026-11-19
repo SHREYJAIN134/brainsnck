@@ -1,0 +1,20 @@
+{
+  "title": "Kohre me driver ko signal kaise pata chalta hai?",
+  "voice": "ElevenLabs Bunty – Punchy, Crisp and Reel King (website, Eleven v4)",
+  "lines": [
+    "[curious] Kohre me driver ko kuch nahi dikhta... par train daud rahi!",
+    "Engine me GPS dabba... Fog Pass.",
+    "Har signal usme pehle se save.",
+    "500 meter pehle bolta: signal aa raha!",
+    "Laal-hara aankh se dikhe... isliye 75 max, train LATE!",
+    "Aise aur railway raaz... follow karo!"
+  ],
+  "caption": "Kohre me loco pilot ko aage kuch nahi dikhta... phir bhi train chalti rehti hai. Use pata kaise chalta hai ki signal aa raha hai? 🌫️🚆\n\nRaaz: Fog Pass device. GPS wala ek chhota sa dabba (1.5 kg tak) jo engine me driver ke desk pe rakha jaata hai. Isme route ke signals, phatak (level crossing) aur speed limit wali jagah pehle se feed hoti hain. GPS se train ki location milte hi ye agle 3 landmarks dikhata hai aur har ek se lagbhag 500 meter pehle bol ke alert deta hai. Railways ne 19,742 aise devices lagaye (PIB, January 2024).\n\nPar ye signal ka rang nahi batata: laal hai ya hara, wo driver ko aankh se hi dekhna padta hai. Isliye Fog Pass ke saath bhi kohre me max speed 75 km/h (pehle 60 thi), aur visibility bahut kam ho toh usse bhi dheere. Isi liye sardiyon me tumhari train late hoti hai.\n\nIs saal ka fog season bhi shuru: Northern Railway ne kohre ki wajah se Jammu Tawi-Kathgodam weekly trains January-March 2027 ke liye cancel ki hain (Business Today, 19 Nov 2026).\n\nTumhari train kohre me sabse zyada kitni late hui? Comment karo 👇",
+  "hashtags": "#howzattech #railwayraaz #indianrailways #kohra #fog #trainlate #locopilot #techinhindi #hinglish #yekaisehotahai",
+  "sources": [
+    "https://indiaeducationdiary.in/?p=482371",
+    "https://www.deccanherald.com/india/railways-increases-max-speed-of-trains-to-75-kmph-to-combat-delays-during-foggy-winter-1169164.html",
+    "https://www.businesstoday.in/latest/photo/planning-nainital-or-jammu-in-january-these-trains-wont-run-and-the-train-numbers-have-changed-568553-2026-11-19"
+  ],
+  "cover": {"lines": ["Kohre me DRIVER...", "SIGNAL kaise pata?"], "pill": "FOG PASS!", "tag": "500 m PEHLE ALERT"}
+}

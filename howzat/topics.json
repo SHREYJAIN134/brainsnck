@@ -414,8 +414,8 @@
     "hook": "Kohre me 10 meter bhi nahi dikh raha... phir bhi driver ko pata hai signal aa raha hai!",
     "pillar": "railway",
     "angle": "safety",
-    "score": 6,
-    "why": "passion 2 + tension 2 + stakes 1 + news 1 (fog season Dec-Jan delays)"
+    "score": 7,
+    "why": "2026-11-19: passion 2 + tension 2 (driver can't see) + stakes 2 (payoff: why YOUR train runs late in fog, 75 km/h cap) + news 1 (fog-season cancellations announced 17-19 Nov 2026, Business Today); railway slot 2 of the week, new angle (safety); reel made 2026-11-19, NOT posted yet (publish_video: video still processing)"
   },
   {
     "n": 49,
@@ -657,5 +657,23 @@
     "pillar": "safety",
     "score": 4,
     "why": "fresh idea 2026-11-18: cyber scamsters threatened gas disconnection, defrauded 45 people of Rs 26 lakh (ThePrint); passion 1 + villain 2 + stakes 1 + news 1, minus 1: scam reels stay low (digital arrest 310, shaadi card 194)"
+  },
+  {
+    "n": 76,
+    "topic": "Kohre ke naam pe trains mahino pehle hi cancel kyun ho jaati hain?",
+    "hook": "Kohra abhi aaya bhi nahi... aur tumhari train 3 mahine ke liye cancel!",
+    "pillar": "railway",
+    "angle": "delays",
+    "score": 5,
+    "why": "fresh idea 2026-11-19: Northern Railway cancels Jammu Tawi-Kathgodam weekly trains for the 2026-27 fog season (Business Today, 19 Nov 2026), more lists every winter; passion 2 + stakes 2 + news 1, conflict 0; too close to the fog reel, use after a few weeks"
+  },
+  {
+    "n": 77,
+    "topic": "Train ka number achanak badal kyun jaata hai?",
+    "hook": "Wahi train, wahi route... par number 12207 se 14695 ho gaya!",
+    "pillar": "railway",
+    "angle": "rules",
+    "score": 2,
+    "why": "fresh idea 2026-11-19: Jammu-Kathgodam trains renumbered for 2027 (Business Today); passion 2 + news 1, minus 1: neutral, no villain or stakes"
   }
 ]
