@@ -15,7 +15,8 @@ reel a day: about 320 credits per reel, 10,000 a month.
 
 ## 1. Topic
 First check `log.json`: if it already has an entry for today's India date (Asia/Kolkata), a reel is already up
-today, so do nothing else and stop without messaging Shrey.
+today, so do nothing else and stop without messaging Shrey. Exception (2026-11-19): if that entry's `note`
+says it was the previous day's reel posted after midnight, today still needs its own reel, so carry on.
 
 **Topic mix: trains at most 2 a week (Shrey, 2026-11-11; replaces the train-only niche of 2026-11-09).** Trains
 did best (railway 3/3 since 2026-11-09, 1,368–3,417 views) but Shrey doesn't want a train-only page. So:
@@ -178,16 +179,20 @@ and host/post `out/post.mp4`.
    - **Before 2026-11-13 (India date): Pro trial** (1,000 tasks, trial ends 2026-11-13, no payment method saved,
      so nothing is charged). Use as many Zapier calls as the reel needs: the one call below, and the full
      fallback if it errors.
-   - **From 2026-11-13: free plan, at most 2 tasks per reel = exactly ONE execute call.** No
-     `inspect_zapier_actions` (the schema is written below), no raw requests, no retries, no GETs. If that one
-     call errors: wait 3 minutes and open `https://www.instagram.com/howzat.tech/reels/` in Chrome; if the new
-     reel is there, use it; otherwise post nothing, send Shrey the error word for word plus "2-task limit ki
-     wajah se fallback nahi chalaya", and stop.
+   - **From 2026-11-13: free plan, 2 tasks per reel = ONE execute call normally.** No
+     `inspect_zapier_actions` (the schema is written below), no GETs.
+   - **If the publish fails, never ask Shrey: do what it takes to post (Shrey's rule, 2026-11-19; replaces
+     "post nothing and stop").** Wait 3 minutes and open `https://www.instagram.com/howzat.tech/reels/` in
+     Chrome; if the new reel is there, use it. Otherwise call `publish_video` once more with the same params
+     (on 2026-11-18 and 2026-11-19 the second call worked after "Video is still processing"). If that fails
+     too, check Chrome again and then use the raw-request fallback below (container, `sleep 240`, publish).
+     Before every retry make sure the reel is not already up, so it never posts twice. Stop and tell Shrey
+     only if Zapier is out of tasks or every route has failed.
    No status-check GET and no permalink GET on any day:
    - **One call:** `execute_zapier_write_action` with `selected_api` InstagramBusinessCLIAPI, action
      `publish_video`, params `video` = the hosted `.mp4` raw URL (the `out/post.mp4` file), `caption`, `instagramPageId`
-     `17841461730434810` (label Howzat.Tech). It returns the media `id`. Call it once only.
-   - **Fallback, trial only (before 2026-11-13), only if that call returned an error** (it can give up with
+     `17841461730434810` (label Howzat.Tech). It returns the media `id`. Retry only as the rule above says.
+   - **Fallback (any day, after a second `publish_video` also failed)** (it can give up with
      "Video is still processing", as on 2026-11-01): wait 3 minutes, open `https://www.instagram.com/howzat.tech/reels/` in Chrome; if a new
      reel is already there, it posted, use it. Otherwise use the raw requests (`connection_id`
      `02430411-5018-80e8-bb13-f7b4036307c6`): POST `https://graph.facebook.com/v21.0/17841461730434810/media`
@@ -200,7 +205,7 @@ and host/post `out/post.mp4`.
      doesn't work, use `https://www.instagram.com/howzat.tech/` as the permalink.
    Caption = `caption` + blank line + "Voice: elevenlabs.io" + blank line + hashtags (always include
    #howzattech). The "Voice: elevenlabs.io" credit is required on the ElevenLabs free plan.
-   If Instagram or Zapier returns an error (including Zapier being out of tasks), report it word for word and stop.
+   If Zapier is out of tasks, or Instagram still refuses after all the retries above, report it word for word and stop.
 
 ## 9. Log and report
 Mark the topic `"status": "posted"` in `topics.json`, append to `log.json` (`date`, `slug`, `title`, `pillar`,
