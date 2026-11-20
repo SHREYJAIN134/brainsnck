@@ -287,5 +287,23 @@
     "media_id": "17915253831473208",
     "permalink": "https://www.instagram.com/reel/Df7S21tjGXX/",
     "note": "second reel on the 2026-11-19 India date: the earlier 2026-11-19 entry (flight-fare) was 2026-11-18's reel posted after midnight; Shrey said 'upload kar do', so today's own reel was made. Bunty generated once (265 chars); site still showed 2,572 credits right after. First publish_video said 'Video is still processing' (not on IG after 3 min); Shrey then said never ask him in this case, just do what it takes to post; second publish_video worked (4 Zapier tasks in all)"
+  },
+  {
+    "date": "2026-11-20",
+    "slug": "snicko-gap",
+    "title": "Camera me gap, phir bhi edge kaise?",
+    "pillar": "cricket",
+    "angle": "umpire vs machine",
+    "bg": "#3e6452",
+    "sources": [
+      "https://thesportstak.com/cricket/story/watch-shubman-gill-clashes-with-umpire-after-controversial-drs-decision-in-india-vs-new-zealand-first-test-3563100-2026-11-19",
+      "https://en.wikipedia.org/wiki/Snickometer",
+      "https://www.lords.org/mcc/the-laws-of-cricket/leg-before-wicket"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-20_1736_howzat-snicko-gap.mp4",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-20_1736_howzat-snicko-gap.jpg",
+    "media_id": "17908869501606353",
+    "permalink": "https://www.instagram.com/reel/Df9njVnDf6w/",
+    "note": "scheduled run; fresh news: IND vs NZ 1st Test DRS row (Gill vs umpire, 2026-11-19). Bunty generated once (243 chars); site showed 2,307 credits before and right after (counter lags; ~2,064 after this reel). First publish_video said 'Video is still processing' (not on IG after 3 min); second publish_video worked (4 Zapier tasks in all)"
   }
 ]
