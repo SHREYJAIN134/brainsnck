@@ -222,9 +222,16 @@ Chrome. Upload the same `out/post.mp4` right after the Instagram post, through Y
 tasks):
 1. Copy `out/post.mp4` to `/mnt/user-data/outputs/<YYYY-MM-DD>_howzat-<slug>.mp4` (the Chrome upload only takes
    files there and under 10 MB; if bigger, re-encode with a higher `-crf`).
-2. In a new MCP tab open `https://www.youtube.com/upload`. Check the channel is How's That / `@HowsThat-c9o`
-   (`https://www.youtube.com/@HowsThat-c9o` shows "Customise channel" when it is the logged-in one). If YouTube
-   is logged out or on another channel, never type a password: skip YouTube and tell Shrey in the final message.
+2. Right channel first (Shrey, 2026-11-22: "login na ho toh khud login karke upload karo, phir wapas usi account
+   pe le aao"). In a new MCP tab open `https://www.youtube.com/`, click the avatar (top right) and note which
+   channel is active. How's That belongs to the Google account "Wasp"; Shrey's Chrome has several Google
+   accounts signed in (also "The all rounders", "Study only Shrey", "ClipNest Studio", ...). If the active
+   channel is not How's That: avatar → **Switch account** → **How's That (@HowsThat-c9o)** under Wasp. Then open
+   `https://www.youtube.com/upload` and upload (steps 3–5). When the Short is published, switch back the same
+   way to the channel that was active before, so Shrey finds YouTube as he left it.
+   Never type a password: if How's That is not in the Switch account list or Google asks for a password
+   (the Wasp account got signed out of Chrome), skip YouTube and tell Shrey in the final message to sign in
+   to Wasp in Chrome once; Instagram still counts.
 3. Don't click "Select files" (native picker): `find` the hidden file-input and use `file_upload` with the path.
 4. Title: `<title> #Shorts` (max 100 chars). Description: the full Instagram caption (caption + "Voice:
    elevenlabs.io" + hashtags). Audience: "No, it's not Made for Kids". Next, Next, Next, Visibility **Public**,
