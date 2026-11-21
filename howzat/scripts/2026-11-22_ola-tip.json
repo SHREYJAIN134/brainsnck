@@ -1,0 +1,20 @@
+{
+  "title": "Ride se pehle tip? 10 lakh ka fine!",
+  "voice": "ElevenLabs Bunty – Punchy, Crisp and Reel King (website, Eleven v4)",
+  "lines": [
+    "[curious] Cab dhoondh rahe the... app bola: tip do, jaldi milegi!",
+    "Tip toh ride ke BAAD hoti hai!",
+    "[sarcastic] Ola ne naam badla... tip se add-on!",
+    "Twist? Add-on wali rides KAM accept hui!",
+    "Sarkar ne thoka 10 lakh ka fine.",
+    "Aise aur raaz ke liye... follow karo!"
+  ],
+  "caption": "Cab search ho rahi thi aur app pe likha aaya: \"Tip now to boost the chances of getting a ride sooner\"... matlab tip do, cab jaldi milegi! 🚕💸\n\nSach: Central Consumer Protection Authority (CCPA) ne ise dark pattern maana aur Ola (ANI Technologies) pe ₹10 lakh ka fine lagaya (13 Nov 2026).\n\nRaaz kya tha:\n• Prompt tab aata tha jab app driver dhoondh raha hota hai, yaani jab tum sabse zyada jaldi me ho. Pre-set amount ₹10-40 se badh ke ₹140 tak pahunch gaye.\n• Motor Vehicle Aggregator Guidelines 2025: tip sirf ride ke BAAD, apni marzi se, aur poori tip driver ko.\n• CCPA ne 2025 me hi rokne ko kaha tha, par Ola ne feature hataya nahi, bas 'tip' ka naam 'add-on' kar diya.\n• Twist: Ola ke apne data (1-15 June 2026) me add-on wali ride requests ko driveron ne bina add-on wali requests se bhi KAM accept kiya. Ye customers ko bataya nahi gaya.\n\nAb Ola ko ride se pehle wale saare tip/add-on prompts hatane honge.\n\nTumne kabhi ride se pehle tip di hai? Comment karo 👇",
+  "hashtags": "#howzattech #ola #cab #darkpattern #tip #consumerrights #paisa #techinhindi #hinglish #yekaisehotahai",
+  "sources": [
+    "https://theprint.in/economy/ccpa-fines-ola-rs-10-lakh-over-pre-ride-tip-feature-calls-it-dark-pattern/3097957/",
+    "https://telanganatoday.com/ola-fined-rs-10-lakh-for-retaining-tip-feature-despite-ccpa-warning",
+    "https://www.cartoq.com/car-life/ccpa-fines-ola-pre-ride-tip-prompts/"
+  ],
+  "cover": {"lines": ["Tip do...", "cab JALDI?"], "pill": "TRICK!", "tag": "₹10 LAKH FINE"}
+}

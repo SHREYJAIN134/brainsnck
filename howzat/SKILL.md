@@ -63,6 +63,8 @@ did best (railway 3/3 since 2026-11-09, 1,368–3,417 views) but Shrey doesn't w
      current booking (no villain) flopped. Flight fare 387 at ~19 h, Dhoni collab 152. Median still ~694.
    - 2026-11-20: fog-pass (railway safety/tech, no villain) only 163 at ~22 h, like current booking (157): both
      railway flops had no villain. Flight fare 497 at ~1.7 days. Median of 18 reels ≥ 48 h ~699.
+   - 2026-11-22: snicko-gap (cricket DRS row, fresh news) 1,152 in ~32 h: cricket controversy holds up again.
+     fog-pass flat at 164 (railway with no villain flops). Flight fare 497 at ~2 days. Median of main reels ≥ 48 h ~800.
    - Not the reason: length, posting time, look and voice were the same for all of them.
    - So: mass Indian passion (cricket, trains, paisa, phone/WhatsApp life) + conflict (villain, scam, cheat,
      controversy, unfair system, or a true mini story with a character) + the viewer's own stakes (paise,
