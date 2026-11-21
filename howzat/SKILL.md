@@ -1,6 +1,7 @@
 # Howzat Tech daily reel
 
-Make one Hinglish "ye kaise hota hai?" explainer reel (15–20 s) for Instagram @howzat.tech and post it.
+Make one Hinglish "ye kaise hota hai?" explainer reel (15–20 s) and post it on Instagram @howzat.tech and on
+YouTube Shorts (channel How's That, @HowsThat-c9o; section 8b).
 Owner: Shrey Jain. Talk to him in Hinglish (Hindi in Roman script), short and simple.
 Reel 1 (Google Maps traffic, `scripts/2026-10-31_google-maps.json`, engine files in `engine/`) is the
 reference for quality and pacing (the look is now the soft flat theme in section 5). Reels are now short (15–20 s) so the free ElevenLabs credits last a
@@ -215,9 +216,26 @@ and host/post `out/post.mp4`.
    #howzattech). The "Voice: elevenlabs.io" credit is required on the ElevenLabs free plan.
    If Zapier is out of tasks, or Instagram still refuses after all the retries above, report it word for word and stop.
 
+## 8b. YouTube Shorts (Shrey, 2026-11-22: post every reel on Instagram AND YouTube, every day)
+Channel: **How's That**, handle `@HowsThat-c9o` (channel id `UCctOMn-0aIlVwGRuuav5jug`), logged in in Shrey's
+Chrome. Upload the same `out/post.mp4` right after the Instagram post, through YouTube Studio in Chrome (no Zapier
+tasks):
+1. Copy `out/post.mp4` to `/mnt/user-data/outputs/<YYYY-MM-DD>_howzat-<slug>.mp4` (the Chrome upload only takes
+   files there and under 10 MB; if bigger, re-encode with a higher `-crf`).
+2. In a new MCP tab open `https://www.youtube.com/upload`. Check the channel is How's That / `@HowsThat-c9o`
+   (`https://www.youtube.com/@HowsThat-c9o` shows "Customise channel" when it is the logged-in one). If YouTube
+   is logged out or on another channel, never type a password: skip YouTube and tell Shrey in the final message.
+3. Don't click "Select files" (native picker): `find` the hidden file-input and use `file_upload` with the path.
+4. Title: `<title> #Shorts` (max 100 chars). Description: the full Instagram caption (caption + "Voice:
+   elevenlabs.io" + hashtags). Audience: "No, it's not Made for Kids". Next, Next, Next, Visibility **Public**,
+   **Publish**. Take the `https://youtube.com/shorts/<id>` link from the "Video published" dialog, close the tab.
+5. If the upload or publish fails, check Studio's Content list first (so it never uploads twice), then try again
+   until it is up, like Instagram.
+
 ## 9. Log and report
 Mark the topic `"status": "posted"` in `topics.json`, append to `log.json` (`date`, `slug`, `title`, `pillar`,
-`bg`, `sources`, `video_url`, `cover_url`, `permalink`), commit the script, scene file and logs, push to `main`. The BrainSnck task pushes to the same repo, so if a push
+`bg`, `sources`, `video_url`, `cover_url`, `permalink`, `youtube_url`), commit the script, scene file and logs, push to `main`. The BrainSnck task pushes to the same repo, so if a push
 is rejected, `git fetch` + `git rebase` and push again (never `--force`).
-Send Shrey one short Hinglish message: the reel title, the Instagram link and the ElevenLabs credits left. If
+Send Shrey one short Hinglish message: the reel title, the Instagram link, the YouTube Shorts link and the
+ElevenLabs credits left. If
 fewer than ~400 credits are left, add that the next reel won't fit and he should log in with another account.

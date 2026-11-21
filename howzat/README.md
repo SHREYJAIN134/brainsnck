@@ -10,6 +10,7 @@ paisa, phone/apps and more, always with a story or villain. See SKILL.md section
   `mix_maps.py` (voice + SFX + beat), `align.py` (maps caption timings from the Kokoro reference
   narration onto the ElevenLabs narration with DTW, then snaps to pauses).
 - Instagram: account id 17841461730434810, posted through Zapier (Instagram for Business).
+- YouTube Shorts (since 2026-11-22): channel How's That, @HowsThat-c9o, uploaded through YouTube Studio in Shrey's Chrome.
 - Free ElevenLabs plan: library voices (Bunty) work only on the website, not the API; captions must credit
   "Voice: elevenlabs.io".
 
