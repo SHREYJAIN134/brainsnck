@@ -186,12 +186,16 @@ and host/post `out/post.mp4`.
    - **From 2026-11-13: free plan, 2 tasks per reel = ONE execute call normally.** No
      `inspect_zapier_actions` (the schema is written below), no GETs.
    - **If the publish fails, never ask Shrey: do what it takes to post (Shrey's rule, 2026-11-19; replaces
-     "post nothing and stop").** Wait 3 minutes and open `https://www.instagram.com/howzat.tech/reels/` in
+     "post nothing and stop"). Keep trying until the reel is published (Shrey, 2026-11-22: "jab bhi aisa ho,
+     try again, keep trying until the reel is published"; on 2026-11-22 a retry was blocked once and the reel
+     only went up after he said this).** Wait 3 minutes and open `https://www.instagram.com/howzat.tech/reels/` in
      Chrome; if the new reel is there, use it. Otherwise call `publish_video` once more with the same params
      (on 2026-11-18 and 2026-11-19 the second call worked after "Video is still processing"). If that fails
      too, check Chrome again and then use the raw-request fallback below (container, `sleep 240`, publish).
-     Before every retry make sure the reel is not already up, so it never posts twice. Stop and tell Shrey
-     only if Zapier is out of tasks or every route has failed.
+     If that fails too, wait 5 minutes, check Chrome, and go round again (`publish_video`, then the fallback)
+     until it is up. Before every retry make sure the reel is not already up, so it never posts twice. Stop and
+     tell Shrey only if Zapier is out of tasks or Instagram gives a hard error (not "still processing" or "not
+     ready") that a retry can't fix.
    No status-check GET and no permalink GET on any day:
    - **One call:** `execute_zapier_write_action` with `selected_api` InstagramBusinessCLIAPI, action
      `publish_video`, params `video` = the hosted `.mp4` raw URL (the `out/post.mp4` file), `caption`, `instagramPageId`

@@ -305,5 +305,23 @@
     "media_id": "17908869501606353",
     "permalink": "https://www.instagram.com/reel/Df9njVnDf6w/",
     "note": "scheduled run; fresh news: IND vs NZ 1st Test DRS row (Gill vs umpire, 2026-11-19). Bunty generated once (243 chars); site showed 2,307 credits before and right after (counter lags; ~2,064 after this reel). First publish_video said 'Video is still processing' (not on IG after 3 min); second publish_video worked (4 Zapier tasks in all)"
+  },
+  {
+    "date": "2026-11-22",
+    "slug": "ola-tip",
+    "title": "Ride se pehle tip? 10 lakh ka fine!",
+    "pillar": "paisa",
+    "angle": "dark pattern",
+    "bg": "#574a7d",
+    "sources": [
+      "https://theprint.in/economy/ccpa-fines-ola-rs-10-lakh-over-pre-ride-tip-feature-calls-it-dark-pattern/3097957/",
+      "https://telanganatoday.com/ola-fined-rs-10-lakh-for-retaining-tip-feature-despite-ccpa-warning",
+      "https://www.cartoq.com/car-life/ccpa-fines-ola-pre-ride-tip-prompts/"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-22_0146_howzat-ola-tip.mp4",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-22_0146_howzat-ola-tip.jpg",
+    "media_id": "18108052238639909",
+    "permalink": "https://www.instagram.com/reel/DgBEbark-Rh/",
+    "note": "previous day's reel posted after midnight: this was 2026-11-21's scheduled run (fired 01:35 IST on 2026-11-22), so 2026-11-22 still needs its own reel. New ElevenLabs account: Bunty generated once (256 chars), 4,219 credits before, 3,963 after. First publish_video said 'Video is still processing' (not on IG after 3 min); second call was blocked by the session's permission check; Shrey then said keep retrying until it posts; third publish_video worked (6 Zapier tasks in all)"
   }
 ]
