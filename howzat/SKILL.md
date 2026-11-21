@@ -233,9 +233,19 @@ tasks):
    (the Wasp account got signed out of Chrome), skip YouTube and tell Shrey in the final message to sign in
    to Wasp in Chrome once; Instagram still counts.
 3. Don't click "Select files" (native picker): `find` the hidden file-input and use `file_upload` with the path.
-4. Title: `<title> #Shorts` (max 100 chars). Description: the full Instagram caption (caption + "Voice:
-   elevenlabs.io" + hashtags). Audience: "No, it's not Made for Kids". Next, Next, Next, Visibility **Public**,
-   **Publish**. Take the `https://youtube.com/shorts/<id>` link from the "Video published" dialog, close the tab.
+4. Title: `<title> #Shorts` (max 100 chars). Description: the caption + blank line + "Aise aur raaz roz: channel
+   subscribe karo 🔔" + blank line + "Voice: elevenlabs.io" + blank line + hashtags + " #shorts". Audience:
+   "No, it's not Made for Kids". **Show more**: Tags = "howzat tech, ye kaise hota hai, hinglish, tech in hindi,
+   hindi explainer, facts in hindi, shorts" + the reel's hashtag words (comma after each, under 500 chars);
+   Altered or synthetic content = **Yes** (the narration is a realistic AI voice; YouTube asks for this).
+   Next, Next, Next, Visibility **Public**, **Publish**. Take the `https://youtube.com/shorts/<id>` link from
+   the "Video published" dialog, close the tab. (JS that works in Studio: title `#title-textarea #textbox`,
+   description `#description-textarea #textbox` (focus, then type), `#toggle-button`, tags
+   `#tags-container input#text-input`, radios `tp-yt-paper-radio-button[name=VIDEO_MADE_FOR_KIDS_NOT_MFK |
+   VIDEO_HAS_ALTERED_CONTENT_YES | PUBLIC]`, `#next-button`, `#done-button`.)
+   Daily upload limit: the channel is not phone-verified, so YouTube allows about 10 uploads a day ("Daily
+   upload limit reached" on 2026-11-22 after 10). If it shows that, the Short is not uploaded: tell Shrey and
+   upload it on the next run.
 5. If the upload or publish fails, check Studio's Content list first (so it never uploads twice), then try again
    until it is up, like Instagram.
 
