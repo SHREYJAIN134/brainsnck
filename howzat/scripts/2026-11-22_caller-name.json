@@ -1,0 +1,21 @@
+{
+  "title": "Truecaller nahi, phir bhi caller ka naam kaise?",
+  "voice": "ElevenLabs Bunty – Punchy, Crisp and Reel King (website, Eleven v4)",
+  "lines": [
+    "[curious] Unknown number... screen pe naam: Ramesh!",
+    "Truecaller bhi nahi. Naam kisne bheja?",
+    "Naya rule: CNAP.",
+    "Telecom company SIM ke record se naam uthati hai,",
+    "number ke saath bhej deti hai.",
+    "Bank ka call, naam kisi aadmi ka? SAVDHAAN!",
+    "Aise aur raaz ke liye... follow karo!"
+  ],
+  "caption": "Unknown number se call aaya... aur screen pe seedha naam! Phone me Truecaller bhi nahi. Toh naam bheja kisne? 📱👀\n\nJawab: CNAP (Calling Name Presentation). DoT ne telecom operators (Airtel, Jio, Vi, BSNL) ko 1 November 2026 se ye service shuru karne ko kaha.\n\nKaise hota hai:\n• Call lagte hi naam operator ke subscriber records se aata hai, yaani SIM lete waqt jo naam register hua. Logon ki contact lists se bana database nahi.\n• 4G aur 5G pe ye default on hai, kuch on karne ki zarurat nahi. 2G/3G aur landline pe baad me.\n• Number tumhare phone me saved hai toh tumhara saved naam hi dikhega. Business connections pe company ka trade name dikh sakta hai.\n• Truecaller me naam aam taur pe users ke diye data se aata hai, isliye kabhi kabhi 'Pappu Pizza' jaise naam dikhte hain.\n\nTip: koi bole 'bank se bol raha hoon' aur screen pe kisi aadmi ka naam aaye? Call kaato aur bank ke official number pe khud call karo.\n\nTumhare phone pe naam aana shuru hua? Comment karo 👇",
+  "hashtags": "#howzattech #cnap #callerid #truecaller #spamcall #scamalert #phone #techinhindi #hinglish #yekaisehotahai",
+  "sources": [
+    "https://inc42.com/buzz/centre-directs-telcos-to-display-caller-names-from-november-1/",
+    "https://www.business-standard.com/technology/tech-news/india-cnap-caller-name-display-system-explained-copy-slug-126102000486_1.html",
+    "https://beebom.com/how-truecaller-works-privacy-concerns"
+  ],
+  "cover": {"lines": ["Truecaller nahi...", "phir NAAM kaise?"], "pill": "CNAP!", "tag": "NAYA RULE"}
+}

@@ -333,5 +333,24 @@
     "permalink": "https://www.instagram.com/reel/DgBEbark-Rh/",
     "youtube_url": "https://youtube.com/shorts/Hk1EQ98dqxk",
     "note": "previous day's reel posted after midnight: this was 2026-11-21's scheduled run (fired 01:35 IST on 2026-11-22), so 2026-11-22 still needs its own reel. New ElevenLabs account: Bunty generated once (256 chars), 4,219 credits before, 3,963 after. First publish_video said 'Video is still processing' (not on IG after 3 min); second call was blocked by the session's permission check; Shrey then said keep retrying until it posts; third publish_video worked (6 Zapier tasks in all)"
+  },
+  {
+    "date": "2026-11-22",
+    "slug": "caller-name",
+    "title": "Truecaller nahi, phir bhi caller ka naam kaise?",
+    "pillar": "phone",
+    "angle": "caller ID",
+    "bg": "#33407a",
+    "sources": [
+      "https://inc42.com/buzz/centre-directs-telcos-to-display-caller-names-from-november-1/",
+      "https://www.business-standard.com/technology/tech-news/india-cnap-caller-name-display-system-explained-copy-slug-126102000486_1.html",
+      "https://beebom.com/how-truecaller-works-privacy-concerns"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-22_1724_howzat-caller-name.mp4",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-22_1724_howzat-caller-name.jpg",
+    "media_id": "17919950502264515",
+    "permalink": "https://www.instagram.com/reel/DgCvwEZAny2/",
+    "youtube_url": null,
+    "note": "2026-11-22's own reel (scheduled run 17:10 IST). Fresh news: DoT made CNAP (caller name from operator records) mandatory from 1 Nov 2026. Bunty generated once (270 chars) on the ElevenLabs account with avatar 'W': 1,928 credits before, counter did not update after (the site made 2 generations, Generation 1 used; ~1,300-1,600 left). First publish_video said 'Video is still processing' (not on IG after 3 min); second publish_video worked (4 Zapier tasks in all). YouTube NOT uploaded: Studio said 'Daily upload limit reached' (10 Shorts already uploaded today), no draft left; upload videos/2026-11-22_1724_howzat-caller-name.mp4 on the next run"
   }
 ]
