@@ -243,9 +243,10 @@ tasks):
    description `#description-textarea #textbox` (focus, then type), `#toggle-button`, tags
    `#tags-container input#text-input`, radios `tp-yt-paper-radio-button[name=VIDEO_MADE_FOR_KIDS_NOT_MFK |
    VIDEO_HAS_ALTERED_CONTENT_YES | PUBLIC]`, `#next-button`, `#done-button`.)
-   Daily upload limit: the channel is not phone-verified, so YouTube allows about 10 uploads a day ("Daily
-   upload limit reached" on 2026-11-22 after 10). If it shows that, the Short is not uploaded: tell Shrey and
-   upload it on the next run.
+   Daily upload limit: about 10 uploads per rolling 24 h, even after Shrey phone-verified the channel on
+   2026-11-22 (hit again on 2026-11-23 after 10 back-catalogue uploads). If Studio shows "Daily upload limit
+   reached", the Short is not uploaded (no draft is kept): close the dialog, leave `youtube_url` empty with a
+   note, tell Shrey, and upload it on the next run before that day's own reel.
 5. If the upload or publish fails, check Studio's Content list first (so it never uploads twice), then try again
    until it is up, like Instagram.
 
