@@ -246,7 +246,10 @@ tasks):
    Daily upload limit: about 10 uploads per rolling 24 h, even after Shrey phone-verified the channel on
    2026-11-22 (hit again on 2026-11-23 after 10 back-catalogue uploads). If Studio shows "Daily upload limit
    reached", the Short is not uploaded (no draft is kept): close the dialog, leave `youtube_url` empty with a
-   note, tell Shrey, and upload it on the next run before that day's own reel.
+   note, tell Shrey, and upload it on the next run before that day's own reel: at the start of 8b, upload
+   every `log.json` reel without a `youtube_url` (oldest first; the video is in the `media` branch history,
+   `git show <commit>:videos/<file>.mp4`), then today's, ~5 min apart, checking Studio's Shorts list first so
+   nothing goes up twice.
 5. If the upload or publish fails, check Studio's Content list first (so it never uploads twice), then try again
    until it is up, like Instagram.
 
