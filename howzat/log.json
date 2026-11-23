@@ -322,7 +322,7 @@
     "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-20_1736_howzat-snicko-gap.jpg",
     "media_id": "17908869501606353",
     "permalink": "https://www.instagram.com/reel/Df9njVnDf6w/",
-    "note": "scheduled run; fresh news: IND vs NZ 1st Test DRS row (Gill vs umpire, 2026-11-19). Bunty generated once (243 chars); site showed 2,307 credits before and right after (counter lags; ~2,064 after this reel). First publish_video said 'Video is still processing' (not on IG after 3 min); second publish_video worked (4 Zapier tasks in all)"
+    "note": "scheduled run; fresh news: IND vs NZ 1st Test DRS row (Gill vs umpire, 2026-11-19). Bunty generated once (243 chars); site showed 2,307 credits before and right after (counter lags; ~2,064 after this reel). First publish_video said 'Video is still processing' (not on IG after 3 min); second publish_video worked (4 Zapier tasks in all) | YouTube: still not uploaded; 2026-11-23 19:50 IST run hit 'Daily upload limit reached' again (10 back-catalogue uploads at 04:50 IST), upload on the next run first"
   },
   {
     "date": "2026-11-22",
@@ -361,5 +361,24 @@
     "permalink": "https://www.instagram.com/reel/DgCvwEZAny2/",
     "youtube_url": "https://youtube.com/shorts/fRKg_CWeXVc",
     "note": "2026-11-22's own reel (scheduled run 17:10 IST). Fresh news: DoT made CNAP (caller name from operator records) mandatory from 1 Nov 2026. Bunty generated once (270 chars) on the ElevenLabs account with avatar 'W': 1,928 credits before, counter did not update after (the site made 2 generations, Generation 1 used; ~1,300-1,600 left). First publish_video said 'Video is still processing' (not on IG after 3 min); second publish_video worked (4 Zapier tasks in all). YouTube: skipped on 2026-11-22 (daily upload limit), uploaded 2026-11-23 04:50 IST"
+  },
+  {
+    "date": "2026-11-23",
+    "slug": "chain-pull",
+    "title": "Chain kheenchi, RPF ko coach kaise pata?",
+    "pillar": "railway",
+    "angle": "rules",
+    "bg": "#2f5f73",
+    "sources": [
+      "https://newsable.asianetnews.com/gallery/india/indian-railways-what-happens-when-you-pull-the-emergency-chain-on-a-moving-train-u3mm8nw",
+      "https://www.etvbharat.com/en/bharat/arrest-in-alarm-chain-pulling-cases-on-rise-at-several-stations-enn26050102476",
+      "https://www.indiatvnews.com/web-stories/news/what-is-the-punishment-for-illegal-alarm-chain-pulling-in-trains-in-indian-railways-check-here-in-images-2025-05-05-988692"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-23_1945_howzat-chain-pull.mp4",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-23_1945_howzat-chain-pull.jpg",
+    "media_id": "18031627799919333",
+    "permalink": "https://www.instagram.com/reel/DgFlZpJADXa/",
+    "youtube_url": null,
+    "note": "scheduled run 19:30 IST; first railway reel of the week (Mon). Bunty generated once (265 chars); site again made 2 generations, Generation 1 used; subscription page after: 8,607/10,000 used = 1,393 left. First publish_video said 'Video is still processing' (not on IG after 3 min); a second publish_video was blocked by the session's permission check, so the raw-request fallback was used: container 17958868248057682, sleep ~4 min, media_publish worked at ~20:05 IST (inspect call + 6 Zapier tasks in all). YouTube: 'Daily upload limit reached' (10 back-catalogue uploads at 04:50 IST), not uploaded; upload on the next run after snicko-gap"
   }
 ]
