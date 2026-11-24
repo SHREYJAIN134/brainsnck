@@ -68,6 +68,8 @@ did best (railway 3/3 since 2026-11-09, 1,368–3,417 views) but Shrey doesn't w
      fog-pass flat at 164 (railway with no villain flops). Flight fare 497 at ~2 days. Median of main reels ≥ 48 h ~800.
    - 2026-11-23: ola-tip (paisa dark pattern + Rs 10 lakh fine) 1,317 in ~42 h; caller-name (phone, CNAP news, weak
      villain) only 137 at ~26 h, a flop like UPI/Shazam. snicko-gap flat at 1,154. Median of 19 main reels ≥ 48 h ~1,130.
+   - 2026-11-24: chain-pull (railway rules + prankster villain + 1 saal jail stakes) 1,571 in ~21 h: railway with a
+     villain works again. caller-name flat at 141, ola-tip 1,322. Median of 21 main reels ≥ 48 h 1,128 (winner ≥ ~3,400).
    - Not the reason: length, posting time, look and voice were the same for all of them.
    - So: mass Indian passion (cricket, trains, paisa, phone/WhatsApp life) + conflict (villain, scam, cheat,
      controversy, unfair system, or a true mini story with a character) + the viewer's own stakes (paise,
