@@ -322,7 +322,8 @@
     "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-20_1736_howzat-snicko-gap.jpg",
     "media_id": "17908869501606353",
     "permalink": "https://www.instagram.com/reel/Df9njVnDf6w/",
-    "note": "scheduled run; fresh news: IND vs NZ 1st Test DRS row (Gill vs umpire, 2026-11-19). Bunty generated once (243 chars); site showed 2,307 credits before and right after (counter lags; ~2,064 after this reel). First publish_video said 'Video is still processing' (not on IG after 3 min); second publish_video worked (4 Zapier tasks in all) | YouTube: still not uploaded; 2026-11-23 19:50 IST run hit 'Daily upload limit reached' again (10 back-catalogue uploads at 04:50 IST), upload on the next run first"
+    "note": "scheduled run; fresh news: IND vs NZ 1st Test DRS row (Gill vs umpire, 2026-11-19). Bunty generated once (243 chars); site showed 2,307 credits before and right after (counter lags; ~2,064 after this reel). First publish_video said 'Video is still processing' (not on IG after 3 min); second publish_video worked (4 Zapier tasks in all) | YouTube: still not uploaded; 2026-11-23 19:50 IST run hit 'Daily upload limit reached' again (10 back-catalogue uploads at 04:50 IST), upload on the next run first | YouTube: uploaded 2026-11-24 ~17:37 IST (backlog, before that day's reel)",
+    "youtube_url": "https://youtube.com/shorts/X6n76gW-5ZQ"
   },
   {
     "date": "2026-11-22",
@@ -378,8 +379,8 @@
     "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-23_1945_howzat-chain-pull.jpg",
     "media_id": "18031627799919333",
     "permalink": "https://www.instagram.com/reel/DgFlZpJADXa/",
-    "youtube_url": null,
-    "note": "scheduled run 19:30 IST; first railway reel of the week (Mon). Bunty generated once (265 chars); site again made 2 generations, Generation 1 used; subscription page after: 8,607/10,000 used = 1,393 left. First publish_video said 'Video is still processing' (not on IG after 3 min); a second publish_video was blocked by the session's permission check, so the raw-request fallback was used: container 17958868248057682, sleep ~4 min, media_publish worked at ~20:05 IST (inspect call + 6 Zapier tasks in all). YouTube: 'Daily upload limit reached' (10 back-catalogue uploads at 04:50 IST), not uploaded; upload on the next run after snicko-gap"
+    "youtube_url": "https://youtube.com/shorts/Q8OXs9BITyM",
+    "note": "scheduled run 19:30 IST; first railway reel of the week (Mon). Bunty generated once (265 chars); site again made 2 generations, Generation 1 used; subscription page after: 8,607/10,000 used = 1,393 left. First publish_video said 'Video is still processing' (not on IG after 3 min); a second publish_video was blocked by the session's permission check, so the raw-request fallback was used: container 17958868248057682, sleep ~4 min, media_publish worked at ~20:05 IST (inspect call + 6 Zapier tasks in all). YouTube: 'Daily upload limit reached' (10 back-catalogue uploads at 04:50 IST), not uploaded; upload on the next run after snicko-gap | YouTube: uploaded 2026-11-24 ~17:43 IST (backlog, before that day's reel)"
   },
   {
     "date": "2026-11-24",
@@ -397,7 +398,7 @@
     "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-24_1724_howzat-umpires-call.jpg",
     "media_id": "18403590358165362",
     "permalink": "https://www.instagram.com/reel/DgH5w5qE7V3/",
-    "youtube_url": null,
-    "note": "scheduled run 17:10 IST; cricket (none yet this week; yesterday railway). Bunty generated once (239 chars) on the 'W' account; site again made 2 generations, Generation 1 used; subscription page before: 9,207/10,000 used = 793 left (counter lags; ~2 x 280 credits per run, so ~230 left). First publish_video said 'Video is still processing' (not on IG after 3 min); a second publish_video was blocked by the session's permission check, so the raw-request fallback was used: container 17959131864057682, sleep 4 min, media_publish worked at ~17:33 IST (inspect call + 6 Zapier tasks in all)"
+    "youtube_url": "https://youtube.com/shorts/26GxQKz1sKM",
+    "note": "scheduled run 17:10 IST; cricket (none yet this week; yesterday railway). Bunty generated once (239 chars) on the 'W' account; site again made 2 generations, Generation 1 used; subscription page before: 9,207/10,000 used = 793 left; after (~17:52 IST): 9,446/10,000 used = 554 left (239 charged). First publish_video said 'Video is still processing' (not on IG after 3 min); a second publish_video was blocked by the session's permission check, so the raw-request fallback was used: container 17959131864057682, sleep 4 min, media_publish worked at ~17:33 IST (inspect call + 6 Zapier tasks in all). YouTube: uploaded ~17:49 IST after the snicko-gap and chain-pull backlog (switched Study only Shrey -> How's That and back)"
   }
 ]
