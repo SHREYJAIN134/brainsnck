@@ -107,9 +107,17 @@ total; the whole typed text, tags and spaces included, must be at most 270 chara
 Shrey is on the ElevenLabs **free plan**: Bunty works on the website only, not through the API. So:
 1. Claude in Chrome (Shrey's real Chrome; load the chrome-browser skill first): open
    `https://elevenlabs.io/app/speech-synthesis/text-to-speech` in a new tab in the MCP tab group.
+   **Account (Shrey, 2026-11-27): always the ElevenLabs account `shreystudyonly@gmail.com` ("Study only Shrey",
+   avatar S; 10,000 free credits a month; Bunty added to My voices on 2026-11-27).** Before generating, open
+   `https://elevenlabs.io/app/settings` and read the email. If another account is signed in, sign it out yourself
+   (avatar → Sign out) without asking, then sign in to `shreystudyonly@gmail.com`; if ElevenLabs is logged out,
+   sign in the same way. Sign in only with **Sign in with Google** → choose `shreystudyonly@gmail.com` (it is a
+   Google account signed in to Shrey's Chrome). Never type a password or an OTP: if Google or ElevenLabs asks for
+   one, or that account is not in the Google chooser, post nothing and tell Shrey that sign-in to
+   shreystudyonly@gmail.com needs him once. Check the settings email again after signing in.
 2. Voice: if it doesn't already show Bunty, open the voice picker → **My voices** → hover Bunty → **Use**.
-   (Shrey may switch to another ElevenLabs account when credits run out: if Bunty isn't in My voices, find
-   "Bunty – Punchy, Crisp and Reel King" in the Voice Library and add it first; if it isn't there, fail.)
+   (If Bunty isn't in My voices, find "Bunty – Punchy, Crisp and Reel King" in the Voice Library and add it
+   first; if it isn't there, fail.)
    Model must be **Eleven v4**.
    Credits: read the account's remaining credits on the site. Credits ≈ 1.17 × characters (reel 1: an
    818-character script used 952), so a 270-character script costs about 320. If remaining < 1.2 × the script's characters,
@@ -121,7 +129,8 @@ Shrey is on the ElevenLabs **free plan**: Bunty works on the website only, not t
 4. When it finishes, pause playback, click the download icon in the bottom player (Generation 1).
 5. `device_list_dir` on `C:\Users\SHREY JAIN\Downloads`, take the newest `ElevenLabs_*Bunty*.mp3` (modified in the
    last few minutes), and `device_stage_files` it into the container. Close your Chrome tab.
-If ElevenLabs is logged out or out of credits: post nothing, tell Shrey in one short message what failed, and stop.
+If ElevenLabs is out of credits, or the sign-in to `shreystudyonly@gmail.com` above fails: post nothing, tell Shrey in
+one short message what failed, and stop.
 If Chrome/the computer can't be reached (Shrey's rule, 2026-11-13): post nothing and don't wait for Shrey: schedule
 a one-time retry 30 minutes later exactly as step 5 of the scheduled-task prompt says, every 30 minutes until the
 reel runs (section 1 stops a run once today's India date is in `log.json`), and give up only after 23:30 IST. (If Shrey ever says he upgraded to a paid plan, the API route through
