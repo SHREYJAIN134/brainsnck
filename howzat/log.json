@@ -419,5 +419,24 @@
     "permalink": "https://www.instagram.com/reel/DgJnux7ig2N/",
     "youtube_url": "https://youtube.com/shorts/ojoiNkoLobE",
     "note": "scheduled run 09:10 IST; railway (2nd and last of the week: Mon chain-pull; yesterday cricket; last railway angle rules -> booking). Fresh news: RPF busted a Baradwar booking clerk + Bilaspur porter + Champa teacher (fake IRCTC ID on a villager's phone), 25 tickets Rs 1.16 lakh, Sec 143. Bunty generated once (269 chars) on the 'W' account; site again made 2 generations, Generation 1 used; before: 554 left; after (subscription page ~09:20 IST): 9,715/10,000 used = 285 left. First publish_video said 'Video is still processing' (not on IG after 3 min); a second publish_video was blocked by the session's permission check, so the raw-request fallback was used: container 17959326327057682, sleep 4 min, media_publish worked at ~09:33 IST (inspect calls + 6 Zapier tasks in all). YouTube: uploaded ~09:38 IST (switched The all rounders -> How's That and back)"
+  },
+  {
+    "date": "2026-11-26",
+    "slug": "fake-discount",
+    "title": "Sale me 50% OFF... par kal bhi yahi daam?",
+    "pillar": "paisa",
+    "angle": "fake discounts",
+    "bg": "#2f6b70",
+    "sources": [
+      "https://www.moneylife.in/article/new-ecommerce-rules-to-rein-in-dark-patterns-misleading-listings-and-hidden-charges-from-1st-january/81643.html",
+      "https://www.angelone.in/news/economy/government-tightens-e-commerce-rules-fake-discounts-and-manipulated-search-results-face-checks",
+      "https://qz.com/india/1724230/more-proof-that-amazon-india-flipkart-discounts-may-be-a-sham"
+    ],
+    "video_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-26_2118_howzat-fake-discount.mp4",
+    "cover_url": "https://raw.githubusercontent.com/SHREYJAIN134/brainsnck/media/videos/2026-11-26_2118_howzat-fake-discount.jpg",
+    "media_id": "18138543805708809",
+    "permalink": "https://www.instagram.com/reel/DgNdyIMgwnl/",
+    "youtube_url": "https://youtube.com/shorts/i4c73LlHoPE",
+    "note": "scheduled run (fired 21:06 IST); paisa (yesterday railway, railway already 2 this week, cricket done Tue). Fresh angle: sale season (Black Friday 27 Nov) + E-Commerce (Amendment) Rules 2026: from 1 Jan 2027 discounts must show the 'prior price' = lowest price in the last 30 days. Bunty generated once (232 chars, kept under 237 so 285 credits >= 1.2 x chars) on the 'W' account; site again made 2 generations, Generation 1 used; before: 285 left, after: 53 left. First publish_video said 'Video is still processing' (not on IG after 3 min); second publish_video worked at ~21:24 IST (4 Zapier tasks in all). YouTube: uploaded ~21:27 IST (switched ClipNest Studio -> How's That and back; ClipNest showed a 'create channel' prompt, dismissed with Not now)"
   }
 ]
