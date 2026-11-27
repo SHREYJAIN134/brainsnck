@@ -74,6 +74,8 @@ did best (railway 3/3 since 2026-11-09, 1,368–3,417 views) but Shrey doesn't w
      (fresh DRS row, 1,156). chain-pull flat at 1,574 (~38 h). Waiting list 4,102. Median of 22 main reels ~1,140.
    - 2026-11-26: ticket-dalal (railway booking + insider villain + 3 saal jail) 1,487 in ~36 h: railway with a villain
      holds again. umpires-call flat at 148 (~2 days). Waiting list 4,127. Median of 23 main reels ≥ 48 h 1,128.
+   - 2026-11-27: fake-discount (paisa + inflated-price villain + sale news) only 159 at ~21 h, early like umpires-call.
+     ticket-dalal flat at 1,487, Waiting list 4,132. Median of 24 main reels ≥ 48 h ~1,140.
    - Not the reason: length, posting time, look and voice were the same for all of them.
    - So: mass Indian passion (cricket, trains, paisa, phone/WhatsApp life) + conflict (villain, scam, cheat,
      controversy, unfair system, or a true mini story with a character) + the viewer's own stakes (paise,
