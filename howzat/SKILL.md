@@ -76,6 +76,8 @@ did best (railway 3/3 since 2026-11-09, 1,368–3,417 views) but Shrey doesn't w
      holds again. umpires-call flat at 148 (~2 days). Waiting list 4,127. Median of 23 main reels ≥ 48 h 1,128.
    - 2026-11-27: fake-discount (paisa + inflated-price villain + sale news) only 159 at ~21 h, early like umpires-call.
      ticket-dalal flat at 1,487, Waiting list 4,132. Median of 24 main reels ≥ 48 h ~1,140.
+   - 2026-11-28: drs-review (fresh cricket DRS row, captain vs bowler) 1,327 in ~19 h: cricket with a fresh row works
+     again. fake-discount flat at 160 (~40 h), a paisa flop. Median of 24 main reels ≥ 48 h 1,142.
    - Not the reason: length, posting time, look and voice were the same for all of them.
    - So: mass Indian passion (cricket, trains, paisa, phone/WhatsApp life) + conflict (villain, scam, cheat,
      controversy, unfair system, or a true mini story with a character) + the viewer's own stakes (paise,
@@ -117,6 +119,10 @@ Shrey is on the ElevenLabs **free plan**: Bunty works on the website only, not t
    Google account signed in to Shrey's Chrome). Never type a password or an OTP: if Google or ElevenLabs asks for
    one, or that account is not in the Google chooser, post nothing and tell Shrey that sign-in to
    shreystudyonly@gmail.com needs him once. Check the settings email again after signing in.
+   (2026-11-28: "Sign in with Google" opens Google in a popup window outside the MCP tab group, where the tools can't
+   reach it. On the sign-in page first run `const o = window.open.bind(window); window.open = (u, n) => o(u, n);`
+   with javascript_tool, then click the button with a real click (a JS click is blocked as a popup): Google opens as
+   a tab in the group a few seconds later; pick "Study only Shrey" there. Don't reload the ElevenLabs tab meanwhile.)
 2. Voice: if it doesn't already show Bunty, open the voice picker → **My voices** → hover Bunty → **Use**.
    (If Bunty isn't in My voices, find "Bunty – Punchy, Crisp and Reel King" in the Voice Library and add it
    first; if it isn't there, fail.)

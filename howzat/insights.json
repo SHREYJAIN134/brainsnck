@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27 18:00 IST",
+  "checked": "2026-11-28 12:52 IST",
   "how": "views = number on each tile of instagram.com/howzat.tech/reels (Shrey's Chrome); likes/comments = Graph API media list via Zapier. The Zapier connection has no Insights permission (reach, watch time, shares, saves give error #10).",
   "reels": [
     {"date": "2026-10-31", "slug": "google-maps", "kind": "main", "views": 1128, "likes": 22, "comments": 0, "angle": "true viral story with a character (99 phones prank)", "conflict": true},
@@ -12,8 +12,8 @@
     {"date": "2026-11-05", "slug": "shazam", "kind": "main", "views": 133, "likes": 2, "comments": 0, "angle": "neutral app 'how it works'", "conflict": false},
     {"date": "2026-11-06", "slug": "fastag", "kind": "main", "views": 170, "likes": 1, "comments": 0, "angle": "neutral process + regional news (only 18 h old when checked)", "conflict": false},
     {"date": "2026-11-07", "slug": "digital-arrest", "kind": "main", "views": 313, "likes": 0, "comments": 0, "angle": "scam villain (fake CBI officer on video call) + viewer's savings at stake + Rs 4,057 cr number", "conflict": true},
-    {"date": "2026-11-08", "slug": "waiting-list", "kind": "main", "views": 4132, "likes": 0, "comments": 0, "angle": "trains + mini story (tum WL 12 atka, dost WL 90 confirm) + your ticket home + Chhath rush", "conflict": true},
-    {"date": "2026-11-09", "slug": "lower-berth", "kind": "main", "views": 1416, "likes": 0, "comments": 0, "angle": "railway niche: tum (upper) vs aunty (lower) story + reserved lower berth quota + WhatsApp myth busted", "conflict": true},
+    {"date": "2026-11-08", "slug": "waiting-list", "kind": "main", "views": 4138, "likes": 0, "comments": 0, "angle": "trains + mini story (tum WL 12 atka, dost WL 90 confirm) + your ticket home + Chhath rush", "conflict": true},
+    {"date": "2026-11-09", "slug": "lower-berth", "kind": "main", "views": 1417, "likes": 0, "comments": 0, "angle": "railway niche: tum (upper) vs aunty (lower) story + reserved lower berth quota + WhatsApp myth busted", "conflict": true},
     {"date": "2026-11-10", "slug": "train-priority", "kind": "main", "views": 1575, "likes": 0, "comments": 0, "angle": "railway delays: tum (40 min khadi) vs Vande Bharat + train ranking + true story (controller suspended for 2-min VB delay)", "conflict": true},
     {"date": "2026-11-11", "slug": "current-booking", "kind": "main", "views": 158, "likes": 0, "comments": 0, "angle": "railway booking: tum (WL cancel at chart) vs dost (CONFIRM 30 min before) + current booking / chart vacancy, practical save-worthy tip", "conflict": true},
     {"date": "2026-11-13", "slug": "shaadi-card", "kind": "main", "views": 196, "likes": 0, "comments": 0, "angle": "safety: true mini story (aunty opens shaadi card from dost ka number, Rs 2.6 lakh gone) + WhatsApp life + wedding season + practical tip (asli card = PDF/JPG, never APK)", "conflict": true},
@@ -29,7 +29,8 @@
     {"date": "2026-11-23", "slug": "chain-pull", "kind": "main", "views": 1577, "likes": 0, "comments": 0, "angle": "railway rules: train stops in the jungle, someone pulled the chain + how the coach is found (valve, brake pipe air, hiss from that coach) + villain (prankster) + stakes (Sec 141: up to 1 yr jail / Rs 1,000 fine)", "conflict": true},
     {"date": "2026-11-24", "slug": "umpires-call", "kind": "main", "views": 148, "likes": 0, "comments": 0, "angle": "cricket DRS rule: ball-tracking shows the ball hitting the stumps yet NOT OUT (umpire's call, <50% of the ball in the wicket zone) + IND vs NZ DRS rows", "conflict": true},
     {"date": "2026-11-25", "slug": "ticket-dalal", "kind": "main", "views": 1487, "likes": 0, "comments": 0, "angle": "railway booking: tum (WL 47) vs kuli ('confirm chahiye? 500 extra') + fresh RPF bust (insider booking clerk, porter, teacher making an IRCTC ID on a villager's phone 'for Aadhaar update') + stakes (your ticket, your phone/ID) + Sec 143 (3 yrs)", "conflict": true},
-    {"date": "2026-11-26", "slug": "fake-discount", "kind": "main", "views": 159, "likes": 0, "comments": 0, "angle": "paisa: sale '50% OFF' but yesterday's price was the same (inflated 'original' price) + new rule from 1 Jan 2027 (prior price = lowest in 30 days) + stakes (your money) + sale-season news", "conflict": true},
-    {"date": "2026-11-27", "slug": "drs-review", "kind": "main", "views": 0, "likes": 0, "comments": 0, "angle": "cricket DRS row, fresh: Bumrah told Gill the ball was high, India reviewed anyway and lost it (IND vs NZ 2nd Test Day 1) + rule: 15 seconds, only the captain decides, a wrong review costs one", "conflict": true}
+    {"date": "2026-11-26", "slug": "fake-discount", "kind": "main", "views": 160, "likes": 0, "comments": 0, "angle": "paisa: sale '50% OFF' but yesterday's price was the same (inflated 'original' price) + new rule from 1 Jan 2027 (prior price = lowest in 30 days) + stakes (your money) + sale-season news", "conflict": true},
+    {"date": "2026-11-27", "slug": "drs-review", "kind": "main", "views": 1327, "likes": 0, "comments": 0, "angle": "cricket DRS row, fresh: Bumrah told Gill the ball was high, India reviewed anyway and lost it (IND vs NZ 2nd Test Day 1) + rule: 15 seconds, only the captain decides, a wrong review costs one", "conflict": true},
+    {"date": "2026-11-28", "slug": "sim-binding", "kind": "main", "views": 0, "likes": 0, "comments": 0, "angle": "phone/WhatsApp: scammer abroad calls from an Indian number (OTP once, SIM thrown, app keeps running) + new SIM-binding rule from 1 Jan 2027 + stakes (your WhatsApp stops without the SIM)", "conflict": true}
   ]
 }
